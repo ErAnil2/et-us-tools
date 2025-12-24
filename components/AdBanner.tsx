@@ -16,8 +16,8 @@ declare global {
   }
 }
 
-interface AdBannerProps {
-  bannerId: string;
+export interface AdBannerProps {
+  bannerId?: string;
   className?: string;
   lazy?: boolean;
 }
@@ -109,7 +109,7 @@ function useIsMobile() {
   return isMobile;
 }
 
-export default function AdBanner({ bannerId, className = "", lazy = true }: AdBannerProps) {
+export default function AdBanner({ bannerId = "webMrec1", className = "", lazy = true }: AdBannerProps) {
   const [bannerConfig, setBannerConfig] = useState<BannerConfig | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
