@@ -48,7 +48,8 @@
       "Bash(git push:*)",
       "Bash(node fix-types.js:*)",
       "Bash(node fix-all-types.js:*)",
-      "Bash(node fix-comprehensive.js:*)"
+      "Bash(node fix-comprehensive.js:*)",
+      "Bash(node fix-color-required.js:*)"
     ],
     "deny": [],
     "ask": []

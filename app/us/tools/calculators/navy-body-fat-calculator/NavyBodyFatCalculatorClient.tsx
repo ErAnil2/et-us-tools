@@ -26,7 +26,7 @@ interface NavyBodyFatCalculatorClientProps {
     href: string;
     title: string;
     description: string;
-    color: string;
+    color?: string;
   }>;
 }
 

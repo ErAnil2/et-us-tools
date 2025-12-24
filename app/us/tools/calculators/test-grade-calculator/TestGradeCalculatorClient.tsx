@@ -26,7 +26,7 @@ interface TestGradeCalculatorClientProps {
     href: string;
     title: string;
     description: string;
-    color: string;
+    color?: string;
   }>;
 }
 
