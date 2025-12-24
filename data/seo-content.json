@@ -1,0 +1,49 @@
+{
+  "calculators/salary-calculator": {
+    "h1Title": "Salary Calculator - Calculate Your Take Home Pay",
+    "metaTitle": "Free Salary Calculator | Calculate Take Home Pay | ET-US.com",
+    "metaDescription": "Calculate your take-home salary after taxes, deductions and benefits. Free salary calculator with detailed breakdown of gross vs net income.",
+    "seoContent": "<h2>About the Salary Calculator</h2><p>Our free salary calculator helps you understand exactly how much money you'll take home from your gross salary. This comprehensive tool accounts for federal taxes, state taxes, Social Security, Medicare, and other common payroll deductions.</p><h3>How to Use the Salary Calculator</h3><p>Simply enter your gross annual salary, select your filing status, and add any pre-tax deductions like health insurance or 401k contributions. The calculator will instantly show your net take-home pay broken down by year, month, and paycheck.</p><h3>Why Use Our Calculator?</h3><ul><li>Accurate tax calculations for all 50 states</li><li>Includes federal, state, and local tax considerations</li><li>Accounts for standard and itemized deductions</li><li>Shows detailed breakdown of all deductions</li><li>Updated for current tax year</li></ul>",
+    "keywords": "salary calculator, take home pay calculator, paycheck calculator, net salary, gross vs net salary",
+    "ogTitle": "Free Salary Calculator | Calculate Your Take Home Pay",
+    "ogDescription": "Calculate your exact take-home pay with our free salary calculator. See detailed breakdown of taxes and deductions.",
+    "ogImage": "",
+    "isActive": true,
+    "category": "calculators",
+    "lastUpdated": "2025-09-11T19:35:30.000Z",
+    "updatedBy": "test"
+  },
+  "age-calculator": {
+    "h1Title": "Age Calculator Online - Find Your Exact Age",
+    "metaTitle": "Age Calculator Online - Find Your Exact Age | The Economic Times",
+    "metaDescription": "",
+    "seoContent": "",
+    "keywords": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "ogImage": "",
+    "updatedAt": "2025-09-11T21:07:45.009Z"
+  },
+  "tip-calculator": {
+    "h1Title": "Tip Calculator",
+    "metaTitle": "",
+    "metaDescription": "",
+    "seoContent": "<strong><h2>Restaurant Tip Calculator - Easy Math for Happy Meals!</h2></strong><br>\r\n\r\n<strong>What is a Tip Calculator?</strong><br>\r\n\r\nA tip calculator is like a helpful friend that does math for you! When you eat at a restaurant, you pay for your yummy food. But you also want to say \"thank you\" to the nice person who brought your food. This \"thank you\" money is called a tip!<br>\r\n\r\nOur restaurant tip calculator makes it super easy to figure out how much tip money to give. No more scratching your head or counting on your fingers!<br>\r\n\r\n<strong>Why Do We Give Tips at Restaurants?</strong><br>\r\n\r\nWhen you go to a restaurant, wonderful people work hard to make your meal special. The server brings your food, fills up your water glass, and makes sure you have everything you need. Giving a tip is like giving them a high-five with money!<br>\r\n\r\nTips help restaurant workers buy groceries, pay for their homes, and take care of their families. When we give good tips, we're being kind and helpful.<br>\r\n\r\n<strong>How Much Tip Should You Give?</strong><br>\r\n\r\nMost grown-ups give tips between 15% and 20% of their bill. But don't worry - you don't need to know what percentages mean! Our tip calculator does all the thinking for you.<br>\r\n\r\nHere's what different tip amounts mean:<br>\r\n- 15% tip: This means \"good job!\"<br>\r\n- 18% tip: This means \"great job!\"<br>\r\n- 20% tip: This means \"amazing job!\"<br>\r\n\r\n<strong>How to Use Our Restaurant Tip Calculator</strong><br>\r\n\r\nUsing our tip calculator is as easy as eating ice cream! Here's how:<br>\r\n\r\nStep 1: Look at your restaurant bill and find the total amount. Type that number into our calculator.<br>\r\n\r\nStep 2: Pick how good you think the service was. Was your server super nice? Choose a higher percentage!<br>\r\n\r\nStep 3: Like magic, our calculator shows you exactly how much tip to give and how much money you'll pay in total.<br>\r\n\r\n<strong>Learning About Money and Kindness</strong><br>\r\n\r\nUsing a tip calculator teaches kids important lessons:<br>\r\n- How percentages work in real life<br>\r\n- Why it's important to pay fairly for services  <br>\r\n- The value of being grateful and kind to others<br>\r\n- Basic math skills that help in everyday life<br>\r\n\r\n<strong>Ready to Calculate Your Tip?</strong><br>\r\n\r\nNext time you're at a restaurant, use our easy tip calculator! It takes the confusion out of tipping and helps you show appreciation for good service. Whether you're getting pizza with friends or celebrating a birthday dinner, our restaurant tip calculator makes sure everyone gets paid fairly and you can focus on enjoying your delicious meal!",
+    "keywords": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "ogImage": "",
+    "updatedAt": "2025-09-12T05:06:23.562Z"
+  },
+  "apps/anagram-solver": {
+    "h1Title": "Anagram Solver Online",
+    "metaTitle": "Anagram Solver Online",
+    "metaDescription": "",
+    "seoContent": "",
+    "keywords": "",
+    "ogTitle": "",
+    "ogDescription": "",
+    "ogImage": "",
+    "updatedAt": "2025-10-14T10:39:10.538Z"
+  }
+}

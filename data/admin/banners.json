@@ -1,0 +1,76 @@
+{
+  "banners": {
+    "topBanner": {
+      "id": "topBanner",
+      "name": "Top Banner (Leaderboard)",
+      "enabled": true,
+      "script": "",
+      "dimensions": "728x90",
+      "fallbackAd": {
+        "text": "Advertisement",
+        "width": 728,
+        "height": 90
+      }
+    },
+    "footerBanner": {
+      "id": "footerBanner",
+      "name": "Footer Banner (Leaderboard)",
+      "enabled": true,
+      "script": "",
+      "dimensions": "728x90",
+      "fallbackAd": {
+        "text": "Advertisement",
+        "width": 728,
+        "height": 90
+      }
+    },
+    "leftSkinBanner": {
+      "id": "leftSkinBanner",
+      "name": "Left Skin Banner",
+      "enabled": true,
+      "script": "",
+      "dimensions": "160x600",
+      "fallbackAd": {
+        "text": "Ad",
+        "width": 160,
+        "height": 600
+      }
+    },
+    "rightSkinBanner": {
+      "id": "rightSkinBanner",
+      "name": "Right Skin Banner",
+      "enabled": true,
+      "script": "",
+      "dimensions": "160x600",
+      "fallbackAd": {
+        "text": "Ad",
+        "width": 160,
+        "height": 600
+      }
+    },
+    "amBreakBanner": {
+      "id": "amBreakBanner",
+      "name": "AM Break Banner (MPU)",
+      "enabled": true,
+      "script": "",
+      "dimensions": "300x250",
+      "fallbackAd": {
+        "text": "Advertisement",
+        "width": 300,
+        "height": 250
+      }
+    },
+    "inContentBanner": {
+      "id": "inContentBanner",
+      "name": "In-Content Banner",
+      "enabled": true,
+      "script": "",
+      "dimensions": "300x250",
+      "fallbackAd": {
+        "text": "Advertisement",
+        "width": 300,
+        "height": 250
+      }
+    }
+  }
+}

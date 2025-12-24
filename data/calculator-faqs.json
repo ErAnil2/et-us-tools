@@ -1,0 +1,554 @@
+{
+  "birth-year-calculator": {
+    "calculatorId": "birth-year-calculator",
+    "calculatorName": "Birth Year Calculator",
+    "calculatorPath": "/us/tools/calculators/birth-year-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "byc-1",
+        "question": "How do I calculate my birth year from my age?",
+        "answer": "Simply subtract your current age from the current year. For example, if you are 25 years old in 2025, your birth year would be 2025 - 25 = 2000. However, if your birthday hasn't occurred yet this year, subtract one more year.",
+        "order": 1
+      },
+      {
+        "id": "byc-2",
+        "question": "Why does my birth year calculation sometimes seem off by one year?",
+        "answer": "This happens because age calculations depend on whether your birthday has passed in the current year. If your birthday is later in the year and hasn't occurred yet, you're technically still the previous age, which affects the birth year calculation.",
+        "order": 2
+      },
+      {
+        "id": "byc-3",
+        "question": "How can I find my birth year if I only know my age?",
+        "answer": "Use our calculator by entering your current age. The calculator will show you your birth year, accounting for the current date. You'll see the exact year you were born based on your age.",
+        "order": 3
+      },
+      {
+        "id": "byc-4",
+        "question": "What generation am I based on my birth year?",
+        "answer": "Birth years determine your generation: Silent Generation (1928-1945), Baby Boomers (1946-1964), Gen X (1965-1980), Millennials (1981-1996), Gen Z (1997-2012), and Gen Alpha (2013-present). Our calculator shows your generation automatically.",
+        "order": 4
+      },
+      {
+        "id": "byc-5",
+        "question": "Can I calculate birth year for a specific date in the past?",
+        "answer": "Yes! Our calculator allows you to enter a custom date instead of using today's date. This is useful for calculating what year someone was born based on their age at a specific point in history.",
+        "order": 5
+      },
+      {
+        "id": "byc-6",
+        "question": "How accurate is the birth year calculator?",
+        "answer": "Our calculator is highly accurate when you provide your exact age. For the most precise result, also consider whether your birthday has passed this year, as this affects whether to subtract an additional year from the calculation.",
+        "order": 6
+      }
+    ]
+  },
+  "overtime-calculator": {
+    "calculatorId": "overtime-calculator",
+    "calculatorName": "Overtime Calculator",
+    "calculatorPath": "/us/tools/calculators/overtime-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "oc-1",
+        "question": "How is overtime pay calculated in the US?",
+        "answer": "Under the Fair Labor Standards Act (FLSA), overtime pay is calculated at 1.5 times (time and a half) your regular hourly rate for hours worked beyond 40 in a workweek. For example, if your regular rate is $20/hour, your overtime rate would be $30/hour.",
+        "order": 1
+      },
+      {
+        "id": "oc-2",
+        "question": "What is double-time pay and when does it apply?",
+        "answer": "Double-time pay (2x your regular rate) is not federally mandated but some states like California require it for hours worked beyond 12 in a single day, or for hours worked on the 7th consecutive day of work. Company policies may also offer double-time for holidays.",
+        "order": 2
+      },
+      {
+        "id": "oc-3",
+        "question": "Are all employees entitled to overtime pay?",
+        "answer": "No, some employees are exempt from overtime requirements. Exempt employees typically include executive, administrative, professional, and certain computer employees who earn above a salary threshold ($684/week as of 2024) and meet specific job duty requirements.",
+        "order": 3
+      },
+      {
+        "id": "oc-4",
+        "question": "How do I calculate my weekly overtime earnings?",
+        "answer": "Enter your regular hourly rate and the total hours worked in a week. Hours up to 40 are paid at your regular rate. Hours beyond 40 are automatically calculated at 1.5x your rate. The calculator shows your regular pay, overtime pay, and total weekly earnings.",
+        "order": 4
+      },
+      {
+        "id": "oc-5",
+        "question": "Does overtime apply to salaried employees?",
+        "answer": "It depends on whether the salaried employee is classified as exempt or non-exempt. Non-exempt salaried employees are entitled to overtime pay. To calculate their hourly rate, divide their weekly salary by 40 hours, then apply the 1.5x multiplier for overtime hours.",
+        "order": 5
+      },
+      {
+        "id": "oc-6",
+        "question": "Are there state-specific overtime rules I should know about?",
+        "answer": "Yes, some states have additional overtime rules. California requires daily overtime (over 8 hours) and double-time provisions. Alaska has an 8-hour daily overtime threshold. Always check your state's labor laws for specific requirements that may provide greater protections.",
+        "order": 6
+      }
+    ]
+  },
+  "countdown-calculator": {
+    "calculatorId": "countdown-calculator",
+    "calculatorName": "Countdown Calculator",
+    "calculatorPath": "/us/tools/calculators/countdown-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "cc-1",
+        "question": "How do I create a countdown to a specific date?",
+        "answer": "Simply enter your target date and time in the calculator above. You can also give your countdown a custom name. The calculator will instantly show you the remaining days, hours, minutes, and seconds until your event.",
+        "order": 1
+      },
+      {
+        "id": "cc-2",
+        "question": "Can I count down to holidays and special events?",
+        "answer": "Yes! Use the quick preset buttons to instantly set countdowns for popular events like New Year's Day, Christmas, Valentine's Day, Independence Day, and more. You can also create custom countdowns for birthdays, anniversaries, or any personal event.",
+        "order": 2
+      },
+      {
+        "id": "cc-3",
+        "question": "Does the countdown update in real-time?",
+        "answer": "Yes, the countdown updates every second, showing you the precise time remaining. You'll see years, months, days, hours, minutes, and seconds ticking down live as time passes.",
+        "order": 3
+      },
+      {
+        "id": "cc-4",
+        "question": "What happens when the countdown reaches zero?",
+        "answer": "When your countdown reaches the target date and time, it will display that the event has arrived. The countdown will show zero for all time units, indicating your event is now happening.",
+        "order": 4
+      },
+      {
+        "id": "cc-5",
+        "question": "Can I share my countdown with others?",
+        "answer": "You can bookmark the page with your countdown settings or share the calculator link with friends and family. They can then set the same target date to track the countdown together.",
+        "order": 5
+      },
+      {
+        "id": "cc-6",
+        "question": "How accurate is the countdown calculation?",
+        "answer": "Our countdown calculator is highly accurate, accounting for varying month lengths, leap years, and precise time calculations down to the second. It uses your device's local time zone for accurate results.",
+        "order": 6
+      }
+    ]
+  },
+  "days-between-dates-calculator": {
+    "calculatorId": "days-between-dates-calculator",
+    "calculatorName": "Days Between Dates Calculator",
+    "calculatorPath": "/us/tools/calculators/days-between-dates-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "dbd-1",
+        "question": "How do I calculate the number of days between two dates?",
+        "answer": "Enter your start date and end date in the calculator above. The tool will automatically calculate the total days, weeks, months, and years between the two dates. You can also toggle 'Include end date' to count the final day in your total.",
+        "order": 1
+      },
+      {
+        "id": "dbd-2",
+        "question": "What's the difference between calendar days and business days?",
+        "answer": "Calendar days include all days (weekdays and weekends), while business days only count Monday through Friday. Use the 'Business days only' checkbox to calculate working days, which is useful for project planning and deadline calculations.",
+        "order": 2
+      },
+      {
+        "id": "dbd-3",
+        "question": "Does the calculator account for leap years?",
+        "answer": "Yes, the calculator automatically accounts for leap years when calculating the difference between dates. It also shows you how many leap years fall within your selected date range.",
+        "order": 3
+      },
+      {
+        "id": "dbd-4",
+        "question": "How accurate is the months calculation?",
+        "answer": "The months calculation uses an average of 30.44 days per month (accounting for months with 28-31 days). For exact month counting, consider the detailed breakdown which shows years, months, weeks, and remaining days.",
+        "order": 4
+      },
+      {
+        "id": "dbd-5",
+        "question": "Can I calculate days between past dates?",
+        "answer": "Yes, you can calculate days between any two dates - past, present, or future. Use the quick preset buttons like 'Last Week', 'Last Month', or 'Last Year' for common past date calculations.",
+        "order": 5
+      },
+      {
+        "id": "dbd-6",
+        "question": "What are common uses for a days between dates calculator?",
+        "answer": "Common uses include calculating age in days, tracking project timelines, planning events, determining payment due dates, calculating rental periods, measuring time until deadlines, and planning vacations or travel.",
+        "order": 6
+      }
+    ]
+  },
+  "years-between-dates-calculator": {
+    "calculatorId": "years-between-dates-calculator",
+    "calculatorName": "Years Between Dates Calculator",
+    "calculatorPath": "/us/tools/calculators/years-between-dates-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "ybd-1",
+        "question": "How do I calculate the years between two dates?",
+        "answer": "Enter your start date and end date in the calculator above. The tool will automatically calculate the time difference in years, months, and days. You can choose between precise calculation, decimal years, or total days.",
+        "order": 1
+      },
+      {
+        "id": "ybd-2",
+        "question": "What's the difference between precise and decimal year calculations?",
+        "answer": "Precise calculation shows exact years, months, and days (e.g., 2 years, 3 months, 15 days). Decimal years express the time as a single decimal number (e.g., 2.29 years), which is useful for statistical analysis and scientific calculations.",
+        "order": 2
+      },
+      {
+        "id": "ybd-3",
+        "question": "Does the calculator account for leap years?",
+        "answer": "Yes, the calculator accounts for leap years in all calculations. The decimal year calculation uses 365.25 days per year to account for the extra day every four years, ensuring accuracy over long time periods.",
+        "order": 3
+      },
+      {
+        "id": "ybd-4",
+        "question": "How can I calculate my exact age using this calculator?",
+        "answer": "Enter your birth date as the start date and click 'Set End to Today' to automatically set today's date as the end date. The calculator will show your exact age in years, months, and days.",
+        "order": 4
+      },
+      {
+        "id": "ybd-5",
+        "question": "Can I swap the start and end dates?",
+        "answer": "Yes, use the 'Swap Dates' button to instantly reverse the start and end dates. This is useful if you entered the dates in the wrong order or want to calculate time in the opposite direction.",
+        "order": 5
+      },
+      {
+        "id": "ybd-6",
+        "question": "What are common uses for calculating years between dates?",
+        "answer": "Common uses include calculating age, determining service tenure, measuring time until retirement, finding anniversary milestones, calculating loan terms, determining eligibility periods, and planning long-term events.",
+        "order": 6
+      }
+    ]
+  },
+  "age-in-days-calculator": {
+    "calculatorId": "age-in-days-calculator",
+    "calculatorName": "Age in Days Calculator",
+    "calculatorPath": "/us/tools/calculators/age-in-days-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "aid-1",
+        "question": "How do I calculate my age in days?",
+        "answer": "Enter your birth date in the calculator above, and it will automatically calculate your exact age in days, hours, minutes, and seconds. The calculator accounts for leap years and varying month lengths for accurate results.",
+        "order": 1
+      },
+      {
+        "id": "aid-2",
+        "question": "Does the calculator account for leap years?",
+        "answer": "Yes, the calculator automatically accounts for leap years (years with 366 days instead of 365). Leap years occur every 4 years, adding an extra day on February 29th. This ensures your age in days is calculated accurately.",
+        "order": 2
+      },
+      {
+        "id": "aid-3",
+        "question": "How many days old am I if I'm 30 years old?",
+        "answer": "At 30 years old, you would be approximately 10,950-10,958 days old, depending on how many leap years occurred during your lifetime (about 7-8 leap years). The exact number depends on your birth date and the current date.",
+        "order": 3
+      },
+      {
+        "id": "aid-4",
+        "question": "Can I calculate my age on a specific future or past date?",
+        "answer": "Yes, select 'Custom Date' instead of 'Today' and enter any date you want. This is useful for finding out how old you were on a specific past event or how old you'll be on a future date.",
+        "order": 4
+      },
+      {
+        "id": "aid-5",
+        "question": "How many hours and minutes have I lived?",
+        "answer": "The calculator shows your age in multiple units: days, hours, minutes, and seconds. For example, if you're 10,000 days old, that's 240,000 hours, 14,400,000 minutes, or 864,000,000 seconds.",
+        "order": 5
+      },
+      {
+        "id": "aid-6",
+        "question": "What is the significance of counting age in days?",
+        "answer": "Counting age in days gives a more precise measurement of time lived. It's useful for celebrating day milestones (like 10,000 days), tracking infant development in pediatrics, calculating exact time differences, and understanding the true duration of your life experiences.",
+        "order": 6
+      }
+    ]
+  },
+  "timezone-calculator": {
+    "calculatorId": "timezone-calculator",
+    "calculatorName": "Time Zone Calculator",
+    "calculatorPath": "/us/tools/calculators/timezone-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "tz-1",
+        "question": "How do I convert time between different time zones?",
+        "answer": "Enter the date and time in your source time zone, select your current time zone, then add one or more target time zones. The calculator will instantly show you the corresponding time in each selected zone, accounting for any offset differences.",
+        "order": 1
+      },
+      {
+        "id": "tz-2",
+        "question": "What is UTC and how does it relate to time zones?",
+        "answer": "UTC (Coordinated Universal Time) is the global reference point for all time zones. It replaced GMT (Greenwich Mean Time) as the world standard. All time zones are expressed as offsets from UTC, such as UTC-5 for Eastern Standard Time or UTC+9 for Japan Standard Time.",
+        "order": 2
+      },
+      {
+        "id": "tz-3",
+        "question": "Does the calculator account for Daylight Saving Time (DST)?",
+        "answer": "Yes, our calculator automatically detects and accounts for Daylight Saving Time. It shows whether DST is currently active in each time zone and adjusts the conversion accordingly. DST typically adds one hour to the standard offset.",
+        "order": 3
+      },
+      {
+        "id": "tz-4",
+        "question": "What's the difference between EST and EDT?",
+        "answer": "EST (Eastern Standard Time) is UTC-5 and is used during winter months. EDT (Eastern Daylight Time) is UTC-4 and is used during summer months when clocks 'spring forward' one hour. The same pattern applies to other US time zones (PST/PDT, MST/MDT, CST/CDT).",
+        "order": 4
+      },
+      {
+        "id": "tz-5",
+        "question": "How many time zones are there in the world?",
+        "answer": "There are 38 distinct time zones worldwide, ranging from UTC-12 to UTC+14. Some countries span multiple zones (like the US with 6), while others use half-hour or quarter-hour offsets (like India at UTC+5:30 or Nepal at UTC+5:45).",
+        "order": 5
+      },
+      {
+        "id": "tz-6",
+        "question": "Why do some countries have unusual time zone offsets?",
+        "answer": "Some countries choose non-standard offsets for practical or political reasons. India uses UTC+5:30 to have a single time zone for the entire country. Nepal uses UTC+5:45 to distinguish itself from India. China uses a single time zone (UTC+8) despite spanning five geographical zones.",
+        "order": 6
+      }
+    ]
+  },
+  "time-calculator": {
+    "calculatorId": "time-calculator",
+    "calculatorName": "Time Calculator",
+    "calculatorPath": "/us/tools/calculators/time-calculator",
+    "isActive": false,
+    "lastUpdated": "2025-12-03T06:59:23.782Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "tc-1",
+        "question": "How do I add or subtract times?",
+        "answer": "Enter the first time in hours, minutes, and seconds. Select either 'Add' or 'Subtract' operation, then enter the second time. The calculator will instantly show the result in HH:MM:SS format, along with total hours, minutes, and seconds.",
+        "order": 1
+      },
+      {
+        "id": "tc-2",
+        "question": "Can this calculator handle times greater than 24 hours?",
+        "answer": "Yes! Unlike a regular clock, this calculator can handle durations that exceed 24 hours. If you add 20 hours and 10 hours, you'll get 30 hours displayed correctly as 30:00:00.",
+        "order": 2
+      },
+      {
+        "id": "tc-3",
+        "question": "What happens if I subtract a larger time from a smaller time?",
+        "answer": "The calculator will return 00:00:00 (zero) if the second time is larger than the first. This prevents negative time values which don't make sense in most practical applications.",
+        "order": 3
+      },
+      {
+        "id": "tc-4",
+        "question": "How do I calculate total work hours for a week?",
+        "answer": "You can add multiple time periods sequentially. First add two times, note the result, then use that result as the first time and add the next time period. Alternatively, convert all times to minutes, add them, then convert back to hours.",
+        "order": 4
+      },
+      {
+        "id": "tc-5",
+        "question": "How do I convert decimal hours to hours and minutes?",
+        "answer": "To convert decimal hours (like 2.5 hours) to hours and minutes: The whole number is hours (2), multiply the decimal by 60 to get minutes (0.5 × 60 = 30 minutes). So 2.5 hours = 2 hours 30 minutes.",
+        "order": 5
+      },
+      {
+        "id": "tc-6",
+        "question": "What's the difference between elapsed time and clock time?",
+        "answer": "Elapsed time is the duration between two events (e.g., 3 hours 45 minutes), while clock time refers to a specific point in time (e.g., 3:45 PM). This calculator works with elapsed time/durations, not clock times.",
+        "order": 6
+      }
+    ]
+  },
+  "age-calculator": {
+    "calculatorId": "age-calculator",
+    "calculatorName": "Age Calculator",
+    "calculatorPath": "/us/tools/calculators/age-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "ac-1",
+        "question": "How is age calculated accurately?",
+        "answer": "Age is calculated by counting the complete years, months, and days between your birth date and the current date (or a specified date). The calculator handles varying month lengths (28-31 days) and leap years correctly. For example, if born on March 15, 1990, and today is December 3, 2025, you would be 35 years, 8 months, and 18 days old.",
+        "order": 1
+      },
+      {
+        "id": "ac-2",
+        "question": "Why does my age in months or days differ from simple multiplication?",
+        "answer": "Simple multiplication (years × 12 for months or years × 365 for days) doesn't account for varying month lengths and leap years. Our calculator counts actual elapsed time, which gives precise results. A year has 365 or 366 days, and months range from 28-31 days.",
+        "order": 2
+      },
+      {
+        "id": "ac-3",
+        "question": "How do I calculate age on a specific date?",
+        "answer": "Enter your birth date and then change the 'Calculate Age On' field to any date you want. This is useful for calculating your age at a future event, for historical dates, or for determining eligibility for age-based requirements on a specific date.",
+        "order": 3
+      },
+      {
+        "id": "ac-4",
+        "question": "What is my zodiac sign based on my birth date?",
+        "answer": "Your Western zodiac sign is determined by your birth date. The 12 signs are: Aries (Mar 21-Apr 19), Taurus (Apr 20-May 20), Gemini (May 21-Jun 20), Cancer (Jun 21-Jul 22), Leo (Jul 23-Aug 22), Virgo (Aug 23-Sep 22), Libra (Sep 23-Oct 22), Scorpio (Oct 23-Nov 21), Sagittarius (Nov 22-Dec 21), Capricorn (Dec 22-Jan 19), Aquarius (Jan 20-Feb 18), and Pisces (Feb 19-Mar 20).",
+        "order": 4
+      },
+      {
+        "id": "ac-5",
+        "question": "How many heartbeats have I had since birth?",
+        "answer": "The average human heart beats about 100,000 times per day or approximately 70 beats per minute at rest. You can estimate your total heartbeats by multiplying your age in days by 100,000. For example, a 30-year-old has had approximately 1.1 billion heartbeats!",
+        "order": 5
+      },
+      {
+        "id": "ac-6",
+        "question": "What generation am I part of?",
+        "answer": "Generations are defined by birth year ranges: Silent Generation (1928-1945), Baby Boomers (1946-1964), Generation X (1965-1980), Millennials/Gen Y (1981-1996), Generation Z (1997-2012), and Generation Alpha (2013-present). Each generation has distinct characteristics shaped by historical events and technology.",
+        "order": 6
+      }
+    ]
+  },
+  "business-days-calculator": {
+    "calculatorId": "business-days-calculator",
+    "calculatorName": "Business Days Calculator",
+    "calculatorPath": "/us/tools/calculators/business-days-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "bdc-1",
+        "question": "What are business days?",
+        "answer": "Business days (also called working days or weekdays) are the days when most businesses operate, typically Monday through Friday. They exclude weekends (Saturday and Sunday) and may also exclude public holidays depending on your country or industry.",
+        "order": 1
+      },
+      {
+        "id": "bdc-2",
+        "question": "How do you calculate business days between two dates?",
+        "answer": "To calculate business days, count each day between the start and end dates, excluding Saturdays and Sundays. For more accurate calculations, you may also need to exclude public holidays specific to your country or region.",
+        "order": 2
+      },
+      {
+        "id": "bdc-3",
+        "question": "Are federal holidays included in business days?",
+        "answer": "Generally, federal holidays are NOT considered business days as most government offices and many businesses are closed. However, some industries may operate on holidays. This calculator excludes weekends but does not automatically exclude holidays.",
+        "order": 3
+      },
+      {
+        "id": "bdc-4",
+        "question": "How many business days are in a year?",
+        "answer": "In a typical year, there are approximately 260-262 business days (52 weeks × 5 weekdays). After accounting for major US federal holidays (about 10-11), you get roughly 250-252 working days. Leap years may add one more day.",
+        "order": 4
+      },
+      {
+        "id": "bdc-5",
+        "question": "What is the difference between calendar days and business days?",
+        "answer": "Calendar days include every day of the week (all 7 days), while business days only count weekdays (Monday-Friday). A period of 7 calendar days equals only 5 business days. This distinction is important for contracts, shipping, and legal deadlines.",
+        "order": 5
+      },
+      {
+        "id": "bdc-6",
+        "question": "Why do businesses use business days for deadlines?",
+        "answer": "Businesses use business days because they represent days when work can actually be performed. This provides more accurate timelines for processing, shipping, and completing tasks, as most employees only work Monday through Friday.",
+        "order": 6
+      }
+    ]
+  },
+  "date-calculator": {
+    "calculatorId": "date-calculator",
+    "calculatorName": "Date Calculator",
+    "calculatorPath": "/us/tools/calculators/date-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "dc-1",
+        "question": "How do I calculate the number of days between two dates?",
+        "answer": "To calculate days between dates, subtract the earlier date from the later date. Our calculator automatically handles this by computing the absolute difference in milliseconds and converting to days. For example, the difference between January 1, 2025 and March 1, 2025 is 59 days.",
+        "order": 1
+      },
+      {
+        "id": "dc-2",
+        "question": "How do I add or subtract days from a date?",
+        "answer": "To add days to a date, simply add the number of days to the current date value. To subtract, use a negative number. Our calculator lets you slide between -365 to +365 days, and also allows you to enter custom values for years, months, and days to add or subtract.",
+        "order": 2
+      },
+      {
+        "id": "dc-3",
+        "question": "What are business days and how are they calculated?",
+        "answer": "Business days (also called working days) are weekdays excluding Saturdays and Sundays. To calculate business days between two dates, count all days and subtract weekends. Some calculations also exclude federal holidays. Our calculator can count business days excluding weekends.",
+        "order": 3
+      },
+      {
+        "id": "dc-4",
+        "question": "How do I calculate years, months, and days between two dates?",
+        "answer": "To break down the difference: First calculate the year difference, then the remaining months, then the remaining days. For example, from January 15, 2023 to March 20, 2025 is 2 years, 2 months, and 5 days.",
+        "order": 4
+      },
+      {
+        "id": "dc-5",
+        "question": "Does the date calculator account for leap years?",
+        "answer": "Yes, our calculator automatically accounts for leap years. February has 29 days in leap years (years divisible by 4, except century years not divisible by 400). The calculator uses JavaScript's Date object which handles leap years correctly.",
+        "order": 5
+      },
+      {
+        "id": "dc-6",
+        "question": "How do I calculate a due date or deadline?",
+        "answer": "To find a due date, use the Add/Subtract mode. Enter your start date, then add the number of days, weeks, or months until the deadline. For example, if a project starts today and has a 90-day deadline, add 90 days to today's date to find the due date.",
+        "order": 6
+      }
+    ]
+  },
+  "hours-calculator": {
+    "calculatorId": "hours-calculator",
+    "calculatorName": "Hours Calculator",
+    "calculatorPath": "/us/tools/calculators/hours-calculator",
+    "isActive": true,
+    "lastUpdated": "2025-12-03T00:00:00.000Z",
+    "updatedBy": "system",
+    "faqs": [
+      {
+        "id": "hc-1",
+        "question": "How do I calculate hours worked between two times?",
+        "answer": "To calculate hours worked, subtract the start time from the end time, then subtract any break time. For example, if you start at 9:00 AM and end at 5:00 PM with a 1-hour lunch break: 8 hours total - 1 hour break = 7 hours worked. Our calculator handles this automatically, including overnight shifts that cross midnight.",
+        "order": 1
+      },
+      {
+        "id": "hc-2",
+        "question": "What is the difference between regular hours and overtime hours?",
+        "answer": "In the US, regular hours are typically the first 40 hours worked per week. Any hours beyond 40 are considered overtime and are usually paid at 1.5x the regular rate (time and a half). Some states have additional overtime rules for daily hours exceeding 8 or 12 hours.",
+        "order": 2
+      },
+      {
+        "id": "hc-3",
+        "question": "How do I convert decimal hours to hours and minutes?",
+        "answer": "To convert decimal hours to minutes, multiply the decimal portion by 60. For example, 7.5 hours = 7 hours and (0.5 × 60) = 30 minutes, so 7.5 hours = 7 hours 30 minutes. Similarly, 2.75 hours = 2 hours and 45 minutes (0.75 × 60 = 45).",
+        "order": 3
+      },
+      {
+        "id": "hc-4",
+        "question": "How do I calculate hours for an overnight or night shift?",
+        "answer": "For shifts that cross midnight, enable the 'Time period crosses midnight' option. The calculator will automatically add 24 hours to the end time. For example, a shift from 10 PM to 6 AM would be calculated as: 6:00 + 24 hours - 22:00 = 8 hours.",
+        "order": 4
+      },
+      {
+        "id": "hc-5",
+        "question": "How is gross pay calculated for weekly timesheets?",
+        "answer": "Gross pay is calculated by multiplying regular hours (up to 40) by the hourly rate, then adding overtime hours (over 40) at 1.5x the rate. For example, with a $20/hour rate and 45 hours worked: (40 × $20) + (5 × $30) = $800 + $150 = $950 gross pay.",
+        "order": 5
+      },
+      {
+        "id": "hc-6",
+        "question": "What's the formula for calculating time duration?",
+        "answer": "Time duration = End Time - Start Time - Break Time. Convert all times to minutes for easier calculation. For example: End (17:00 = 1020 min) - Start (09:00 = 540 min) - Break (60 min) = 420 minutes = 7 hours.",
+        "order": 6
+      }
+    ]
+  }
+}

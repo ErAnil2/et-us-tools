@@ -1,0 +1,631 @@
+{
+  "calculators": {
+    "401k-calculator": {
+      "h1Title": "401k Calculator - Plan Your Retirement Savings",
+      "metaTitle": "Free 401k Calculator | Retirement Savings Planner | The Economic Times",
+      "metaDescription": "Calculate your 401k retirement savings with our free calculator. Estimate employer match, tax savings, and projected growth over time.",
+      "keywords": "401k calculator, retirement calculator, 401k savings, employer match calculator, retirement planning",
+      "seoContent": "<h2>About the 401k Calculator</h2><p>Our free 401k calculator helps you plan for a secure retirement by estimating how much your 401k savings could grow over time. Factor in your contributions, employer matching, and expected investment returns.</p><h3>Key Features</h3><ul><li>Calculate employer match contributions</li><li>Project growth based on different return rates</li><li>See the impact of increasing contributions</li><li>Understand tax-deferred growth benefits</li></ul>",
+      "faqs": [
+        {"question": "How much should I contribute to my 401k?", "answer": "Financial experts recommend contributing at least enough to get your full employer match, typically 3-6% of your salary. Ideally, aim for 10-15% of your income including employer contributions."},
+        {"question": "What is the 401k contribution limit?", "answer": "For 2024, the contribution limit is $23,000 for those under 50, and $30,500 for those 50 and older (including the $7,500 catch-up contribution)."},
+        {"question": "How does employer matching work?", "answer": "Employer matching means your company contributes money to your 401k based on your own contributions. A common match is 50% of your contributions up to 6% of your salary."}
+      ]
+    },
+    "age-calculator": {
+      "h1Title": "Age Calculator - Calculate Your Exact Age",
+      "metaTitle": "Free Age Calculator | Calculate Your Exact Age in Years, Months & Days | ET",
+      "metaDescription": "Calculate your exact age in years, months, days, hours, and minutes. Find your zodiac sign, Chinese zodiac, generation, and countdown to your next birthday.",
+      "keywords": "age calculator, calculate age, exact age, age in days, birthday calculator, zodiac sign calculator",
+      "seoContent": "<h2>About the Age Calculator</h2><p>Our free age calculator instantly computes your exact age from your date of birth. Get detailed results including years, months, days, hours, and even minutes.</p><h3>What You'll Discover</h3><ul><li>Your exact age in multiple units</li><li>Your zodiac and Chinese zodiac signs</li><li>Your generational cohort</li><li>Countdown to your next birthday</li><li>Life statistics and milestones</li></ul>",
+      "faqs": [
+        {"question": "How does the age calculator work?", "answer": "The calculator takes your birth date and compares it to today's date, calculating the exact difference in years, months, days, hours, and minutes."},
+        {"question": "Can I calculate age between two dates?", "answer": "Yes, you can enter any two dates to calculate the exact time difference between them, useful for determining ages at specific points in time."},
+        {"question": "What zodiac information is provided?", "answer": "The calculator shows both your Western zodiac sign based on birth month and your Chinese zodiac animal based on birth year."}
+      ]
+    },
+    "age-in-days-calculator": {
+      "h1Title": "Age in Days Calculator - How Many Days Old Are You?",
+      "metaTitle": "Age in Days Calculator | Calculate Days Since Birth | The Economic Times",
+      "metaDescription": "Find out exactly how many days old you are. Calculate your age in days, weeks, hours, and minutes from your date of birth.",
+      "keywords": "age in days, days old calculator, age calculator days, how many days old am I",
+      "seoContent": "<h2>Calculate Your Age in Days</h2><p>Ever wondered exactly how many days you've been alive? Our age in days calculator gives you the precise count from your birth date to today.</p>",
+      "faqs": [
+        {"question": "How many days are in a year?", "answer": "A regular year has 365 days, while a leap year has 366 days. Our calculator accounts for leap years in its calculations."},
+        {"question": "What's a significant day milestone?", "answer": "Common milestones include 10,000 days (about 27 years), 15,000 days (about 41 years), and 20,000 days (about 55 years)."}
+      ]
+    },
+    "area-calculator": {
+      "h1Title": "Area Calculator - Calculate Area of Any Shape",
+      "metaTitle": "Free Area Calculator | Calculate Area of Shapes | The Economic Times",
+      "metaDescription": "Calculate the area of any shape including rectangles, circles, triangles, and more. Free online area calculator with instant results.",
+      "keywords": "area calculator, calculate area, square footage calculator, shape area calculator",
+      "seoContent": "<h2>About the Area Calculator</h2><p>Calculate the area of various shapes quickly and accurately. Whether you need to measure a room, garden, or any surface, our calculator provides instant results.</p>",
+      "faqs": [
+        {"question": "How do I calculate the area of a rectangle?", "answer": "Multiply the length by the width. For example, a rectangle 10 feet by 12 feet has an area of 120 square feet."},
+        {"question": "What units can I use?", "answer": "You can use any units (feet, meters, inches, etc.) as long as you use the same unit for all measurements. The result will be in square units."}
+      ]
+    },
+    "area-of-a-circle-calculator": {
+      "h1Title": "Area of a Circle Calculator",
+      "metaTitle": "Circle Area Calculator | Calculate Area from Radius or Diameter | ET",
+      "metaDescription": "Calculate the area of a circle using radius or diameter. Free online circle area calculator with step-by-step formula explanation.",
+      "keywords": "circle area calculator, area of circle, pi r squared calculator, radius to area",
+      "seoContent": "<h2>Calculate Circle Area</h2><p>Find the area of any circle by entering the radius or diameter. Uses the formula A = πr² for accurate calculations.</p>",
+      "faqs": [
+        {"question": "What is the formula for circle area?", "answer": "The area of a circle equals pi (π) times the radius squared: A = πr². If you know the diameter, divide it by 2 to get the radius."},
+        {"question": "What is pi (π)?", "answer": "Pi is approximately 3.14159. It's the ratio of a circle's circumference to its diameter and is used in all circle calculations."}
+      ]
+    },
+    "auto-loan-affordability-calculator": {
+      "h1Title": "Auto Loan Affordability Calculator",
+      "metaTitle": "Auto Loan Affordability Calculator | How Much Car Can I Afford? | ET",
+      "metaDescription": "Calculate how much car you can afford based on your income and expenses. Free auto loan affordability calculator with monthly payment estimates.",
+      "keywords": "auto loan calculator, car affordability calculator, how much car can I afford, car payment calculator",
+      "seoContent": "<h2>How Much Car Can You Afford?</h2><p>Determine your car buying budget based on your income, current debts, and preferred monthly payment. Make an informed decision before visiting the dealership.</p>",
+      "faqs": [
+        {"question": "What percentage of income should go to car payment?", "answer": "Financial experts recommend spending no more than 10-15% of your monthly take-home pay on car payments, and no more than 20% on total car expenses including insurance and gas."},
+        {"question": "Does the calculator include insurance?", "answer": "This calculator focuses on the loan payment. Remember to budget an additional $100-$200+ monthly for insurance, maintenance, and fuel."}
+      ]
+    },
+    "bmi-calculator": {
+      "h1Title": "BMI Calculator - Calculate Your Body Mass Index",
+      "metaTitle": "Free BMI Calculator | Body Mass Index Calculator | The Economic Times",
+      "metaDescription": "Calculate your Body Mass Index (BMI) instantly. Find out if you're underweight, normal weight, overweight, or obese with our free BMI calculator.",
+      "keywords": "BMI calculator, body mass index, BMI chart, healthy weight calculator, obesity calculator",
+      "seoContent": "<h2>About BMI Calculator</h2><p>Body Mass Index (BMI) is a measure of body fat based on height and weight. Our calculator instantly determines your BMI and what category you fall into.</p><h3>BMI Categories</h3><ul><li>Underweight: BMI less than 18.5</li><li>Normal weight: BMI 18.5-24.9</li><li>Overweight: BMI 25-29.9</li><li>Obese: BMI 30 or greater</li></ul>",
+      "faqs": [
+        {"question": "How is BMI calculated?", "answer": "BMI is calculated by dividing your weight in kilograms by your height in meters squared (kg/m²). For pounds and inches: (weight × 703) ÷ (height²)."},
+        {"question": "Is BMI accurate for everyone?", "answer": "BMI is a general indicator and may not be accurate for athletes with high muscle mass, elderly individuals, or pregnant women. Consult a healthcare provider for personalized assessment."},
+        {"question": "What is a healthy BMI?", "answer": "A healthy BMI is generally considered to be between 18.5 and 24.9. However, optimal BMI can vary based on age, gender, and ethnicity."}
+      ]
+    },
+    "compound-interest-calculator": {
+      "h1Title": "Compound Interest Calculator",
+      "metaTitle": "Free Compound Interest Calculator | Calculate Investment Growth | ET",
+      "metaDescription": "Calculate compound interest on your investments. See how your money grows over time with daily, monthly, or yearly compounding.",
+      "keywords": "compound interest calculator, investment calculator, savings growth calculator, compound interest formula",
+      "seoContent": "<h2>Understanding Compound Interest</h2><p>Compound interest is interest calculated on both the initial principal and the accumulated interest. This 'interest on interest' effect can significantly grow your wealth over time.</p><h3>Compounding Frequency</h3><ul><li>Daily compounding: 365 times per year</li><li>Monthly compounding: 12 times per year</li><li>Quarterly compounding: 4 times per year</li><li>Annual compounding: Once per year</li></ul>",
+      "faqs": [
+        {"question": "What is the compound interest formula?", "answer": "A = P(1 + r/n)^(nt) where A = final amount, P = principal, r = annual interest rate, n = compounding frequency, t = time in years."},
+        {"question": "How does compounding frequency affect returns?", "answer": "More frequent compounding results in slightly higher returns. Daily compounding earns more than monthly, which earns more than annual compounding."},
+        {"question": "What's the Rule of 72?", "answer": "The Rule of 72 is a quick way to estimate how long it takes to double your money: divide 72 by the interest rate. At 6% interest, money doubles in about 12 years."}
+      ]
+    },
+    "emi-calculator": {
+      "h1Title": "EMI Calculator - Calculate Your Loan EMI",
+      "metaTitle": "Free EMI Calculator | Loan EMI Calculator Online | The Economic Times",
+      "metaDescription": "Calculate EMI for home loan, car loan, or personal loan. Free EMI calculator with amortization schedule and total interest breakdown.",
+      "keywords": "EMI calculator, loan EMI calculator, home loan EMI, car loan EMI, personal loan EMI",
+      "seoContent": "<h2>EMI Calculator</h2><p>EMI (Equated Monthly Installment) is the fixed amount you pay each month to repay your loan. Our calculator helps you determine the monthly payment for any loan amount, interest rate, and tenure.</p>",
+      "faqs": [
+        {"question": "What is EMI?", "answer": "EMI stands for Equated Monthly Installment. It's a fixed payment amount made by a borrower to a lender at a specified date each month, consisting of both principal and interest."},
+        {"question": "How is EMI calculated?", "answer": "EMI = [P × r × (1+r)^n] / [(1+r)^n – 1], where P = loan amount, r = monthly interest rate, n = number of monthly installments."},
+        {"question": "Can I prepay my loan to reduce EMI?", "answer": "Yes, making prepayments reduces your principal, which can either reduce your EMI amount or shorten your loan tenure, depending on your lender's policy."}
+      ]
+    },
+    "mortgage-calculator": {
+      "h1Title": "Mortgage Calculator - Calculate Your Monthly Payment",
+      "metaTitle": "Free Mortgage Calculator | Home Loan Payment Calculator | ET",
+      "metaDescription": "Calculate your monthly mortgage payment including principal, interest, taxes, and insurance. Free mortgage calculator with amortization schedule.",
+      "keywords": "mortgage calculator, home loan calculator, monthly mortgage payment, house payment calculator",
+      "seoContent": "<h2>Mortgage Calculator</h2><p>Estimate your monthly mortgage payment and understand the true cost of homeownership. Our calculator includes principal, interest, property taxes, and insurance (PITI).</p>",
+      "faqs": [
+        {"question": "What's included in a mortgage payment?", "answer": "A typical mortgage payment includes Principal (loan repayment), Interest, property Taxes, and homeowner's Insurance (PITI). Some loans also include PMI if down payment is less than 20%."},
+        {"question": "How much house can I afford?", "answer": "A general rule is that your monthly housing costs shouldn't exceed 28% of your gross monthly income. Total debt payments shouldn't exceed 36%."},
+        {"question": "What's the difference between 15 and 30-year mortgages?", "answer": "A 15-year mortgage has higher monthly payments but lower total interest. A 30-year mortgage has lower monthly payments but you pay more interest over time."}
+      ]
+    },
+    "tip-calculator": {
+      "h1Title": "Tip Calculator - Calculate Restaurant Tips",
+      "metaTitle": "Free Tip Calculator | Restaurant Tip Calculator | The Economic Times",
+      "metaDescription": "Calculate tips for restaurants, delivery, and services. Split the bill among friends and determine the right tip percentage.",
+      "keywords": "tip calculator, restaurant tip calculator, tip percentage, bill split calculator",
+      "seoContent": "<h2>Restaurant Tip Calculator</h2><p>Quickly calculate the appropriate tip amount for your dining experience. Split the bill among multiple people and adjust tip percentage based on service quality.</p>",
+      "faqs": [
+        {"question": "What's a standard tip percentage?", "answer": "In the US, standard tipping is 15-20% for good service. 15% is acceptable, 18% is standard, and 20%+ is for excellent service."},
+        {"question": "Should I tip on the pre-tax or post-tax amount?", "answer": "Traditionally, tips are calculated on the pre-tax subtotal. However, many people tip on the total bill for simplicity."},
+        {"question": "How much should I tip for takeout?", "answer": "Tipping for takeout is optional but appreciated. 10% is a nice gesture, especially for large or complicated orders."}
+      ]
+    },
+    "salary-calculator": {
+      "h1Title": "Salary Calculator - Calculate Your Take Home Pay",
+      "metaTitle": "Free Salary Calculator | Net Pay Calculator | The Economic Times",
+      "metaDescription": "Calculate your take-home salary after taxes and deductions. Convert between hourly, weekly, monthly, and annual pay rates.",
+      "keywords": "salary calculator, take home pay calculator, net salary calculator, paycheck calculator",
+      "seoContent": "<h2>Salary Calculator</h2><p>Understand your true take-home pay after federal and state taxes, Social Security, Medicare, and other deductions. Compare gross vs net salary.</p>",
+      "faqs": [
+        {"question": "What's the difference between gross and net salary?", "answer": "Gross salary is your total earnings before deductions. Net salary (take-home pay) is what you receive after taxes and other deductions are subtracted."},
+        {"question": "What deductions affect my paycheck?", "answer": "Common deductions include federal income tax, state income tax, Social Security (6.2%), Medicare (1.45%), health insurance, and 401k contributions."}
+      ]
+    },
+    "percentage-calculator": {
+      "h1Title": "Percentage Calculator - Calculate Percentages Easily",
+      "metaTitle": "Free Percentage Calculator | Calculate Percentages Online | ET",
+      "metaDescription": "Calculate percentages instantly. Find percentage of a number, percentage increase/decrease, and solve percentage problems.",
+      "keywords": "percentage calculator, percent calculator, calculate percentage, percentage increase calculator",
+      "seoContent": "<h2>Percentage Calculator</h2><p>Solve any percentage problem quickly. Calculate what percent of a number, percentage change, and more.</p>",
+      "faqs": [
+        {"question": "How do I calculate percentage of a number?", "answer": "To find X% of Y: multiply Y by X and divide by 100. For example, 20% of 150 = 150 × 20 ÷ 100 = 30."},
+        {"question": "How do I calculate percentage increase?", "answer": "Percentage increase = ((New Value - Original Value) / Original Value) × 100. For example, going from 100 to 120 is a 20% increase."}
+      ]
+    },
+    "discount-calculator": {
+      "h1Title": "Discount Calculator - Calculate Sale Prices",
+      "metaTitle": "Free Discount Calculator | Sale Price Calculator | The Economic Times",
+      "metaDescription": "Calculate discounted prices and savings instantly. Find final price after applying percentage discounts on any purchase.",
+      "keywords": "discount calculator, sale price calculator, percent off calculator, savings calculator",
+      "seoContent": "<h2>Discount Calculator</h2><p>Quickly determine the final price after applying a discount. See how much you save with percentage-off deals.</p>",
+      "faqs": [
+        {"question": "How do I calculate discount price?", "answer": "Final Price = Original Price × (1 - Discount%/100). For a 25% discount on $80: $80 × 0.75 = $60."},
+        {"question": "How do I calculate the discount percentage?", "answer": "Discount % = ((Original Price - Sale Price) / Original Price) × 100."}
+      ]
+    },
+    "loan-calculator": {
+      "h1Title": "Loan Calculator - Calculate Loan Payments",
+      "metaTitle": "Free Loan Calculator | Loan Payment Calculator | The Economic Times",
+      "metaDescription": "Calculate monthly loan payments for personal, auto, or home loans. See total interest paid and amortization schedule.",
+      "keywords": "loan calculator, loan payment calculator, interest calculator, amortization calculator",
+      "seoContent": "<h2>Loan Calculator</h2><p>Determine your monthly payment and total cost for any loan. Works for personal loans, auto loans, student loans, and mortgages.</p>",
+      "faqs": [
+        {"question": "How is loan payment calculated?", "answer": "Monthly payment depends on loan amount, interest rate, and loan term. The formula accounts for compound interest over the loan period."},
+        {"question": "What's an amortization schedule?", "answer": "An amortization schedule shows each payment broken down into principal and interest, plus the remaining balance after each payment."}
+      ]
+    },
+    "inflation-calculator": {
+      "h1Title": "Inflation Calculator - Calculate Purchasing Power",
+      "metaTitle": "Free Inflation Calculator | CPI Inflation Calculator | The Economic Times",
+      "metaDescription": "Calculate how inflation affects purchasing power over time. See what past dollars are worth today and project future values.",
+      "keywords": "inflation calculator, purchasing power calculator, CPI calculator, inflation rate calculator",
+      "seoContent": "<h2>Inflation Calculator</h2><p>Understand how inflation erodes purchasing power. Compare the value of money across different years.</p>",
+      "faqs": [
+        {"question": "What is inflation?", "answer": "Inflation is the rate at which prices for goods and services increase over time, reducing the purchasing power of money."},
+        {"question": "How is inflation measured?", "answer": "Inflation is typically measured using the Consumer Price Index (CPI), which tracks the price changes of a basket of common goods and services."}
+      ]
+    },
+    "car-loan-calculator": {
+      "h1Title": "Car Loan Calculator - Calculate Auto Loan Payments",
+      "metaTitle": "Free Car Loan Calculator | Auto Loan Calculator | The Economic Times",
+      "metaDescription": "Calculate monthly car loan payments, total interest, and compare loan terms. Make informed decisions on your next vehicle purchase.",
+      "keywords": "car loan calculator, auto loan calculator, car payment calculator, vehicle loan calculator",
+      "seoContent": "<h2>Car Loan Calculator</h2><p>Estimate your monthly car payment based on loan amount, interest rate, and term. Compare different scenarios to find the best financing option.</p>",
+      "faqs": [
+        {"question": "What car loan term should I choose?", "answer": "Shorter terms (36-48 months) have higher payments but less total interest. Longer terms (60-72 months) have lower payments but cost more overall."},
+        {"question": "What affects my auto loan interest rate?", "answer": "Credit score, down payment, loan term, and vehicle age all impact your rate. New cars typically have lower rates than used cars."}
+      ]
+    },
+    "gpa-calculator": {
+      "h1Title": "GPA Calculator - Calculate Your Grade Point Average",
+      "metaTitle": "Free GPA Calculator | Grade Point Average Calculator | The Economic Times",
+      "metaDescription": "Calculate your GPA easily. Enter your grades and credit hours to find your cumulative GPA on a 4.0 scale.",
+      "keywords": "GPA calculator, grade point average calculator, college GPA calculator, cumulative GPA",
+      "seoContent": "<h2>GPA Calculator</h2><p>Calculate your Grade Point Average on a 4.0 scale. Add courses with their grades and credit hours to compute your cumulative GPA.</p>",
+      "faqs": [
+        {"question": "How is GPA calculated?", "answer": "GPA = Total Grade Points / Total Credit Hours. Each grade has a point value (A=4.0, B=3.0, etc.) multiplied by credit hours."},
+        {"question": "What is a good GPA?", "answer": "Above 3.5 is excellent, 3.0-3.5 is good, 2.5-3.0 is average. Requirements vary by program and institution."}
+      ]
+    },
+    "body-fat-percentage-calculator": {
+      "h1Title": "Body Fat Percentage Calculator",
+      "metaTitle": "Free Body Fat Calculator | Body Fat Percentage Calculator | ET",
+      "metaDescription": "Calculate your body fat percentage using the US Navy method or other formulas. Find your fitness level and ideal body fat range.",
+      "keywords": "body fat calculator, body fat percentage, body composition calculator, fat percentage calculator",
+      "seoContent": "<h2>Body Fat Calculator</h2><p>Estimate your body fat percentage using various methods. Understand your body composition and fitness level.</p>",
+      "faqs": [
+        {"question": "What is a healthy body fat percentage?", "answer": "For men: 10-20% is healthy, athletes 6-13%. For women: 18-28% is healthy, athletes 14-20%. Essential fat is 2-5% for men, 10-13% for women."},
+        {"question": "How accurate is this calculator?", "answer": "Calculation methods provide estimates with ±3-4% accuracy. For precise measurement, consider DEXA scans or hydrostatic weighing."}
+      ]
+    },
+    "retirement-calculator": {
+      "h1Title": "Retirement Calculator - Plan Your Retirement",
+      "metaTitle": "Free Retirement Calculator | Retirement Planning Calculator | ET",
+      "metaDescription": "Plan your retirement with our free calculator. Determine how much you need to save and when you can retire comfortably.",
+      "keywords": "retirement calculator, retirement planning, retirement savings calculator, how much to retire",
+      "seoContent": "<h2>Retirement Calculator</h2><p>Plan for a secure retirement. Calculate how much you need to save based on your desired retirement age, lifestyle, and current savings.</p>",
+      "faqs": [
+        {"question": "How much do I need to retire?", "answer": "A common rule is to have 25 times your annual expenses saved. For $50,000/year expenses, you'd need $1.25 million."},
+        {"question": "What's the 4% rule?", "answer": "The 4% rule suggests withdrawing 4% of your retirement savings annually, which should make your money last 30+ years."}
+      ]
+    },
+    "investment-calculator": {
+      "h1Title": "Investment Calculator - Calculate Investment Returns",
+      "metaTitle": "Free Investment Calculator | Investment Return Calculator | ET",
+      "metaDescription": "Calculate potential investment returns over time. See how your money can grow with regular contributions and compound interest.",
+      "keywords": "investment calculator, investment return calculator, compound growth calculator, investment growth",
+      "seoContent": "<h2>Investment Calculator</h2><p>Project your investment growth over time. See the impact of regular contributions and compound returns on your portfolio.</p>",
+      "faqs": [
+        {"question": "What's a realistic investment return?", "answer": "Historical stock market returns average 7-10% annually after inflation. Bond returns are typically 3-5%. Diversified portfolios often target 6-8%."},
+        {"question": "How does compounding work?", "answer": "Compounding means earning returns on your returns. Over long periods, this can dramatically increase your wealth through exponential growth."}
+      ]
+    },
+    "currency-converter": {
+      "h1Title": "Currency Converter - Exchange Rates Calculator",
+      "metaTitle": "Free Currency Converter | Exchange Rate Calculator | The Economic Times",
+      "metaDescription": "Convert between world currencies with real-time exchange rates. Free currency converter for USD, EUR, GBP, INR, and more.",
+      "keywords": "currency converter, exchange rate calculator, forex calculator, money converter",
+      "seoContent": "<h2>Currency Converter</h2><p>Convert between currencies using up-to-date exchange rates. Useful for travel planning, international business, and investment decisions.</p>",
+      "faqs": [
+        {"question": "Are exchange rates real-time?", "answer": "Exchange rates are updated regularly but may have slight delays. For large transactions, check with your bank for exact rates."},
+        {"question": "What affects exchange rates?", "answer": "Interest rates, inflation, economic stability, political conditions, and trade balances all influence currency exchange rates."}
+      ]
+    },
+    "calorie-calculator": {
+      "h1Title": "Calorie Calculator - Daily Calorie Needs",
+      "metaTitle": "Free Calorie Calculator | Daily Calorie Calculator | The Economic Times",
+      "metaDescription": "Calculate how many calories you need daily for weight loss, maintenance, or muscle gain. Based on your age, gender, height, and activity level.",
+      "keywords": "calorie calculator, daily calorie needs, TDEE calculator, calorie intake calculator",
+      "seoContent": "<h2>Calorie Calculator</h2><p>Determine your daily calorie needs based on your goals. Whether you want to lose weight, maintain, or build muscle, knowing your caloric needs is the first step.</p>",
+      "faqs": [
+        {"question": "How are daily calories calculated?", "answer": "We calculate your Basal Metabolic Rate (BMR) using the Mifflin-St Jeor equation, then multiply by an activity factor to get Total Daily Energy Expenditure (TDEE)."},
+        {"question": "How many calories for weight loss?", "answer": "A safe calorie deficit is 500 calories below TDEE, which results in about 1 pound of weight loss per week."}
+      ]
+    },
+    "date-calculator": {
+      "h1Title": "Date Calculator - Calculate Days Between Dates",
+      "metaTitle": "Free Date Calculator | Days Between Dates Calculator | ET",
+      "metaDescription": "Calculate the number of days between two dates. Add or subtract days from a date. Find what date it will be in X days.",
+      "keywords": "date calculator, days between dates, date difference calculator, day counter",
+      "seoContent": "<h2>Date Calculator</h2><p>Calculate the difference between two dates or find a date by adding/subtracting days. Useful for planning events, counting down, or calculating deadlines.</p>",
+      "faqs": [
+        {"question": "Does the calculator account for leap years?", "answer": "Yes, our calculator automatically accounts for leap years when calculating days between dates."},
+        {"question": "Can I calculate business days only?", "answer": "Use our business day calculator to exclude weekends and holidays from your date calculations."}
+      ]
+    },
+    "time-calculator": {
+      "h1Title": "Time Calculator - Add & Subtract Time",
+      "metaTitle": "Free Time Calculator | Time Duration Calculator | The Economic Times",
+      "metaDescription": "Calculate time differences, add or subtract hours and minutes, convert between time units. Free time duration calculator.",
+      "keywords": "time calculator, time duration calculator, hours calculator, time difference calculator",
+      "seoContent": "<h2>Time Calculator</h2><p>Add, subtract, and calculate time differences. Convert between hours, minutes, and seconds. Perfect for tracking work hours or project time.</p>",
+      "faqs": [
+        {"question": "How do I calculate total hours worked?", "answer": "Enter your start and end times. The calculator will determine the total hours and minutes worked, including breaks if specified."},
+        {"question": "Can I add multiple time periods?", "answer": "Yes, you can add multiple time entries to calculate total duration across several periods."}
+      ]
+    },
+    "fuel-cost-calculator": {
+      "h1Title": "Fuel Cost Calculator - Calculate Trip Gas Costs",
+      "metaTitle": "Free Fuel Cost Calculator | Gas Cost Calculator | The Economic Times",
+      "metaDescription": "Calculate fuel costs for your trip. Enter distance, fuel efficiency, and gas price to estimate total fuel expenses.",
+      "keywords": "fuel cost calculator, gas cost calculator, trip fuel calculator, mpg calculator",
+      "seoContent": "<h2>Fuel Cost Calculator</h2><p>Estimate how much you'll spend on gas for your trip. Enter the distance, your vehicle's MPG, and current gas prices.</p>",
+      "faqs": [
+        {"question": "How is fuel cost calculated?", "answer": "Fuel Cost = (Distance / MPG) × Price per Gallon. For a 300-mile trip at 30 MPG with $3.50/gallon gas: (300/30) × $3.50 = $35."},
+        {"question": "How can I improve my fuel economy?", "answer": "Maintain proper tire pressure, avoid aggressive driving, remove excess weight, use cruise control, and keep up with regular maintenance."}
+      ]
+    },
+    "electric-bill-calculator": {
+      "h1Title": "Electricity Bill Calculator",
+      "metaTitle": "Free Electricity Bill Calculator | Energy Cost Calculator | ET",
+      "metaDescription": "Calculate your electricity bill based on usage. Estimate costs for appliances and find ways to save on your energy bill.",
+      "keywords": "electricity bill calculator, electric bill estimator, energy cost calculator, power consumption calculator",
+      "seoContent": "<h2>Electricity Bill Calculator</h2><p>Estimate your monthly electricity costs based on appliance usage. Identify energy-hungry devices and find savings opportunities.</p>",
+      "faqs": [
+        {"question": "How is electricity billed?", "answer": "Electricity is billed per kilowatt-hour (kWh). Your bill = Total kWh used × Rate per kWh + fixed charges and taxes."},
+        {"question": "Which appliances use the most electricity?", "answer": "HVAC systems, water heaters, electric dryers, and refrigerators typically consume the most energy in a home."}
+      ]
+    },
+    "sleep-calculator": {
+      "h1Title": "Sleep Calculator - Find Your Ideal Bedtime",
+      "metaTitle": "Free Sleep Calculator | Bedtime Calculator | The Economic Times",
+      "metaDescription": "Calculate the best time to sleep and wake up based on sleep cycles. Wake up refreshed by timing your sleep correctly.",
+      "keywords": "sleep calculator, bedtime calculator, sleep cycle calculator, wake up time calculator",
+      "seoContent": "<h2>Sleep Calculator</h2><p>Find the optimal time to go to bed or wake up based on 90-minute sleep cycles. Waking between cycles helps you feel more rested.</p>",
+      "faqs": [
+        {"question": "How long is a sleep cycle?", "answer": "A complete sleep cycle lasts about 90 minutes and includes light sleep, deep sleep, and REM sleep stages."},
+        {"question": "How many sleep cycles do I need?", "answer": "Most adults need 5-6 sleep cycles per night (7.5-9 hours). Waking at the end of a cycle feels more natural."}
+      ]
+    },
+    "ovulation-calculator": {
+      "h1Title": "Ovulation Calculator - Track Your Fertile Days",
+      "metaTitle": "Free Ovulation Calculator | Fertility Calculator | The Economic Times",
+      "metaDescription": "Calculate your most fertile days and ovulation date. Track your menstrual cycle to improve chances of conception.",
+      "keywords": "ovulation calculator, fertility calculator, ovulation tracker, fertile days calculator",
+      "seoContent": "<h2>Ovulation Calculator</h2><p>Identify your most fertile days based on your menstrual cycle. Understand when you're most likely to conceive.</p>",
+      "faqs": [
+        {"question": "When does ovulation occur?", "answer": "Ovulation typically occurs 14 days before your next period. For a 28-day cycle, that's around day 14."},
+        {"question": "What is the fertility window?", "answer": "The fertility window is about 6 days - the 5 days before ovulation plus ovulation day itself. Sperm can survive up to 5 days in the body."}
+      ]
+    },
+    "due-date-calculator": {
+      "h1Title": "Due Date Calculator - Pregnancy Due Date",
+      "metaTitle": "Free Due Date Calculator | Pregnancy Calculator | The Economic Times",
+      "metaDescription": "Calculate your baby's due date based on last menstrual period or conception date. Track pregnancy milestones week by week.",
+      "keywords": "due date calculator, pregnancy calculator, due date estimator, baby due date",
+      "seoContent": "<h2>Due Date Calculator</h2><p>Estimate your baby's arrival date based on your last period or conception date. Most pregnancies last about 40 weeks from the last menstrual period.</p>",
+      "faqs": [
+        {"question": "How is the due date calculated?", "answer": "The due date is typically calculated as 280 days (40 weeks) from the first day of your last menstrual period."},
+        {"question": "How accurate is the due date?", "answer": "Only about 5% of babies are born on their exact due date. Most arrive within 2 weeks before or after."}
+      ]
+    },
+    "tax-calculator": {
+      "h1Title": "Tax Calculator - Estimate Your Taxes",
+      "metaTitle": "Free Tax Calculator | Income Tax Calculator | The Economic Times",
+      "metaDescription": "Calculate your federal and state income taxes. Estimate your tax refund or amount owed with our free tax calculator.",
+      "keywords": "tax calculator, income tax calculator, tax refund calculator, federal tax calculator",
+      "seoContent": "<h2>Tax Calculator</h2><p>Estimate your federal and state income taxes based on your income, filing status, and deductions.</p>",
+      "faqs": [
+        {"question": "What tax brackets are used?", "answer": "The US uses progressive tax brackets: 10%, 12%, 22%, 24%, 32%, 35%, and 37% for 2024. You only pay the higher rate on income above each threshold."},
+        {"question": "Should I itemize or take standard deduction?", "answer": "Choose whichever is higher. The 2024 standard deduction is $14,600 (single) or $29,200 (married filing jointly). Itemize if your deductions exceed these amounts."}
+      ]
+    },
+    "square-footage-calculator": {
+      "h1Title": "Square Footage Calculator",
+      "metaTitle": "Free Square Footage Calculator | Room Size Calculator | ET",
+      "metaDescription": "Calculate square footage for rooms, homes, and properties. Convert between square feet, square meters, and acres.",
+      "keywords": "square footage calculator, room size calculator, area calculator, sq ft calculator",
+      "seoContent": "<h2>Square Footage Calculator</h2><p>Calculate the square footage of any space. Simply enter the length and width to get the total area in square feet.</p>",
+      "faqs": [
+        {"question": "How do I calculate square footage?", "answer": "Multiply length by width. For a 12ft × 15ft room: 12 × 15 = 180 square feet."},
+        {"question": "How do I handle irregular shapes?", "answer": "Break the area into rectangles, calculate each one, then add them together."}
+      ]
+    },
+    "concrete-calculator": {
+      "h1Title": "Concrete Calculator - Calculate Concrete Needed",
+      "metaTitle": "Free Concrete Calculator | Concrete Volume Calculator | ET",
+      "metaDescription": "Calculate how much concrete you need for your project. Get estimates in cubic yards and number of bags required.",
+      "keywords": "concrete calculator, concrete volume calculator, cement calculator, how much concrete",
+      "seoContent": "<h2>Concrete Calculator</h2><p>Determine exactly how much concrete you need for slabs, footings, walls, and columns. Avoid over-ordering or running short.</p>",
+      "faqs": [
+        {"question": "How is concrete measured?", "answer": "Concrete is measured in cubic yards. To calculate: (Length × Width × Depth in feet) ÷ 27 = cubic yards."},
+        {"question": "Should I order extra concrete?", "answer": "Yes, order 5-10% extra to account for waste, spillage, and uneven ground. Running short mid-pour is problematic."}
+      ]
+    },
+    "paint-calculator": {
+      "h1Title": "Paint Calculator - Calculate Paint Needed",
+      "metaTitle": "Free Paint Calculator | Paint Coverage Calculator | ET",
+      "metaDescription": "Calculate how much paint you need for your project. Estimate gallons required based on wall area and coverage rate.",
+      "keywords": "paint calculator, paint coverage calculator, how much paint, wall paint calculator",
+      "seoContent": "<h2>Paint Calculator</h2><p>Determine how many gallons of paint you need for your walls, ceiling, or trim. Accounts for doors, windows, and multiple coats.</p>",
+      "faqs": [
+        {"question": "How much area does a gallon of paint cover?", "answer": "One gallon typically covers 350-400 square feet with one coat. Coverage varies by paint type and surface texture."},
+        {"question": "How many coats do I need?", "answer": "Most projects need 2 coats. Going from dark to light colors may require 3 or more coats, or using a primer first."}
+      ]
+    }
+  },
+  "games": {
+    "2048-game": {
+      "h1Title": "2048 Game - Play Free Online",
+      "metaTitle": "Play 2048 Game Online Free | Number Puzzle Game | The Economic Times",
+      "metaDescription": "Play the classic 2048 puzzle game online for free. Slide numbered tiles, combine them to reach 2048! No download required.",
+      "keywords": "2048 game, play 2048, 2048 puzzle, number game, tile game",
+      "seoContent": "<h2>About 2048</h2><p>2048 is an addictive number puzzle game where you slide tiles to combine matching numbers. The goal is to create a tile with the number 2048.</p>",
+      "faqs": [
+        {"question": "How do you play 2048?", "answer": "Use arrow keys to slide all tiles in one direction. When two tiles with the same number touch, they merge into one with their sum. Keep combining until you reach 2048!"},
+        {"question": "What's the highest possible tile?", "answer": "Theoretically, the highest possible tile is 131,072 (2^17), but reaching even 8192 is extremely difficult for most players."}
+      ]
+    },
+    "chess": {
+      "h1Title": "Chess - Play Online Free",
+      "metaTitle": "Play Chess Online Free | Chess Game | The Economic Times",
+      "metaDescription": "Play chess online for free against the computer. Multiple difficulty levels available. No registration required.",
+      "keywords": "chess game, play chess online, free chess, chess against computer",
+      "seoContent": "<h2>Online Chess</h2><p>Challenge your mind with the classic game of chess. Play against our AI at various difficulty levels to improve your skills.</p>",
+      "faqs": [
+        {"question": "What are the basic rules of chess?", "answer": "Each piece moves differently: pawns move forward, rooks move in straight lines, bishops move diagonally, knights move in L-shapes, queens combine rook and bishop moves, kings move one square any direction."},
+        {"question": "What is checkmate?", "answer": "Checkmate occurs when a king is in check (under attack) and cannot escape. This ends the game."}
+      ]
+    },
+    "tic-tac-toe": {
+      "h1Title": "Tic Tac Toe - Play Free Online",
+      "metaTitle": "Play Tic Tac Toe Online Free | X and O Game | The Economic Times",
+      "metaDescription": "Play classic Tic Tac Toe online for free. Challenge friends or play against the computer. No download needed.",
+      "keywords": "tic tac toe, play tic tac toe, noughts and crosses, X and O game",
+      "seoContent": "<h2>Tic Tac Toe</h2><p>The classic game of X's and O's. Get three in a row to win! Play against a friend or test your strategy against our AI.</p>",
+      "faqs": [
+        {"question": "What's the best first move in Tic Tac Toe?", "answer": "The center square is generally considered the best first move, giving you the most winning possibilities."},
+        {"question": "Can Tic Tac Toe always end in a draw?", "answer": "Yes, with perfect play from both sides, Tic Tac Toe always ends in a draw. This is why the game is considered 'solved'."}
+      ]
+    },
+    "snake-game": {
+      "h1Title": "Snake Game - Play Classic Snake Online",
+      "metaTitle": "Play Snake Game Online Free | Classic Snake | The Economic Times",
+      "metaDescription": "Play the classic Snake game online for free. Guide the snake to eat food and grow longer. How high can you score?",
+      "keywords": "snake game, play snake, classic snake game, snake online",
+      "seoContent": "<h2>Classic Snake Game</h2><p>Relive the classic Nokia snake game in your browser. Control the snake, eat food to grow, and avoid hitting walls or yourself!</p>",
+      "faqs": [
+        {"question": "How do you control the snake?", "answer": "Use the arrow keys or WASD to change the snake's direction. The snake moves continuously in the current direction."},
+        {"question": "How do you score points?", "answer": "Each piece of food eaten adds points and makes the snake longer. The longer you survive and the more you eat, the higher your score."}
+      ]
+    },
+    "hangman": {
+      "h1Title": "Hangman Game - Word Guessing Game",
+      "metaTitle": "Play Hangman Online Free | Word Game | The Economic Times",
+      "metaDescription": "Play Hangman online for free. Guess the hidden word before running out of attempts. Fun word guessing game for all ages.",
+      "keywords": "hangman game, play hangman, word guessing game, hangman online",
+      "seoContent": "<h2>Hangman Game</h2><p>The classic word guessing game. Guess letters to reveal the hidden word before the stick figure is complete!</p>",
+      "faqs": [
+        {"question": "How many wrong guesses do I get?", "answer": "You typically get 6 wrong guesses (head, body, 2 arms, 2 legs) before the game ends."},
+        {"question": "What's a good strategy for Hangman?", "answer": "Start with common vowels (E, A, I, O, U) and frequent consonants (T, N, S, R, L). Look for patterns as letters are revealed."}
+      ]
+    },
+    "memory-cards": {
+      "h1Title": "Memory Card Game - Match Pairs",
+      "metaTitle": "Play Memory Card Game Online Free | Matching Game | ET",
+      "metaDescription": "Test your memory with our card matching game. Find matching pairs by remembering card positions. Fun brain training game.",
+      "keywords": "memory game, card matching game, concentration game, memory cards",
+      "seoContent": "<h2>Memory Card Game</h2><p>Exercise your brain with this classic memory game. Flip cards to find matching pairs while improving your concentration and recall.</p>",
+      "faqs": [
+        {"question": "How does the memory game work?", "answer": "Click two cards to flip them. If they match, they stay face up. If not, they flip back. Remember the positions to find all pairs!"},
+        {"question": "How can I improve at memory games?", "answer": "Create mental associations, look for patterns, and practice regularly. Memory games can actually improve your real-world recall abilities."}
+      ]
+    },
+    "typing-speed": {
+      "h1Title": "Typing Speed Test - Check Your WPM",
+      "metaTitle": "Free Typing Speed Test | WPM Test | The Economic Times",
+      "metaDescription": "Test your typing speed in words per minute (WPM). Improve your typing skills with our free online typing test.",
+      "keywords": "typing test, typing speed test, WPM test, words per minute, typing practice",
+      "seoContent": "<h2>Typing Speed Test</h2><p>Measure your typing speed in words per minute (WPM) and accuracy. Regular practice can significantly improve your typing skills.</p>",
+      "faqs": [
+        {"question": "What is a good typing speed?", "answer": "Average typing speed is 40 WPM. 60-80 WPM is considered good. Professional typists often exceed 80-100 WPM."},
+        {"question": "How can I type faster?", "answer": "Learn proper finger placement on home row keys, practice regularly without looking at the keyboard, and focus on accuracy before speed."}
+      ]
+    },
+    "sudoku": {
+      "h1Title": "Sudoku - Play Free Online",
+      "metaTitle": "Play Sudoku Online Free | Number Puzzle | The Economic Times",
+      "metaDescription": "Play Sudoku puzzles online for free. Multiple difficulty levels from easy to expert. Train your brain with this classic number game.",
+      "keywords": "sudoku, play sudoku, sudoku puzzle, sudoku online, number puzzle",
+      "seoContent": "<h2>Online Sudoku</h2><p>Challenge yourself with Sudoku puzzles at various difficulty levels. Fill the 9x9 grid so each row, column, and 3x3 box contains digits 1-9.</p>",
+      "faqs": [
+        {"question": "What are the rules of Sudoku?", "answer": "Fill every row, column, and 3x3 box with numbers 1-9. Each number can only appear once in each row, column, and box."},
+        {"question": "How do I solve difficult Sudoku puzzles?", "answer": "Use techniques like scanning, pencil marking candidates, looking for naked pairs/triples, and X-wing patterns for harder puzzles."}
+      ]
+    },
+    "crossword": {
+      "h1Title": "Daily Crossword Puzzle",
+      "metaTitle": "Free Daily Crossword Puzzle | Word Game | The Economic Times",
+      "metaDescription": "Solve our free daily crossword puzzle. Challenge your vocabulary and general knowledge with new puzzles every day.",
+      "keywords": "crossword puzzle, daily crossword, free crossword, word puzzle",
+      "seoContent": "<h2>Daily Crossword</h2><p>Expand your vocabulary and test your knowledge with our daily crossword puzzles. New puzzles available every day!</p>",
+      "faqs": [
+        {"question": "How often are new puzzles added?", "answer": "A new crossword puzzle is available every day. Previous puzzles remain accessible in our archive."},
+        {"question": "Can I get hints?", "answer": "Yes, you can reveal individual letters or whole words if you're stuck. Try to solve without hints for the best challenge!"}
+      ]
+    },
+    "word-scramble": {
+      "h1Title": "Word Scramble Game - Unscramble Words",
+      "metaTitle": "Play Word Scramble Online Free | Word Game | The Economic Times",
+      "metaDescription": "Unscramble the letters to form words. Test your vocabulary with this fun word puzzle game. Multiple difficulty levels.",
+      "keywords": "word scramble, unscramble words, word puzzle, anagram game",
+      "seoContent": "<h2>Word Scramble</h2><p>Exercise your vocabulary by unscrambling jumbled letters to form words. Great for improving spelling and word recognition.</p>",
+      "faqs": [
+        {"question": "How do I solve scrambled words?", "answer": "Look for common letter patterns, prefixes, and suffixes. Try rearranging vowels and consonants. Sometimes saying the letters aloud helps."},
+        {"question": "What's the difference between difficulty levels?", "answer": "Easier levels have shorter, common words. Harder levels feature longer words, technical terms, or less common vocabulary."}
+      ]
+    }
+  },
+  "apps": {
+    "anagram-solver": {
+      "h1Title": "Anagram Solver - Find All Word Combinations",
+      "metaTitle": "Free Anagram Solver | Word Finder Tool | The Economic Times",
+      "metaDescription": "Solve anagrams instantly! Enter letters to find all possible words. Perfect for Scrabble, Words With Friends, and word puzzles.",
+      "keywords": "anagram solver, anagram finder, word unscrambler, scrabble helper",
+      "seoContent": "<h2>Anagram Solver</h2><p>Find all possible words from a set of letters. Our solver checks against a comprehensive dictionary to find every valid word combination.</p>",
+      "faqs": [
+        {"question": "What is an anagram?", "answer": "An anagram is a word or phrase formed by rearranging the letters of another word or phrase. For example, 'listen' and 'silent' are anagrams."},
+        {"question": "Can I use blank tiles?", "answer": "Yes! Use ? or * to represent blank tiles. The solver will show all possible words with any letter in that position."}
+      ]
+    },
+    "word-counter": {
+      "h1Title": "Word Counter - Count Words & Characters",
+      "metaTitle": "Free Word Counter | Character Counter Tool | The Economic Times",
+      "metaDescription": "Count words, characters, sentences, and paragraphs in your text. Free online word counter with reading time estimate.",
+      "keywords": "word counter, character counter, word count tool, text counter",
+      "seoContent": "<h2>Word Counter</h2><p>Instantly count words, characters (with and without spaces), sentences, and paragraphs. Includes estimated reading and speaking time.</p>",
+      "faqs": [
+        {"question": "How is word count calculated?", "answer": "Words are counted by spaces between text. Hyphenated words count as one word. Numbers and symbols count as words if separated by spaces."},
+        {"question": "What's the average reading speed?", "answer": "Average adult reading speed is about 200-250 words per minute for normal text. Speaking is about 150 words per minute."}
+      ]
+    },
+    "timer": {
+      "h1Title": "Online Timer - Free Countdown Timer",
+      "metaTitle": "Free Online Timer | Countdown Timer | The Economic Times",
+      "metaDescription": "Set a countdown timer for any duration. Alarm sounds when time is up. Perfect for cooking, workouts, and productivity.",
+      "keywords": "online timer, countdown timer, kitchen timer, workout timer",
+      "seoContent": "<h2>Countdown Timer</h2><p>Set a timer for any duration. Get an alarm notification when your time is up. Works in the background while you browse.</p>",
+      "faqs": [
+        {"question": "Will the timer work if I switch tabs?", "answer": "Yes! The timer continues running in the background and will alert you when complete, even if you're on a different tab."},
+        {"question": "Can I set multiple timers?", "answer": "You can run multiple timers simultaneously. Each timer runs independently and will alert separately."}
+      ]
+    },
+    "stopwatch": {
+      "h1Title": "Online Stopwatch - Free Digital Stopwatch",
+      "metaTitle": "Free Online Stopwatch | Digital Stopwatch | The Economic Times",
+      "metaDescription": "Use our free online stopwatch to track time with precision. Features lap times, split times, and millisecond accuracy.",
+      "keywords": "online stopwatch, digital stopwatch, lap timer, time tracker",
+      "seoContent": "<h2>Digital Stopwatch</h2><p>Track time with millisecond precision. Record lap times, pause and resume, and keep track of multiple intervals.</p>",
+      "faqs": [
+        {"question": "What's the difference between lap and split time?", "answer": "Lap time measures the duration of each individual segment. Split time shows the total elapsed time from the start to each marker."},
+        {"question": "How accurate is the stopwatch?", "answer": "Our stopwatch is accurate to the millisecond. However, your reaction time when clicking start/stop adds a small margin of error."}
+      ]
+    },
+    "random-number-generator": {
+      "h1Title": "Random Number Generator",
+      "metaTitle": "Free Random Number Generator | RNG Tool | The Economic Times",
+      "metaDescription": "Generate random numbers instantly. Set your range and generate single or multiple random numbers. No patterns or bias.",
+      "keywords": "random number generator, RNG, random number picker, number randomizer",
+      "seoContent": "<h2>Random Number Generator</h2><p>Generate truly random numbers within any range you specify. Perfect for games, raffles, statistical sampling, and more.</p>",
+      "faqs": [
+        {"question": "Are the numbers truly random?", "answer": "We use cryptographically secure pseudorandom number generation, which produces unpredictable numbers suitable for most applications."},
+        {"question": "Can I exclude certain numbers?", "answer": "You can specify a range (min-max) and whether to allow duplicates when generating multiple numbers."}
+      ]
+    },
+    "qr-generator": {
+      "h1Title": "QR Code Generator - Create Free QR Codes",
+      "metaTitle": "Free QR Code Generator | Create QR Codes Online | ET",
+      "metaDescription": "Generate QR codes for URLs, text, contacts, and more. Free QR code maker with customization options. Download in multiple formats.",
+      "keywords": "QR code generator, QR maker, create QR code, QR code creator",
+      "seoContent": "<h2>QR Code Generator</h2><p>Create QR codes instantly for websites, text, contact information, WiFi networks, and more. Customize colors and download in various formats.</p>",
+      "faqs": [
+        {"question": "What can I encode in a QR code?", "answer": "QR codes can contain URLs, plain text, contact info (vCards), email addresses, phone numbers, WiFi credentials, and more."},
+        {"question": "What size should my QR code be?", "answer": "For print, aim for at least 2cm x 2cm at 300 DPI. The more data encoded, the larger the code should be for reliable scanning."}
+      ]
+    },
+    "password-generator": {
+      "h1Title": "Password Generator - Create Secure Passwords",
+      "metaTitle": "Free Password Generator | Strong Password Creator | ET",
+      "metaDescription": "Generate strong, secure passwords instantly. Customize length and character types. Create unbreakable passwords for your accounts.",
+      "keywords": "password generator, secure password, strong password creator, random password",
+      "seoContent": "<h2>Password Generator</h2><p>Create strong, unique passwords for all your accounts. Customize length and include uppercase, lowercase, numbers, and special characters.</p>",
+      "faqs": [
+        {"question": "What makes a strong password?", "answer": "Strong passwords are at least 12 characters long and include a mix of uppercase, lowercase, numbers, and symbols. Avoid common words and personal information."},
+        {"question": "Should I use a unique password for each account?", "answer": "Yes! Using unique passwords prevents a breach of one account from compromising others. Use a password manager to keep track of them."}
+      ]
+    },
+    "json-formatter": {
+      "h1Title": "JSON Formatter & Validator",
+      "metaTitle": "Free JSON Formatter | JSON Validator & Beautifier | ET",
+      "metaDescription": "Format, validate, and beautify JSON data online. Minify or pretty-print JSON with syntax highlighting. Free JSON tool for developers.",
+      "keywords": "JSON formatter, JSON validator, JSON beautifier, JSON minifier",
+      "seoContent": "<h2>JSON Formatter</h2><p>Format messy JSON into readable code. Validate JSON syntax, beautify with proper indentation, or minify for production use.</p>",
+      "faqs": [
+        {"question": "What is JSON?", "answer": "JSON (JavaScript Object Notation) is a lightweight data format used for storing and exchanging data. It's easy for humans to read and machines to parse."},
+        {"question": "Why format JSON?", "answer": "Formatted JSON with proper indentation is easier to read, debug, and understand. It helps identify structure and spot errors quickly."}
+      ]
+    },
+    "color-picker": {
+      "h1Title": "Color Picker - Find Color Codes",
+      "metaTitle": "Free Color Picker | HEX RGB Color Codes | The Economic Times",
+      "metaDescription": "Pick any color and get its HEX, RGB, and HSL codes. Free online color picker for web designers and developers.",
+      "keywords": "color picker, hex color, rgb color code, color selector",
+      "seoContent": "<h2>Color Picker</h2><p>Select any color and get its values in multiple formats: HEX, RGB, HSL, and CMYK. Perfect for web design and development.</p>",
+      "faqs": [
+        {"question": "What's the difference between HEX and RGB?", "answer": "HEX uses hexadecimal notation (#FF5733). RGB uses decimal values (255, 87, 51). They represent the same colors in different formats."},
+        {"question": "When should I use HSL?", "answer": "HSL (Hue, Saturation, Lightness) is intuitive for creating color variations. It's easy to lighten/darken colors by adjusting the L value."}
+      ]
+    },
+    "base64-encoder": {
+      "h1Title": "Base64 Encoder/Decoder",
+      "metaTitle": "Free Base64 Encoder Decoder | Base64 Converter | ET",
+      "metaDescription": "Encode text to Base64 or decode Base64 to text. Free online Base64 conversion tool for developers.",
+      "keywords": "base64 encoder, base64 decoder, base64 converter, encode decode base64",
+      "seoContent": "<h2>Base64 Encoder/Decoder</h2><p>Convert text to Base64 encoding or decode Base64 back to readable text. Useful for encoding binary data as ASCII text.</p>",
+      "faqs": [
+        {"question": "What is Base64 encoding?", "answer": "Base64 is a way to encode binary data using 64 printable ASCII characters. It's commonly used to embed images in HTML or send binary data in text-only protocols."},
+        {"question": "Why use Base64?", "answer": "Base64 allows binary data to be safely transmitted over text-based protocols like email or HTTP. It's also used for data URLs and API authentication."}
+      ]
+    },
+    "pomodoro-timer": {
+      "h1Title": "Pomodoro Timer - Focus Timer for Productivity",
+      "metaTitle": "Free Pomodoro Timer | Focus Timer | The Economic Times",
+      "metaDescription": "Boost productivity with the Pomodoro Technique. Work in focused 25-minute sessions with short breaks. Free online Pomodoro timer.",
+      "keywords": "pomodoro timer, focus timer, productivity timer, study timer",
+      "seoContent": "<h2>Pomodoro Timer</h2><p>Use the Pomodoro Technique to improve focus and productivity. Work for 25 minutes, take a 5-minute break, repeat.</p>",
+      "faqs": [
+        {"question": "What is the Pomodoro Technique?", "answer": "The Pomodoro Technique involves working in 25-minute focused sessions (pomodoros) followed by 5-minute breaks. After 4 pomodoros, take a longer 15-30 minute break."},
+        {"question": "Why does Pomodoro work?", "answer": "Breaking work into manageable intervals reduces mental fatigue, increases focus, and makes large tasks feel less overwhelming. Regular breaks prevent burnout."}
+      ]
+    },
+    "world-clock": {
+      "h1Title": "World Clock - Time Zones Around the World",
+      "metaTitle": "Free World Clock | Time Zones | The Economic Times",
+      "metaDescription": "Check the current time in cities around the world. Compare time zones and plan international meetings. Free world clock tool.",
+      "keywords": "world clock, time zones, international time, city time",
+      "seoContent": "<h2>World Clock</h2><p>View current time across multiple cities and time zones. Perfect for coordinating with international teams or planning travel.</p>",
+      "faqs": [
+        {"question": "How many time zones are there?", "answer": "There are 24 main time zones, but some areas use half-hour or 45-minute offsets, creating over 30 practical time zones worldwide."},
+        {"question": "What is UTC?", "answer": "UTC (Coordinated Universal Time) is the primary time standard. Other time zones are expressed as offsets from UTC (e.g., EST is UTC-5)."}
+      ]
+    }
+  }
+}

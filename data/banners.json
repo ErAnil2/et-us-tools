@@ -1,0 +1,92 @@
+{
+  "topBanner": {
+    "id": "topBanner",
+    "name": "Top Header Banner",
+    "dimensions": "728x90",
+    "enabled": true,
+    "script": "",
+    "fallbackAd": {
+      "text": "Advertisement",
+      "width": 728,
+      "height": 90
+    },
+    "placement": "top-header",
+    "createdAt": "2025-09-11T18:14:55.877Z",
+    "updatedAt": "2025-09-23T11:34:12.740Z"
+  },
+  "leftSkinBanner": {
+    "id": "leftSkinBanner",
+    "name": "Left Skin Banner",
+    "dimensions": "160x600",
+    "enabled": true,
+    "script": "",
+    "fallbackAd": {
+      "text": "Advertisement",
+      "width": 160,
+      "height": 600
+    },
+    "placement": "left-sidebar",
+    "createdAt": "2025-09-11T18:14:55.877Z",
+    "updatedAt": "2025-09-23T11:34:07.101Z"
+  },
+  "rightSkinBanner": {
+    "id": "rightSkinBanner",
+    "name": "Right Skin Banner",
+    "dimensions": "160x600",
+    "enabled": true,
+    "script": "",
+    "fallbackAd": {
+      "text": "Advertisement",
+      "width": 160,
+      "height": 600
+    },
+    "placement": "right-sidebar",
+    "createdAt": "2025-09-11T18:14:55.877Z",
+    "updatedAt": "2025-09-23T11:34:10.907Z"
+  },
+  "footerBanner": {
+    "id": "footerBanner",
+    "name": "Footer Banner",
+    "dimensions": "728x90",
+    "enabled": true,
+    "script": "",
+    "fallbackAd": {
+      "text": "Advertisement",
+      "width": 728,
+      "height": 90
+    },
+    "placement": "footer",
+    "createdAt": "2025-09-11T18:14:55.877Z",
+    "updatedAt": "2025-09-23T11:34:14.220Z"
+  },
+  "banner1": {
+    "id": "banner1",
+    "name": "MREC Banner 1",
+    "dimensions": "300x250",
+    "enabled": false,
+    "script": "<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\" crossorigin=\"anonymous\"></script>\n<script>\n  window.googletag = window.googletag || {cmd: []};\n  googletag.cmd.push(function() {\n    googletag.defineSlot('/23037861279/et_mweb/et_mweb_calculators/et_mweb_calculators_ls/ET_MWEB_CALCULATORS_LS_MREC_1', [[320, 100], [320, 50]], 'div-gpt-ad-1757326691666-0').addService(googletag.pubads());\n    googletag.pubads().enableSingleRequest();\n    googletag.enableServices();\n  });\n</script>\n",
+    "fallbackAd": {
+      "text": "Advertisement",
+      "width": 300,
+      "height": 250
+    },
+    "placement": "content-mrec-1",
+    "createdAt": "2025-09-11T18:14:55.877Z",
+    "updatedAt": "2025-09-16T07:48:58.789Z"
+  },
+  "banner2": {
+    "id": "banner2",
+    "name": "MREC Banner 2",
+    "dimensions": "300x250",
+    "enabled": false,
+    "script": "<script async src=\"https://securepubads.g.doubleclick.net/tag/js/gpt.js\" crossorigin=\"anonymous\"></script>\n<script>\n  window.googletag = window.googletag || {cmd: []};\n  googletag.cmd.push(function() {\n    googletag.defineSlot('/23037861279/et_mweb/et_mweb_calculators/et_mweb_calculators_ls/ET_MWEB_CALCULATORS_LS_MREC_1', [[320, 100], [320, 50]], 'div-gpt-ad-1757326691666-0').addService(googletag.pubads());\n    googletag.pubads().enableSingleRequest();\n    googletag.enableServices();\n  });\n</script>\n",
+    "fallbackAd": {
+      "text": "Advertisement",
+      "width": 300,
+      "height": 250
+    },
+    "placement": "content-mrec-2",
+    "createdAt": "2025-09-11T18:14:55.877Z",
+    "updatedAt": "2025-09-16T07:48:58.789Z"
+  }
+}

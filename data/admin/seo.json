@@ -1,0 +1,43 @@
+{
+  "pages": {
+    "/us/tools": {
+      "metaTitle": "Free Online Calculators, Games & Apps | The Economic Times",
+      "metaDescription": "360+ free online calculators, games, and apps from The Economic Times. Calculate finances, health metrics, math problems & more. No signup required!",
+      "h1": "Free Online Calculators, Games & Apps",
+      "faqs": []
+    },
+    "/us/tools/calculators/bmi-calculator": {
+      "metaTitle": "BMI Calculator - Calculate Your Body Mass Index | ET Tools",
+      "metaDescription": "Free BMI Calculator to calculate your Body Mass Index. Check if you're underweight, normal, overweight, or obese based on your height and weight.",
+      "h1": "BMI Calculator",
+      "faqs": [
+        {
+          "question": "What is BMI?",
+          "answer": "BMI (Body Mass Index) is a measure of body fat based on your weight in relation to your height."
+        },
+        {
+          "question": "How is BMI calculated?",
+          "answer": "BMI is calculated by dividing your weight in kilograms by your height in meters squared (kg/m²)."
+        }
+      ]
+    },
+    "/us/tools/calculators/sip-calculator": {
+      "metaTitle": "SIP Calculator - Calculate Mutual Fund Returns | ET Tools",
+      "metaDescription": "Free SIP Calculator to estimate your mutual fund returns. Plan your investments with our easy-to-use Systematic Investment Plan calculator.",
+      "h1": "SIP Calculator",
+      "faqs": []
+    },
+    "/us/tools/games/chess": {
+      "metaTitle": "Play Chess Online Free | ET Games",
+      "metaDescription": "Play chess online for free. Challenge the computer or play with friends. No download required.",
+      "h1": "Chess Game",
+      "faqs": []
+    },
+    "/us/tools/apps/lucky-draw-picker": {
+      "metaTitle": "Lucky Draw Picker - Random Winner Selector | ET Apps",
+      "metaDescription": "Free Lucky Draw Picker to randomly select winners. Perfect for giveaways, raffles, and contests.",
+      "h1": "Lucky Draw Picker",
+      "faqs": []
+    }
+  }
+}
