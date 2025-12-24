@@ -46,7 +46,7 @@ const fallbackFaqs = [
 ];
 
 export default function GearRatioCalculatorClient() {
-  const { getH1, getSubHeading, seoContent, faqSchema } = usePageSEO('gear-ratio-calculator');
+  const { getH1, getSubHeading, faqSchema } = usePageSEO('gear-ratio-calculator');
 
   // Calculation type
   const [calculationType, setCalculationType] = useState<string>('simple');
