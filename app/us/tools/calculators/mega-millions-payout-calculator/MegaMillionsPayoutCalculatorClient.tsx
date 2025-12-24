@@ -54,7 +54,7 @@ export default function MegaMillionsPayoutCalculatorClient() {
   const taxChartRef = useRef<HTMLCanvasElement>(null);
   const prizeChartInstance = useRef<any>(null);
   const taxChartInstance = useRef<any>(null);
-  const debounceTimer = useRef<NodeJS.Timeout>();
+  const debounceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const [results, setResults] = useState({
     finalAmount: 78120000,
