@@ -23,8 +23,8 @@ const defaultRelatedCalculators: RelatedCalculator[] = [
 ];
 interface Props {
   relatedCalculators?: RelatedCalculator[];
-  faqSchema: any;
-  calculatorSchema: any;
+  faqSchema?: any;
+  calculatorSchema?: any;
 }
 
 interface CategoryBreakdown {
