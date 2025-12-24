@@ -728,8 +728,8 @@ export default function MemoryCardsClient({ relatedGames = defaultRelatedGames }
                       href={game.href}
                       className="flex items-center gap-3 p-3 rounded-xl hover:bg-gray-50 transition-colors group"
                     >
-                      <div className={`w-10 h-10 ${game.color} rounded-lg flex items-center justify-center text-white text-lg`}>
-                        {getGameIcon(game.icon)}
+                      <div className={`w-10 h-10 ${game.color ?? 'bg-gray-500'} rounded-lg flex items-center justify-center text-white text-lg`}>
+                        {game.icon ? getGameIcon(game.icon) : '🎮'}
                       </div>
                       <div>
                         <div className="font-semibold text-gray-800 group-hover:text-rose-600 transition-colors">{game.title}</div>
