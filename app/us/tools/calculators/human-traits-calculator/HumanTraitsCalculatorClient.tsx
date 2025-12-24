@@ -574,7 +574,7 @@ export default function HumanTraitsCalculatorClient() {
                         <span className="font-semibold capitalize">{prediction.mostLikely}</span>
                       </div>
                       <div className="text-sm text-green-700">
-                        {Object.entries(prediction.probabilities)
+                        {Object.entries(prediction.probabilities as Record<string, number>)
                           .filter(([_, prob]) => prob > 0)
                           .map(([traitValue, prob]) => (
                             <span key={traitValue} className="inline-block mr-3 capitalize">{traitValue}: {prob}%</span>
