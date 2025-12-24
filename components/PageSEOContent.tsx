@@ -191,11 +191,11 @@ export function PageHeader({
 
 // Separate component for just the FAQs (Firebase-powered)
 export function FirebaseFAQs({
-  pageId,
+  pageId = 'default',
   fallbackFaqs = [],
   className = 'bg-white rounded-xl shadow-lg p-4 md:p-6 mb-6 md:mb-8'
 }: {
-  pageId: string;
+  pageId?: string;
   fallbackFaqs?: FAQ[];
   className?: string;
 }) {
