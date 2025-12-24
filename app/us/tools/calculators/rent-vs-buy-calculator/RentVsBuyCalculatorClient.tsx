@@ -275,6 +275,7 @@ export default function RentVsBuyCalculatorClient({ relatedCalculators = default
       monthlyMortgage,
       monthlyTax,
       monthlyInsurance,
+      monthlyMaintenance,
       totalMonthlyBuy,
       currentRent: monthlyRentVal,
       homeEquity: netEquity,
