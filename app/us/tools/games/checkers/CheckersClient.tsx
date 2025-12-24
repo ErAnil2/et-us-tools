@@ -431,7 +431,7 @@ export default function CheckersClient({ relatedGames = defaultRelatedGames }: C
       let captured = false;
 
       // Handle jump
-      if (move?.jumpedRow !== undefined) {
+      if (move && move.jumpedRow !== undefined && move.jumpedCol !== undefined) {
         newBoard[move.jumpedRow][move.jumpedCol] = null;
         moveDesc += ' (jump)';
         captured = true;
