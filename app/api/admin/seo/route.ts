@@ -115,7 +115,7 @@ export async function POST(request: NextRequest) {
 
     const success = savePageSEO(pageId, {
       pagePath,
-      pageName: pageId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+      pageName: pageId.split('-').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
       category,
       metaTitle: metaTitle || '',
       metaDescription: metaDescription || '',
