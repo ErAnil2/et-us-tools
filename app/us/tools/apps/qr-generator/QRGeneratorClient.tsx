@@ -60,14 +60,14 @@ const fallbackFaqs = [
 ];
 
 interface QRGeneratorClientProps {
-  relatedApps: Array<{
+  relatedApps?: Array<{
     href: string;
     title: string;
     description: string;
     color: string;
     icon: string;
   }>;
-  breadcrumbs: Array<{
+  breadcrumbs?: Array<{
     name: string;
     url: string;
     current?: boolean;
@@ -83,7 +83,7 @@ declare global {
   }
 }
 
-export default function QRGeneratorClient({ relatedApps, breadcrumbs }: QRGeneratorClientProps) {
+export default function QRGeneratorClient({ relatedApps = [], breadcrumbs = [] }: QRGeneratorClientProps) {
   const [currentType, setCurrentType] = useState<QRType>('url');
   const [currentQRData, setCurrentQRData] = useState('');
   const [qrColor, setQrColor] = useState('#000000');
