@@ -11,7 +11,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -50,24 +51,18 @@ const getRiskInfo = (whr: number, gender: 'male' | 'female'): RiskInfo => {
 };
 
 const faqItems = [
-  {
-    question: "What is a healthy waist-to-hip ratio?",
-    answer: "For men, a WHR below 0.90 is considered healthy, with below 0.85 being ideal. For women, below 0.80 is healthy, with below 0.75 being ideal. Higher ratios indicate more abdominal fat and increased health risks."
+  { id: 'faq-1', question: "What is a healthy waist-to-hip ratio?", answer: "For men, a WHR below 0.90 is considered healthy, with below 0.85 being ideal. For women, below 0.80 is healthy, with below 0.75 being ideal. Higher ratios indicate more abdominal fat and increased health risks."
   },
-  {
-    question: "How do I measure my waist correctly?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do I measure my waist correctly?",
     answer: "Measure your waist at the narrowest point, typically just above your belly button and below your ribcage. Stand relaxed, exhale normally, and keep the tape measure parallel to the floor without pulling it too tight."
   },
-  {
-    question: "How do I measure my hips correctly?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do I measure my hips correctly?",
     answer: "Measure your hips at the widest point around your buttocks. Stand with feet together, keep the tape measure parallel to the floor, and wrap it around the fullest part of your hips."
   },
-  {
-    question: "Why is WHR important for health?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Why is WHR important for health?",
     answer: "WHR indicates where your body stores fat. Abdominal fat (apple shape) is associated with higher risk of heart disease, type 2 diabetes, and metabolic syndrome compared to hip/thigh fat (pear shape)."
   },
-  {
-    question: "How can I improve my waist-to-hip ratio?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How can I improve my waist-to-hip ratio?",
     answer: "Reduce waist circumference through cardiovascular exercise, core strengthening, a balanced diet low in processed foods, adequate sleep, and stress management. Focus on overall fat loss rather than spot reduction."
   }
 ];
@@ -76,9 +71,7 @@ const fallbackFaqs = [
   {
     id: '1',
     question: "What is a Waist Hip Ratio Calculator?",
-    answer: "A Waist Hip Ratio Calculator is a mathematical tool that helps you quickly calculate or convert waist hip ratio-related values. It eliminates manual calculations and provides instant, accurate results.",
-    order: 1
-  },
+    answer: "A Waist Hip Ratio Calculator is a mathematical tool that helps you quickly calculate or convert waist hip ratio-related values. It eliminates manual calculations and provides instant, accurate results.", order: 1 },
   {
     id: '2',
     question: "How do I use this Waist Hip Ratio Calculator?",
@@ -529,7 +522,7 @@ export default function WaistHipRatioCalculatorClient({ relatedCalculators = def
                   href={calc.href}
                   className="group bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-all border border-gray-100"
                 >
-                  <div className={`w-10 h-10 ${calc.color} rounded-lg flex items-center justify-center mb-3`}>
+                  <div className={`w-10 h-10 ${calc.color || 'bg-gray-500'} rounded-lg flex items-center justify-center mb-3`}>
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>

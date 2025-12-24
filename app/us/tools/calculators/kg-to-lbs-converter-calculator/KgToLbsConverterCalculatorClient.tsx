@@ -9,7 +9,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -127,24 +128,19 @@ export default function KgToLbsConverterCalculatorClient() {
   ];
 
   const faqs = [
-    {
-      question: 'How do I convert kilograms to pounds?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'How do I convert kilograms to pounds?',
       answer: 'To convert kilograms to pounds, multiply the kilogram value by 2.20462. For example, 10 kg x 2.20462 = 22.05 lbs. A quick approximation is to multiply by 2.2, which gives you a close estimate for most practical purposes.'
     },
-    {
-      question: 'How do I convert pounds to kilograms?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'How do I convert pounds to kilograms?',
       answer: 'To convert pounds to kilograms, divide the pound value by 2.20462, or multiply by 0.453592. For example, 100 lbs / 2.20462 = 45.36 kg. A quick estimate is to divide by 2.2.'
     },
-    {
-      question: 'Why do some countries use kilograms and others use pounds?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'Why do some countries use kilograms and others use pounds?',
       answer: 'Kilograms are part of the metric system (SI units) used by most countries worldwide. Pounds are part of the imperial system, still commonly used in the United States and partially in the United Kingdom. The metric system is preferred in science and international trade due to its decimal-based simplicity.'
     },
-    {
-      question: 'What is the exact conversion factor between kg and lbs?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'What is the exact conversion factor between kg and lbs?',
       answer: 'The exact conversion is 1 kilogram = 2.20462262185 pounds. This is defined by international agreement. For most everyday purposes, using 2.205 or even 2.2 provides sufficient accuracy.'
     },
-    {
-      question: 'How much is 1 stone in kilograms and pounds?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'How much is 1 stone in kilograms and pounds?',
       answer: 'One stone equals 14 pounds or approximately 6.35 kilograms. The stone is a unit of weight still used in the UK and Ireland, particularly for expressing body weight. For example, 10 stone = 140 lbs = 63.5 kg.'
     }
   ];

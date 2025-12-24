@@ -44,7 +44,11 @@
       "Bash(node scripts/test-all-pages.js:*)",
       "Bash(git remote add:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(node fix-types.js:*)",
+      "Bash(node fix-all-types.js:*)",
+      "Bash(node fix-comprehensive.js:*)"
     ],
     "deny": [],
     "ask": []

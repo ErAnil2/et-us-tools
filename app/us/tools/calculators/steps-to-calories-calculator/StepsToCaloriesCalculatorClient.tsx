@@ -10,10 +10,12 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
-  seoContent: string;
+  seoContent?: string;
   relatedCalculators?: RelatedCalculator[];
 }
 

@@ -66,7 +66,7 @@ const objectPresets = [
 ];
 
 export default function KineticEnergyCalculatorClient() {
-  const { getH1, getSubHeading, getSEOContent, faqSchema } = usePageSEO('kinetic-energy-calculator');
+  const { getH1, getSubHeading, seoContent, faqSchema } = usePageSEO('kinetic-energy-calculator');
 
   // Input state
   const [mass, setMass] = useState<number>(2);

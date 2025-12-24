@@ -10,6 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -301,24 +303,19 @@ export default function SalaryCalculatorClient({ relatedCalculators = defaultRel
   };
 
   const faqItems = [
-    {
-      question: "What is the difference between gross and net salary?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is the difference between gross and net salary?",
       answer: "Gross salary is your total compensation before any deductions, while net salary (take-home pay) is what you actually receive after taxes and deductions. The difference includes federal and state income taxes, Social Security, Medicare, and any voluntary deductions like 401(k) contributions and health insurance premiums."
     },
-    {
-      question: "How are federal income taxes calculated?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How are federal income taxes calculated?",
       answer: "Federal income taxes use a progressive system with tax brackets. Only the income within each bracket is taxed at that bracket's rate. For example, if you're single earning $60,000, the first $11,600 is taxed at 10%, the next $35,550 at 12%, and the remaining $12,850 at 22%. Your marginal rate (highest bracket) is 22%, but your effective rate is lower."
     },
-    {
-      question: "What is FICA tax and how much is it?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is FICA tax and how much is it?",
       answer: "FICA (Federal Insurance Contributions Act) includes Social Security and Medicare taxes. Social Security is 6.2% on income up to $168,600 (2024), and Medicare is 1.45% on all income. High earners pay an additional 0.9% Medicare tax on income over $200,000 (single) or $250,000 (married). Your employer pays an equal amount."
     },
-    {
-      question: "How do pre-tax deductions affect my paycheck?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do pre-tax deductions affect my paycheck?",
       answer: "Pre-tax deductions like 401(k) contributions and health insurance premiums reduce your taxable income before taxes are calculated. This means you pay less in income taxes now, though you'll pay taxes on 401(k) withdrawals in retirement. A $500 monthly 401(k) contribution might only reduce your take-home pay by $350-400 depending on your tax bracket."
     },
-    {
-      question: "Which states have no income tax?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Which states have no income tax?",
       answer: "Nine states have no state income tax: Alaska, Florida, Nevada, New Hampshire (on wages), South Dakota, Tennessee, Texas, Washington, and Wyoming. However, some of these states have higher property taxes, sales taxes, or other fees to compensate. Consider total tax burden and cost of living when comparing locations."
     }
   ];

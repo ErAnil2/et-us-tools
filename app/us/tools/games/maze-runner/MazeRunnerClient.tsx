@@ -160,7 +160,7 @@ export default function MazeRunnerClient({ relatedGames = defaultRelatedGames }:
     const coins: Coin[] = [];
 
     for (let i = 0; i < count; i++) {
-      let x, y;
+      let x: number = 0, y: number = 0;
       let attempts = 0;
       do {
         x = Math.floor(Math.random() * size);

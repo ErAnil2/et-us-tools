@@ -60,8 +60,7 @@ export default function AdminSEOManagementPage() {
   });
 
   // New/Edit FAQ form state
-  const [faqForm, setFaqForm] = useState({
-    question: '',
+  const [faqForm, setFaqForm] = useState({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '',
     answer: '',
     order: 1
   });
@@ -232,7 +231,7 @@ export default function AdminSEOManagementPage() {
             setFormData(updatedPage);
           }
           setEditingFaq(null);
-          setFaqForm({ question: '', answer: '', order: 1 });
+          setFaqForm({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '', answer: '', order: 1 });
           showSuccess('FAQ updated successfully!');
         }
       } else {
@@ -249,7 +248,7 @@ export default function AdminSEOManagementPage() {
         if (response.ok) {
           await fetchPages();
           setIsAddingFaq(false);
-          setFaqForm({ question: '', answer: '', order: 1 });
+          setFaqForm({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '', answer: '', order: 1 });
           showSuccess('FAQ added successfully!');
         }
       }
@@ -670,8 +669,7 @@ export default function AdminSEOManagementPage() {
                         <button
                           onClick={() => {
                             setIsAddingFaq(true);
-                            setFaqForm({
-                              question: '',
+                            setFaqForm({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '',
                               answer: '',
                               order: (formData.faqs?.length || 0) + 1
                             });
@@ -731,7 +729,7 @@ export default function AdminSEOManagementPage() {
                                 onClick={() => {
                                   setIsAddingFaq(false);
                                   setEditingFaq(null);
-                                  setFaqForm({ question: '', answer: '', order: 1 });
+                                  setFaqForm({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '', answer: '', order: 1 });
                                 }}
                                 className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 text-sm"
                               >

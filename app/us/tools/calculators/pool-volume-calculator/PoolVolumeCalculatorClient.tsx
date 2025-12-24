@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -674,7 +674,7 @@ export default function PoolVolumeCalculatorClient({ relatedCalculators = defaul
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {relatedCalculators.map((calc, index) => (
             <Link key={index} href={calc.href} className="block">
-              <div className={`${calc.color} text-white rounded-lg p-4 hover:opacity-90 transition-opacity`}>
+              <div className={`${calc.color || 'bg-gray-500'} text-white rounded-lg p-4 hover:opacity-90 transition-opacity`}>
                 <h3 className="font-semibold text-lg mb-1">{calc.title}</h3>
                 <p className="text-sm opacity-90">{calc.description}</p>
               </div>

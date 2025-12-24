@@ -29,8 +29,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface StudyTimeCalculatorClientProps {
@@ -1000,7 +1000,7 @@ export default function StudyTimeCalculatorClient({ relatedCalculators = default
         <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6 text-center">Related Converter Calculators</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {relatedCalculators.map((calc, index) => (
-            <Link key={index} href={calc.href} className={`${calc.color} rounded-xl p-4 md:p-6 text-white hover:shadow-xl transition-all transform hover:-translate-y-1`}>
+            <Link key={index} href={calc.href} className={`${calc.color || 'bg-gray-500'} rounded-xl p-4 md:p-6 text-white hover:shadow-xl transition-all transform hover:-translate-y-1`}>
               <h3 className="text-base md:text-lg font-bold mb-2">{calc.title}</h3>
               <p className="text-xs md:text-sm opacity-90">{calc.description}</p>
             </Link>

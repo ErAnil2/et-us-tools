@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface RentVsBuyCalculatorClientProps {
@@ -1270,7 +1270,7 @@ export default function RentVsBuyCalculatorClient({ relatedCalculators = default
           <Link
             key={calc.href}
             href={calc.href}
-            className={`${calc.color} rounded-xl shadow-lg p-6 text-white hover:shadow-xl transition-shadow duration-300`}
+            className={`${calc.color || 'bg-gray-500'} rounded-xl shadow-lg p-6 text-white hover:shadow-xl transition-shadow duration-300`}
           >
             <div className="flex items-center mb-3">
               <div className="text-xl sm:text-2xl md:text-3xl mr-3">

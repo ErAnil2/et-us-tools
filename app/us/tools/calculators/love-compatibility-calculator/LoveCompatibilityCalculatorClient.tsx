@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -740,7 +740,7 @@ export default function LoveCompatibilityCalculatorClient({ relatedCalculators =
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
           {relatedCalculators.map((calc, index) => (
             <Link key={index} href={calc.href} className="block">
-              <div className={`${calc.color} text-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300`}>
+              <div className={`${calc.color || 'bg-gray-500'} text-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300`}>
                 <h3 className="text-lg font-semibold mb-2">{calc.title}</h3>
                 <p className="text-sm opacity-90">{calc.description}</p>
               </div>

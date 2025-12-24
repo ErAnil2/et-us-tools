@@ -38,8 +38,7 @@ export default function AdminFAQManagementPage() {
   });
 
   // New/Edit FAQ form state
-  const [faqForm, setFaqForm] = useState({
-    question: '',
+  const [faqForm, setFaqForm] = useState({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '',
     answer: '',
     order: 1
   });
@@ -110,7 +109,7 @@ export default function AdminFAQManagementPage() {
         if (response.ok) {
           await fetchAllFaqs();
           setEditingFaq(null);
-          setFaqForm({ question: '', answer: '', order: 1 });
+          setFaqForm({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '', answer: '', order: 1 });
         }
       } else {
         // Add new FAQ
@@ -126,7 +125,7 @@ export default function AdminFAQManagementPage() {
         if (response.ok) {
           await fetchAllFaqs();
           setIsAddingNew(false);
-          setFaqForm({ question: '', answer: '', order: 1 });
+          setFaqForm({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '', answer: '', order: 1 });
         }
       }
     } catch (error) {
@@ -396,8 +395,7 @@ export default function AdminFAQManagementPage() {
                   <button
                     onClick={() => {
                       setIsAddingNew(true);
-                      setFaqForm({
-                        question: '',
+                      setFaqForm({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '',
                         answer: '',
                         order: selectedCalcData.faqs.length + 1
                       });
@@ -457,7 +455,7 @@ export default function AdminFAQManagementPage() {
                           onClick={() => {
                             setIsAddingNew(false);
                             setEditingFaq(null);
-                            setFaqForm({ question: '', answer: '', order: 1 });
+                            setFaqForm({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '', answer: '', order: 1 });
                           }}
                           className="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 text-sm"
                         >

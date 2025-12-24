@@ -12,6 +12,7 @@ interface RelatedCalculator {
   title: string;
   description: string;
   color?: string;
+  icon?: string;
 }
 
 interface CalorieBurnClientProps {

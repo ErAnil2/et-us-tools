@@ -1,5 +1,7 @@
 'use client';
 
+
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { CalculatorAfterCalcBanners } from '@/components/MRECBanners';
 import { MobileBelowSubheadingBanner } from '@/components/BannerPlacements';
@@ -10,8 +12,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface OvulationCalculatorClientProps {
@@ -73,7 +75,7 @@ export default function OvulationCalculatorClient({ relatedCalculators = default
   const [statusDisplay, setStatusDisplay] = useState('text-center p-3 rounded-lg bg-gray-100');
   const [statusTextClass, setStatusTextClass] = useState('font-medium text-gray-600');
   const [showCalendar, setShowCalendar] = useState(false);
-  const [calendarDays, setCalendarDays] = useState<JSX.Element[]>([]);
+  const [calendarDays, setCalendarDays] = useState<React.ReactElement[]>([]);
 
   useEffect(() => {
     // Set default date to 14 days ago (middle of typical cycle)
@@ -199,7 +201,7 @@ export default function OvulationCalculatorClient({ relatedCalculators = default
     fertileStart: Date,
     fertileEnd: Date
   ) {
-    const days: JSX.Element[] = [];
+    const days: React.ReactElement[] = [];
 
     // Show current month around ovulation date
     const displayDate = new Date(ovulationDate.getFullYear(), ovulationDate.getMonth(), 1);
@@ -499,7 +501,7 @@ export default function OvulationCalculatorClient({ relatedCalculators = default
               href={calc.href}
               className="block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-3 sm:p-4 md:p-6"
             >
-              <div className={`${calc.color} w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
+              <div className={`${calc.color || 'bg-gray-500'} w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
                 <span className="text-white text-2xl">{calc.icon === 'scale' ? '⚖️' : calc.icon === 'heart' ? '❤️' : calc.icon === 'food' ? '🍎' : calc.icon === 'percent' ? '%' : '💧'}</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">{calc.title}</h3>

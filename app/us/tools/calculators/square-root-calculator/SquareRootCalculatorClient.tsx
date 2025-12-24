@@ -11,7 +11,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -496,7 +497,7 @@ export default function SquareRootCalculatorClient({ relatedCalculators = defaul
             {relatedCalculators.map((calc) => (
               <Link key={calc.href} href={calc.href} className="group">
                 <div className="rounded-xl p-4 bg-white border-2 border-gray-100 hover:border-blue-300 hover:shadow-lg transition-all h-full">
-                  <div className={`w-12 h-12 ${calc.color} rounded-lg flex items-center justify-center mb-3`}>
+                  <div className={`w-12 h-12 ${calc.color || 'bg-gray-500'} rounded-lg flex items-center justify-center mb-3`}>
                     <span className="text-white text-xl">√</span>
                   </div>
                   <h3 className="text-sm font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">

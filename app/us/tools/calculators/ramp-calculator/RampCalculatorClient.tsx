@@ -1,5 +1,7 @@
 'use client';
 
+
+import React from 'react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CalculatorAfterCalcBanners } from '@/components/MRECBanners';
@@ -10,6 +12,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -86,7 +90,7 @@ export default function RampCalculatorClient({ relatedCalculators = defaultRelat
   const [totalLength, setTotalLength] = useState<string>('24 ft');
   const [complianceStatus, setComplianceStatus] = useState<{
     className: string;
-    content: JSX.Element;
+    content: React.ReactElement;
   }>({
     className: 'mt-6 p-4 rounded-lg bg-green-100 border border-green-200',
     content: (

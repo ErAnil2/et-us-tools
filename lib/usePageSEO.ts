@@ -164,18 +164,40 @@ export function usePageSEO(pageId: string): UsePageSEOResult {
 }
 
 // Helper function to generate WebApplication schema
+// Supports both object format and positional arguments
 export function generateWebAppSchema(
-  name: string,
-  description: string,
-  url: string,
+  nameOrOptions: string | { name: string; description: string; url?: string; applicationCategory?: string; operatingSystem?: string },
+  description?: string,
+  url?: string,
   category: string = 'Utility'
 ) {
+  // Handle object format
+  if (typeof nameOrOptions === 'object') {
+    const opts = nameOrOptions;
+    return {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": opts.name,
+      "description": opts.description,
+      "url": opts.url || '',
+      "applicationCategory": opts.applicationCategory || 'Utility',
+      "operatingSystem": opts.operatingSystem || "All",
+      "permissions": "none",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    };
+  }
+
+  // Handle positional arguments format
   return {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": name,
-    "description": description,
-    "url": url,
+    "name": nameOrOptions,
+    "description": description || '',
+    "url": url || '',
     "applicationCategory": category,
     "operatingSystem": "All",
     "permissions": "none",

@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -814,7 +814,7 @@ export default function RecoveryHeartRateCalculatorClient({ relatedCalculators =
             <Link
               key={index}
               href={calc.href}
-              className={`${calc.color} text-white rounded-lg p-6 hover:opacity-90 transition-opacity`}
+              className={`${calc.color || 'bg-gray-500'} text-white rounded-lg p-6 hover:opacity-90 transition-opacity`}
             >
               <h3 className="text-xl font-semibold mb-2">{calc.title}</h3>
               <p className="text-white text-opacity-90">{calc.description}</p>

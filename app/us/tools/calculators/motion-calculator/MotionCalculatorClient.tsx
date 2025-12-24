@@ -11,7 +11,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -21,7 +22,7 @@ const defaultRelatedCalculators: RelatedCalculator[] = [
   { href: '/us/tools/calculators/age-calculator', title: 'Age Calculator', description: 'Calculate your exact age', color: 'bg-orange-500' },
 ];
 interface MotionCalculatorClientProps {
-  relatedCalculators: Array<{
+  relatedCalculators?: Array<{
     href: string;
     title: string;
     description: string;

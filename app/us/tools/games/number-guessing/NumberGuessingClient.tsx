@@ -482,7 +482,7 @@ export default function NumberGuessingClient({ relatedGames = defaultRelatedGame
 
               {/* Ad Banner */}
               <div className="mt-6">
-                <AdBanner slot="bottom" />
+                <AdBanner />
               </div>
 
               {/* Mobile MREC2 - Before FAQs */}

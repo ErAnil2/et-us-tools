@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface MaterialData {
@@ -529,7 +529,7 @@ export default function SteelPlateWeightCalculatorClient({ relatedCalculators = 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
           {relatedCalculators.map((calc) => (
             <Link key={calc.href} href={calc.href}>
-              <div className={`${calc.color} rounded-lg p-6 text-white hover:opacity-90 transition-opacity cursor-pointer`}>
+              <div className={`${calc.color || 'bg-gray-500'} rounded-lg p-6 text-white hover:opacity-90 transition-opacity cursor-pointer`}>
                 <h4 className="text-xl font-semibold mb-2">{calc.title}</h4>
                 <p className="text-sm opacity-90">{calc.description}</p>
               </div>

@@ -9,7 +9,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -21,7 +22,7 @@ const defaultRelatedCalculators: RelatedCalculator[] = [
 
 import { CalculatorAfterCalcBanners, CalculatorMobileMrec2 } from '@/components/MRECBanners';
 interface ElectricityBillClientProps {
-  relatedCalculators: Array<{
+  relatedCalculators?: Array<{
     href: string;
     title: string;
     description: string;

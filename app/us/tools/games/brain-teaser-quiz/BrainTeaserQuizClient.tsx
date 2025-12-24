@@ -12,6 +12,7 @@ interface RelatedGame {
   title: string;
   description: string;
   color: string;
+  icon?: string;
 }
 
 const defaultRelatedGames: RelatedGame[] = [
@@ -70,7 +71,7 @@ interface Question {
 }
 
 interface BrainTeaserQuizClientProps {
-  relatedGames: Array<{
+  relatedGames?: Array<{
     href: string;
     title: string;
     description: string;
@@ -100,22 +101,19 @@ const getGameIcon = (icon: string) => {
 const questionBank = {
   logic: {
     easy: [
-      {
-        question: "What comes next in this sequence: 2, 4, 8, 16, ?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What comes next in this sequence: 2, 4, 8, 16, ?",
         options: ["24", "32", "28", "30"],
         correct: 1,
         hint: "Each number is double the previous number.",
         explanation: "This is a doubling sequence: 2×2=4, 4×2=8, 8×2=16, 16×2=32."
       },
-      {
-        question: "If all Bloops are Razzles and all Razzles are Lazzles, then all Bloops are definitely Lazzles. True or False?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "If all Bloops are Razzles and all Razzles are Lazzles, then all Bloops are definitely Lazzles. True or False?",
         options: ["True", "False"],
         correct: 0,
         hint: "Follow the logical chain: Bloops → Razzles → Lazzles",
         explanation: "True. If A→B and B→C, then A→C. This is basic logical transitivity."
       },
-      {
-        question: "What comes next: 1, 1, 2, 3, 5, 8, ?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What comes next: 1, 1, 2, 3, 5, 8, ?",
         options: ["10", "11", "13", "15"],
         correct: 2,
         hint: "Add the two previous numbers together.",
@@ -123,15 +121,13 @@ const questionBank = {
       }
     ],
     medium: [
-      {
-        question: "A man lives on the 20th floor. Every morning he takes the elevator down. When he comes home, he takes it to the 10th floor and walks up... except on rainy days. Why?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "A man lives on the 20th floor. Every morning he takes the elevator down. When he comes home, he takes it to the 10th floor and walks up... except on rainy days. Why?",
         options: ["He's short and can't reach the 20th floor button", "He likes exercise", "The elevator is broken", "He's afraid of heights"],
         correct: 0,
         hint: "Think about what's different on rainy days that would help him reach higher buttons.",
         explanation: "He's too short to reach the 20th floor button, but on rainy days he has an umbrella to press it."
       },
-      {
-        question: "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
         options: ["A ghost", "An echo", "A shadow", "A thought"],
         correct: 1,
         hint: "Think about sounds that come back to you.",
@@ -139,8 +135,7 @@ const questionBank = {
       }
     ],
     hard: [
-      {
-        question: "You have 12 balls that look identical. 11 weigh the same, one is different. Using a balance scale 3 times, how many balls do you weigh first?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "You have 12 balls that look identical. 11 weigh the same, one is different. Using a balance scale 3 times, how many balls do you weigh first?",
         options: ["2", "3", "4", "6"],
         correct: 2,
         hint: "Divide into groups that give maximum information per weighing.",
@@ -150,22 +145,19 @@ const questionBank = {
   },
   riddles: {
     easy: [
-      {
-        question: "What has keys but no locks, space but no room, and you can enter but can't go inside?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What has keys but no locks, space but no room, and you can enter but can't go inside?",
         options: ["A computer keyboard", "A piano", "A map", "A book"],
         correct: 0,
         hint: "Think about something you use every day with letters and numbers.",
         explanation: "A keyboard has keys, a space bar, and an enter key, but no physical locks, rooms, or interior."
       },
-      {
-        question: "What gets wetter the more it dries?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What gets wetter the more it dries?",
         options: ["A sponge", "A towel", "Rain", "A mop"],
         correct: 1,
         hint: "Think about something used after a shower.",
         explanation: "A towel gets wetter as it dries other things (like your body)."
       },
-      {
-        question: "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
         options: ["A painting", "A map", "A dream", "A photograph"],
         correct: 1,
         hint: "Something you might unfold to find your way.",
@@ -173,15 +165,13 @@ const questionBank = {
       }
     ],
     medium: [
-      {
-        question: "I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I?",
         options: ["Fire", "Plant", "Cloud", "Crystal"],
         correct: 0,
         hint: "Think about something that needs oxygen but is destroyed by water.",
         explanation: "Fire grows (spreads), needs air (oxygen), but water extinguishes it."
       },
-      {
-        question: "The more you take, the more you leave behind. What am I?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "The more you take, the more you leave behind. What am I?",
         options: ["Time", "Footsteps", "Memories", "Breaths"],
         correct: 1,
         hint: "Think about what happens when you walk.",
@@ -191,8 +181,7 @@ const questionBank = {
   },
   math: {
     easy: [
-      {
-        question: "If you multiply me by any number, the result equals that number. What am I?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "If you multiply me by any number, the result equals that number. What am I?",
         options: ["0", "1", "10", "Infinity"],
         correct: 1,
         hint: "Think about the multiplicative identity.",
@@ -200,8 +189,7 @@ const questionBank = {
       }
     ],
     medium: [
-      {
-        question: "A bat and ball cost $1.10 total. The bat costs $1.00 more than the ball. How much does the ball cost?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "A bat and ball cost $1.10 total. The bat costs $1.00 more than the ball. How much does the ball cost?",
         options: ["$0.10", "$0.05", "$0.15", "$0.20"],
         correct: 1,
         hint: "If the ball is X, then the bat is X + $1.00. What's the total?",
@@ -211,15 +199,13 @@ const questionBank = {
   },
   lateral: {
     medium: [
-      {
-        question: "A man pushes his car to a hotel and tells the owner he's bankrupt. What happened?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "A man pushes his car to a hotel and tells the owner he's bankrupt. What happened?",
         options: ["He's playing Monopoly", "His car broke down", "He lost his job", "He gambled his money"],
         correct: 0,
         hint: "Think about games where you move pieces around a board.",
         explanation: "He's playing Monopoly! He moved his car piece to a hotel property and couldn't afford the rent."
       },
-      {
-        question: "A woman shoots her husband, holds him underwater for 5 minutes, then hangs him. Later they enjoy dinner together. How?",
+      { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "A woman shoots her husband, holds him underwater for 5 minutes, then hangs him. Later they enjoy dinner together. How?",
         options: ["She's a ghost", "She shot, developed, and hung a photo of him", "It was a dream", "They're actors"],
         correct: 1,
         hint: "Think about photography terms.",

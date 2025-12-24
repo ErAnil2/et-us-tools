@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface PetCostCalculatorClientProps {
@@ -754,7 +754,7 @@ export default function PetCostCalculatorClient({ relatedCalculators = defaultRe
             <Link
               key={calc.href}
               href={calc.href}
-              className={`${calc.color} text-white rounded-xl p-6 hover:opacity-90 transition-opacity`}
+              className={`${calc.color || 'bg-gray-500'} text-white rounded-xl p-6 hover:opacity-90 transition-opacity`}
             >
               <h3 className="text-lg font-bold mb-2">{calc.title}</h3>
               <p className="text-sm opacity-90">{calc.description}</p>

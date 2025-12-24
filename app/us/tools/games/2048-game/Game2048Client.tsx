@@ -12,6 +12,7 @@ interface RelatedGame {
   title: string;
   description: string;
   color: string;
+  icon?: string;
 }
 
 const defaultRelatedGames: RelatedGame[] = [
@@ -60,7 +61,7 @@ const fallbackFaqs = [
 ];
 
 interface Game2048ClientProps {
-  relatedGames: Array<{
+  relatedGames?: Array<{
     href: string;
     title: string;
     description: string;

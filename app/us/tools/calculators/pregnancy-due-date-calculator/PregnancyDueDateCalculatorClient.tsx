@@ -1,5 +1,7 @@
 'use client';
 
+
+import React from 'react';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CalculatorAfterCalcBanners, CalculatorMobileMrec2 } from '@/components/MRECBanners';
@@ -11,8 +13,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -104,7 +106,7 @@ export default function PregnancyDueDateCalculatorClient({ relatedCalculators = 
   const [developmentText, setDevelopmentText] = useState('');
   const [babyDevelopment, setBabyDevelopment] = useState<string[]>([]);
   const [motherSymptoms, setMotherSymptoms] = useState<string[]>([]);
-  const [timeline, setTimeline] = useState<JSX.Element[]>([]);
+  const [timeline, setTimeline] = useState<React.ReactElement[]>([]);
 
   // Baby size and weight data by week
   const babyData: BabyDataMap = {

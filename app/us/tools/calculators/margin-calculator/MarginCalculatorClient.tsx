@@ -173,24 +173,19 @@ export default function MarginCalculatorClient({ relatedCalculators = defaultRel
   }, [cost, sellingPrice, results.profit]);
 
   const faqItems = [
-    {
-      question: "What is the difference between margin and markup?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is the difference between margin and markup?",
       answer: "Margin is the percentage of the selling price that is profit (Profit ÷ Selling Price × 100), while markup is the percentage added to the cost to get the selling price (Profit ÷ Cost × 100). For example, if a product costs $100 and sells for $150, the margin is 33.33% ($50/$150) and the markup is 50% ($50/$100). Margin is always lower than markup for the same transaction."
     },
-    {
-      question: "How do I calculate selling price from cost and desired margin?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do I calculate selling price from cost and desired margin?",
       answer: "To calculate selling price from cost and desired margin, use the formula: Selling Price = Cost ÷ (1 - Margin%). For example, if your cost is $100 and you want a 40% margin, the selling price would be $100 ÷ (1 - 0.40) = $100 ÷ 0.60 = $166.67. This ensures your profit is 40% of the final selling price."
     },
-    {
-      question: "What is a good profit margin for my business?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is a good profit margin for my business?",
       answer: "Good profit margins vary significantly by industry. Grocery stores typically operate on 2-5% margins, retail clothing averages 50-60%, restaurants aim for 3-9%, while software and SaaS companies can achieve 60-80% margins. Research your specific industry benchmarks and factor in your operating costs, competition, and target market when setting prices."
     },
-    {
-      question: "How does margin affect break-even point?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How does margin affect break-even point?",
       answer: "Higher margins mean you need to sell fewer units to cover fixed costs and break even. For example, with a $10 profit per unit and $1,000 in fixed costs, you need 100 sales to break even. If you increase your margin to $20 profit per unit, you only need 50 sales. However, higher prices may reduce sales volume, so finding the optimal price point is crucial."
     },
-    {
-      question: "Should I use margin or markup for pricing?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Should I use margin or markup for pricing?",
       answer: "Both are useful but serve different purposes. Margin is better for understanding your overall profitability and comparing with industry standards since it relates profit to revenue. Markup is more practical for day-to-day pricing decisions since it directly tells you how much to add to your cost. Many businesses use markup for pricing but track margin for financial reporting."
     }
   ];

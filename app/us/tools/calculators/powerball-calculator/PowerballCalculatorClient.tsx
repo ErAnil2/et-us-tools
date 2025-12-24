@@ -16,8 +16,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface PowerballCalculatorClientProps {
@@ -189,7 +189,7 @@ export default function PowerballCalculatorClient({ relatedCalculators = default
               borderWidth: 1,
               callbacks: {
                 label: function(context) {
-                  return context.dataset.label + ': ' + context.parsed.y.toFixed(4) + '%';
+                  return context.dataset.label + ': ' + (context.parsed?.y ?? 0).toFixed(4) + '%';
                 }
               }
             }
@@ -221,7 +221,7 @@ export default function PowerballCalculatorClient({ relatedCalculators = default
                 font: {
                   size: 10
                 },
-                callback: function(value) {
+                callback: function(value: any) {
                   return (value as number).toFixed(2) + '%';
                 }
               },
@@ -296,7 +296,7 @@ export default function PowerballCalculatorClient({ relatedCalculators = default
               borderWidth: 1,
               callbacks: {
                 label: function(context) {
-                  const value = context.parsed.y;
+                  const value = (context.parsed?.y ?? 0);
                   if (value >= 1000000) {
                     return context.label + ': $' + (value / 1000000).toFixed(1) + 'M';
                   } else if (value >= 1000) {
@@ -334,7 +334,7 @@ export default function PowerballCalculatorClient({ relatedCalculators = default
                 font: {
                   size: 10
                 },
-                callback: function(value) {
+                callback: function(value: any) {
                   const numValue = value as number;
                   if (numValue >= 1000000) {
                     return '$' + (numValue / 1000000).toFixed(0) + 'M';
@@ -780,7 +780,7 @@ export default function PowerballCalculatorClient({ relatedCalculators = default
         <h2 className="text-2xl font-bold text-gray-800 mb-3 sm:mb-4 md:mb-6 text-center">Related Financial Calculators</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {relatedCalculators.map((calc, index) => (
-            <Link key={index} href={calc.href} className={`${calc.color} text-white rounded-lg p-6 hover:opacity-90 transition-opacity`}>
+            <Link key={index} href={calc.href} className={`${calc.color || 'bg-gray-500'} text-white rounded-lg p-6 hover:opacity-90 transition-opacity`}>
               <h3 className="text-lg font-semibold mb-2">{calc.title}</h3>
               <p className="text-sm opacity-90">{calc.description}</p>
             </Link>

@@ -85,23 +85,10 @@ const fractionSets = {
 };
 
 const fallbackFaqs = [
-  {
-    question: "How does Fraction Match help learn fractions?",
-    answer: "By matching fractions with their decimal equivalents, you build mental connections between these two representations of the same value, making conversion easier over time.",
-    order: 1
-  },
-  {
-    question: "What are the different difficulty levels?",
-    answer: "Easy has common fractions like halves and quarters. Medium introduces thirds, sixths, and eighths. Hard includes sevenths, ninths, and other complex fractions.",
-    order: 2
-  },
-  {
-    question: "How does the scoring system work?",
-    answer: "You earn points for each correct match. Consecutive matches build a streak bonus. Higher difficulties give more points. Speed Match mode adds time pressure.",
-    order: 3
-  },
-  {
-    question: "What's the best strategy for this game?",
+  { id: 'faq-1', question: "How does Fraction Match help learn fractions?", answer: "By matching fractions with their decimal equivalents, you build mental connections between these two representations of the same value, making conversion easier over time.", order: 1 },
+  { id: 'faq-2', question: "What are the different difficulty levels?", answer: "Easy has common fractions like halves and quarters. Medium introduces thirds, sixths, and eighths. Hard includes sevenths, ninths, and other complex fractions.", order: 2 },
+  { id: 'faq-3', question: "How does the scoring system work?", answer: "You earn points for each correct match. Consecutive matches build a streak bonus. Higher difficulties give more points. Speed Match mode adds time pressure.", order: 3 },
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What's the best strategy for this game?",
     answer: "Start by memorizing common equivalents (1/2 = 0.5, 1/4 = 0.25). Look for patterns like thirds ending in .333 or .667. Practice regularly to improve recall speed.",
     order: 4
   }

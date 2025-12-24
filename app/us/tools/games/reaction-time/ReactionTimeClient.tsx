@@ -12,6 +12,7 @@ interface RelatedGame {
   title: string;
   description: string;
   color: string;
+  icon?: string;
 }
 
 const defaultRelatedGames: RelatedGame[] = [
@@ -62,7 +63,7 @@ const fallbackFaqs = [
 type GameState = 'waiting' | 'ready' | 'clicked' | 'finished';
 
 interface ReactionTimeClientProps {
-  relatedGames: Array<{
+  relatedGames?: Array<{
     href: string;
     title: string;
     description: string;

@@ -20,8 +20,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface OhmsLawCalculatorClientProps {
@@ -456,7 +456,7 @@ export default function OhmsLawCalculatorClient({ relatedCalculators = defaultRe
                   <Link
                     key={index}
                     href={calc.href}
-                    className={`${calc.color} text-white p-4 rounded-lg hover:opacity-90 transition`}
+                    className={`${calc.color || 'bg-gray-500'} text-white p-4 rounded-lg hover:opacity-90 transition`}
                   >
                     <h3 className="font-bold mb-1">{calc.title}</h3>
                     <p className="text-sm opacity-90">{calc.description}</p>

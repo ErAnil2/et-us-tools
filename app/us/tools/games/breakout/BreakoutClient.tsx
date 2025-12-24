@@ -518,7 +518,7 @@ export default function BreakoutClient({ relatedGames = defaultRelatedGames }: B
                 )}
               </div>
 
-              <div className="mt-6"><AdBanner slot="bottom" /></div>
+              <div className="mt-6"><AdBanner /></div>
 
               {/* SEO Content Section */}
               <div className="mt-8 bg-white rounded-2xl shadow-lg p-6 md:p-8">

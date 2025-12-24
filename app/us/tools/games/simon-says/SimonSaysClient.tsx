@@ -12,6 +12,7 @@ interface RelatedGame {
   title: string;
   description: string;
   color: string;
+  icon?: string;
 }
 
 const defaultRelatedGames: RelatedGame[] = [
@@ -63,7 +64,7 @@ type Difficulty = 'easy' | 'medium' | 'hard' | 'expert';
 type GameMode = 'classic' | 'challenge' | 'speed';
 
 interface SimonSaysClientProps {
-  relatedGames: Array<{
+  relatedGames?: Array<{
     href: string;
     title: string;
     description: string;

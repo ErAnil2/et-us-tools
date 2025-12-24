@@ -9,8 +9,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -463,7 +463,7 @@ export default function MgToMlClient({ relatedCalculators = defaultRelatedCalcul
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {relatedCalculators.map((calc, index) => (
             <Link key={index} href={calc.href} className="block">
-              <div className={`${calc.color} rounded-lg p-6 text-white hover:opacity-90 transition-opacity`}>
+              <div className={`${calc.color || 'bg-gray-500'} rounded-lg p-6 text-white hover:opacity-90 transition-opacity`}>
                 <h3 className="text-lg font-bold mb-2">{calc.title}</h3>
                 <p className="text-sm opacity-90">{calc.description}</p>
               </div>

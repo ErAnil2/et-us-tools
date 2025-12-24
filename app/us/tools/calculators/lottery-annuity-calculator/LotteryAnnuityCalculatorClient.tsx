@@ -11,8 +11,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -201,7 +201,7 @@ export default function LotteryAnnuityCalculatorClient({ relatedCalculators = de
             tooltip: {
               callbacks: {
                 label: function(context: any) {
-                  return '$' + context.parsed.y.toLocaleString();
+                  return '$' + (context.parsed?.y ?? 0).toLocaleString();
                 }
               }
             }
@@ -285,7 +285,7 @@ export default function LotteryAnnuityCalculatorClient({ relatedCalculators = de
             tooltip: {
               callbacks: {
                 label: function(context: any) {
-                  return context.dataset.label + ': $' + context.parsed.y.toLocaleString();
+                  return context.dataset.label + ': $' + (context.parsed?.y ?? 0).toLocaleString();
                 }
               }
             }
@@ -670,7 +670,7 @@ export default function LotteryAnnuityCalculatorClient({ relatedCalculators = de
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {relatedCalculators.map((calc, index) => (
               <Link key={index} href={calc.href} className="block">
-                <div className={`${calc.color} p-6 rounded-lg text-white hover:opacity-90 transition-opacity`}>
+                <div className={`${calc.color || 'bg-gray-500'} p-6 rounded-lg text-white hover:opacity-90 transition-opacity`}>
                   <h3 className="font-semibold mb-2">{calc.title}</h3>
                   <p className="text-sm opacity-90">{calc.description}</p>
                 </div>

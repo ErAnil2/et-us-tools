@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -705,7 +705,7 @@ export default function HvacLoadCalculatorClient({ relatedCalculators = defaultR
               href={calc.href}
               className="block p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
             >
-              <div className={`inline-block px-3 py-1 ${calc.color} text-white text-xs font-semibold rounded-full mb-2`}>
+              <div className={`inline-block px-3 py-1 ${calc.color || 'bg-gray-500'} text-white text-xs font-semibold rounded-full mb-2`}>
                 {calc.icon}
               </div>
               <h3 className="font-semibold text-gray-800 mb-1">{calc.title}</h3>

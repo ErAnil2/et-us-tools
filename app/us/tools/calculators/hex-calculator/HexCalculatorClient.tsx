@@ -10,7 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 interface HistoryItem {
@@ -798,7 +799,7 @@ export default function HexCalculatorClient({ relatedCalculators = defaultRelate
                   href={calc.href}
                   className="p-3 rounded-lg border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all group"
                 >
-                  <div className={`w-8 h-8 ${calc.color} rounded-lg mb-2 flex items-center justify-center text-white text-sm font-bold`}>
+                  <div className={`w-8 h-8 ${calc.color || 'bg-gray-500'} rounded-lg mb-2 flex items-center justify-center text-white text-sm font-bold`}>
                     {calc.title.charAt(0)}
                   </div>
                   <div className="text-sm font-medium text-gray-800 group-hover:text-blue-600">{calc.title}</div>

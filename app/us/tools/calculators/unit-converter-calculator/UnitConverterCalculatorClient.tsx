@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -591,7 +591,7 @@ export default function UnitConverterCalculatorClient({ relatedCalculators = def
             <Link
               key={index}
               href={calc.href}
-              className={`${calc.color} text-white rounded-xl p-6 hover:opacity-90 transition-opacity`}
+              className={`${calc.color || 'bg-gray-500'} text-white rounded-xl p-6 hover:opacity-90 transition-opacity`}
             >
               <div className="flex items-start justify-between">
                 <div>

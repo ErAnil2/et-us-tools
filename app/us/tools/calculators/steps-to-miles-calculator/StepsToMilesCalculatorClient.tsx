@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -318,7 +318,7 @@ export default function StepsToMilesCalculatorClient({ relatedCalculators = defa
             <Link
               key={calc.href}
               href={calc.href}
-              className={`${calc.color} text-white rounded-lg p-6 hover:shadow-lg transition-shadow duration-300`}
+              className={`${calc.color || 'bg-gray-500'} text-white rounded-lg p-6 hover:shadow-lg transition-shadow duration-300`}
             >
               <h3 className="text-xl font-semibold mb-2">{calc.title}</h3>
               <p className="text-white/90">{calc.description}</p>

@@ -11,8 +11,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface MinecraftCircleCalculatorClientProps {
@@ -597,7 +597,7 @@ export default function MinecraftCircleCalculatorClient({ relatedCalculators = d
               <Link
                 key={index}
                 href={calc.href}
-                className={`${calc.color} rounded-lg p-6 text-white hover:opacity-90 transition-opacity`}
+                className={`${calc.color || 'bg-gray-500'} rounded-lg p-6 text-white hover:opacity-90 transition-opacity`}
               >
                 <h4 className="font-semibold text-lg mb-2">{calc.title}</h4>
                 <p className="text-sm opacity-90">{calc.description}</p>

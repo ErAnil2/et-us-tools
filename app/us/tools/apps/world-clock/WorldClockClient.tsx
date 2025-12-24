@@ -53,28 +53,21 @@ const defaultCities = [
 ];
 
 const faqs = [
-  {
-    question: "How do I add a city to my world clock?",
-    answer: "Click the 'Add City' button and select a city from the dropdown menu. You can add multiple cities to compare times across different locations simultaneously."
+  { id: 'faq-1', question: "How do I add a city to my world clock?", answer: "Click the 'Add City' button and select a city from the dropdown menu. You can add multiple cities to compare times across different locations simultaneously."
   },
-  {
-    question: "What does the sun/moon icon mean?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What does the sun/moon icon mean?",
     answer: "The sun icon (☀️) indicates daytime (6 AM - 6 PM) in that location, while the moon icon (🌙) indicates nighttime. This helps you quickly see if it's a good time to call or schedule meetings."
   },
-  {
-    question: "How accurate is the world clock?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How accurate is the world clock?",
     answer: "The world clock uses your device's system time and applies the correct timezone offset for each city. It updates every second and automatically adjusts for Daylight Saving Time changes."
   },
-  {
-    question: "Why do some cities show a different date?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Why do some cities show a different date?",
     answer: "Due to timezone differences, some cities may be ahead or behind your local time by up to 24 hours. For example, when it's Monday evening in New York, it may already be Tuesday morning in Sydney."
   },
-  {
-    question: "Can I remove cities from my world clock?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Can I remove cities from my world clock?",
     answer: "Yes! Click the 'X' button on any city card to remove it from your display. You can always add it back later using the 'Add City' button."
   },
-  {
-    question: "What is the UTC offset shown?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is the UTC offset shown?",
     answer: "UTC (Coordinated Universal Time) offset shows how many hours ahead (+) or behind (-) a city is from the universal time standard. For example, UTC-5 means the city is 5 hours behind UTC."
   }
 ];
@@ -92,9 +85,7 @@ const fallbackFaqs = [
   {
     id: '1',
     question: "What is a World Clock Calculator?",
-    answer: "A World Clock Calculator is a free online tool designed to help you quickly and accurately calculate world clock-related values. It simplifies complex calculations and provides instant results.",
-    order: 1
-  },
+    answer: "A World Clock Calculator is a free online tool designed to help you quickly and accurately calculate world clock-related values. It simplifies complex calculations and provides instant results.", order: 1 },
   {
     id: '2',
     question: "How do I use this World Clock Calculator?",

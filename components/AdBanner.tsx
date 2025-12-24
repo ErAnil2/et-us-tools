@@ -74,7 +74,7 @@ function loadGptLibrary(): Promise<void> {
     gptLibraryLoading = true;
 
     // Initialize googletag
-    window.googletag = window.googletag || { cmd: [] };
+    window.googletag = window.googletag || { cmd: [] } as any;
 
     const script = document.createElement('script');
     script.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
@@ -318,8 +318,8 @@ export default function AdBanner({ bannerId = "webMrec1", className = "", lazy =
     );
   }
 
-  // Banner disabled
-  if (!bannerConfig.enabled) {
+  // Banner disabled or no config
+  if (!bannerConfig || !bannerConfig.enabled) {
     return null;
   }
 

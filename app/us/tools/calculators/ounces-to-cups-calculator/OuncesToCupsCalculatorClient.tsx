@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface OuncesToCupsCalculatorClientProps {
@@ -446,7 +446,7 @@ export default function OuncesToCupsCalculatorClient({ relatedCalculators = defa
             <Link
               key={index}
               href={calc.href}
-              className={`${calc.color} rounded-lg p-6 text-white hover:opacity-90 transition-opacity`}
+              className={`${calc.color || 'bg-gray-500'} rounded-lg p-6 text-white hover:opacity-90 transition-opacity`}
             >
               <h3 className="text-xl font-semibold mb-2">{calc.title}</h3>
               <p className="text-sm opacity-90">{calc.description}</p>

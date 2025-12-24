@@ -57,8 +57,7 @@ const fallbackFaqs = [
     answer: "Select which tables you want to practice (2-12), then choose Practice mode to learn at your own pace, Quiz mode to test specific tables, or Challenge mode to test all tables randomly. Type your answers and track your progress!",
     order: 1
   },
-  {
-    question: "What does 'mastered' mean for a table?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What does 'mastered' mean for a table?",
     answer: "A table is considered mastered when you've answered at least 10 problems from that table with 90% or higher accuracy. Mastered tables show a gold star in the selection menu.",
     order: 2
   },
@@ -68,8 +67,7 @@ const fallbackFaqs = [
     answer: "Practice mode shows problems one at a time with immediate feedback and no time pressure. Quiz mode gives you a set number of problems with a timer, testing your speed and accuracy.",
     order: 2
   },
-  {
-    question: "What's the best way to memorize multiplication tables?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What's the best way to memorize multiplication tables?",
     answer: "Start with easier tables (2, 5, 10), use patterns (like 9's finger trick), practice regularly in short sessions, and focus on the tables you find most difficult. Consistent practice is key!",
     order: 4
   }

@@ -8,7 +8,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -21,7 +22,7 @@ const defaultRelatedCalculators: RelatedCalculator[] = [
 import { CalculatorAfterCalcBanners } from '@/components/MRECBanners';
 import { usePageSEO } from '@/lib/usePageSEO';
 interface DownloadTimeClientProps {
-  relatedCalculators: Array<{
+  relatedCalculators?: Array<{
     href: string;
     title: string;
     description: string;

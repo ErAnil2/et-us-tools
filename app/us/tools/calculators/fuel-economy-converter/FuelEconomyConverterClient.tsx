@@ -9,7 +9,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -128,24 +129,19 @@ export default function FuelEconomyConverterClient() {
   ];
 
   const faqs = [
-    {
-      question: 'What is the difference between MPG (US) and MPG (UK)?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'What is the difference between MPG (US) and MPG (UK)?',
       answer: 'MPG (US) uses the US gallon (3.785 liters), while MPG (UK) uses the Imperial gallon (4.546 liters). Because the UK gallon is larger, the same vehicle will have a higher MPG rating in UK units. To convert: UK MPG = US MPG x 1.201.'
     },
-    {
-      question: 'How do I convert MPG to L/100km?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'How do I convert MPG to L/100km?',
       answer: 'To convert US MPG to L/100km, divide 235.214 by the MPG value. For example, 25 MPG (US) = 235.214 / 25 = 9.41 L/100km. Note that higher MPG means lower L/100km (better efficiency).'
     },
-    {
-      question: 'Which fuel economy measurement is better for comparison?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'Which fuel economy measurement is better for comparison?',
       answer: 'L/100km is often considered better for comparing fuel costs because it shows actual fuel consumption. With MPG, the relationship between efficiency and fuel cost is not linear - going from 10 to 20 MPG saves more fuel than going from 30 to 40 MPG for the same distance.'
     },
-    {
-      question: 'What is considered good fuel economy?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'What is considered good fuel economy?',
       answer: 'Good fuel economy varies by vehicle type. For cars: 30+ MPG is good, 40+ is excellent. For SUVs: 25+ MPG is good. For trucks: 20+ MPG is respectable. In L/100km: under 8 is good, under 6 is excellent for cars.'
     },
-    {
-      question: 'How does driving behavior affect fuel economy?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'How does driving behavior affect fuel economy?',
       answer: 'Aggressive driving (rapid acceleration, speeding, hard braking) can reduce fuel economy by 15-30%. Other factors include: tire pressure (underinflation reduces MPG by 0.2% per 1 PSI drop), excess weight (100 lbs reduces MPG by 1%), and air conditioning (can reduce MPG by 5-25%).'
     }
   ];

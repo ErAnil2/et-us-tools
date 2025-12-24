@@ -80,8 +80,7 @@ const generateEasyProblem = (): ShoppingProblem => {
       const price = [10, 15, 20, 25, 30, 40, 50][Math.floor(Math.random() * 7)];
       const discountPercent = [10, 20, 25, 50][Math.floor(Math.random() * 4)];
       const discountAmount = (price * discountPercent) / 100;
-      return {
-        question: `A t-shirt costs $${price}. It's ${discountPercent}% off. How much is the discount?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A t-shirt costs $${price}. It's ${discountPercent}% off. How much is the discount?`,
         answer: discountAmount,
         hint: `Multiply $${price} by ${discountPercent/100}`,
         type: 'discount' as ProblemType
@@ -95,8 +94,7 @@ const generateEasyProblem = (): ShoppingProblem => {
         { name: 'orange', price: Math.floor(Math.random() * 3) + 1 }
       ];
       const total = items.reduce((sum, item) => sum + item.price, 0);
-      return {
-        question: `You buy an apple ($${items[0].price}), a banana ($${items[1].price}), and an orange ($${items[2].price}). What's the total?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `You buy an apple ($${items[0].price}), a banana ($${items[1].price}), and an orange ($${items[2].price}). What's the total?`,
         answer: total,
         hint: 'Add all the prices together',
         type: 'total' as ProblemType,
@@ -107,8 +105,7 @@ const generateEasyProblem = (): ShoppingProblem => {
     () => {
       const price = Math.floor(Math.random() * 8) + 2;
       const paid = [10, 20][Math.floor(Math.random() * 2)];
-      return {
-        question: `Your snack costs $${price}. You pay with a $${paid} bill. How much change do you get?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Your snack costs $${price}. You pay with a $${paid} bill. How much change do you get?`,
         answer: paid - price,
         hint: `Subtract: $${paid} - $${price}`,
         type: 'change' as ProblemType
@@ -118,8 +115,7 @@ const generateEasyProblem = (): ShoppingProblem => {
     () => {
       const price = Math.floor(Math.random() * 5) + 2;
       const quantity = Math.floor(Math.random() * 5) + 2;
-      return {
-        question: `Pencils cost $${price} each. How much do ${quantity} pencils cost?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Pencils cost $${price} each. How much do ${quantity} pencils cost?`,
         answer: price * quantity,
         hint: `Multiply: $${price} × ${quantity}`,
         type: 'total' as ProblemType
@@ -136,8 +132,7 @@ const generateMediumProblem = (): ShoppingProblem => {
       const price = [15, 20, 25, 30, 40, 50][Math.floor(Math.random() * 6)];
       const taxRate = [5, 8, 10][Math.floor(Math.random() * 3)];
       const tax = (price * taxRate) / 100;
-      return {
-        question: `A book costs $${price}. With ${taxRate}% sales tax, what is the tax amount?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A book costs $${price}. With ${taxRate}% sales tax, what is the tax amount?`,
         answer: tax,
         hint: `Tax = $${price} × ${taxRate/100}`,
         type: 'tax' as ProblemType
@@ -148,8 +143,7 @@ const generateMediumProblem = (): ShoppingProblem => {
       const bill = [20, 25, 30, 40, 50, 60][Math.floor(Math.random() * 6)];
       const tipPercent = [15, 18, 20][Math.floor(Math.random() * 3)];
       const tip = (bill * tipPercent) / 100;
-      return {
-        question: `Your restaurant bill is $${bill}. You want to leave a ${tipPercent}% tip. How much is the tip?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Your restaurant bill is $${bill}. You want to leave a ${tipPercent}% tip. How much is the tip?`,
         answer: tip,
         hint: `Tip = $${bill} × ${tipPercent/100}`,
         type: 'tip' as ProblemType
@@ -160,8 +154,7 @@ const generateMediumProblem = (): ShoppingProblem => {
       const price = [40, 50, 60, 80, 100][Math.floor(Math.random() * 5)];
       const discountPercent = [10, 15, 20, 25][Math.floor(Math.random() * 4)];
       const salePrice = price - (price * discountPercent) / 100;
-      return {
-        question: `A jacket is $${price} with ${discountPercent}% off. What is the sale price?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A jacket is $${price} with ${discountPercent}% off. What is the sale price?`,
         answer: salePrice,
         hint: `First find discount, then subtract from original`,
         type: 'discount' as ProblemType
@@ -176,8 +169,7 @@ const generateMediumProblem = (): ShoppingProblem => {
       const unitPriceA = priceA / quantityA;
       const unitPriceB = priceB / quantityB;
       const betterDeal = unitPriceA < unitPriceB ? priceA : priceB;
-      return {
-        question: `Store A: ${quantityA} items for $${priceA}. Store B: ${quantityB} items for $${priceB}. Which store has the better unit price? (Enter the total price of better deal)`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Store A: ${quantityA} items for $${priceA}. Store B: ${quantityB} items for $${priceB}. Which store has the better unit price? (Enter the total price of better deal)`,
         answer: betterDeal,
         hint: 'Divide price by quantity for each store',
         type: 'comparison' as ProblemType
@@ -189,8 +181,7 @@ const generateMediumProblem = (): ShoppingProblem => {
       const item2 = Math.floor(Math.random() * 8) + 3;
       const total = item1 + item2;
       const paid = Math.ceil(total / 10) * 10 + 10;
-      return {
-        question: `You buy a sandwich ($${item1}) and a drink ($${item2}). You pay with $${paid}. How much change?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `You buy a sandwich ($${item1}) and a drink ($${item2}). You pay with $${paid}. How much change?`,
         answer: paid - total,
         hint: `Total = $${item1} + $${item2}, then subtract from $${paid}`,
         type: 'change' as ProblemType
@@ -209,8 +200,7 @@ const generateHardProblem = (): ShoppingProblem => {
       const tax = [8, 10][Math.floor(Math.random() * 2)];
       const afterDiscount = price - (price * discount / 100);
       const finalPrice = afterDiscount + (afterDiscount * tax / 100);
-      return {
-        question: `Shoes cost $${price}. They're ${discount}% off, then ${tax}% tax is added. What's the final price?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Shoes cost $${price}. They're ${discount}% off, then ${tax}% tax is added. What's the final price?`,
         answer: Math.round(finalPrice * 100) / 100,
         hint: 'Apply discount first, then add tax to discounted price',
         type: 'discount' as ProblemType
@@ -223,8 +213,7 @@ const generateHardProblem = (): ShoppingProblem => {
       const people = [2, 3, 4][Math.floor(Math.random() * 3)];
       const totalWithTip = bill + (bill * tipPercent / 100);
       const perPerson = totalWithTip / people;
-      return {
-        question: `A $${bill} dinner bill with ${tipPercent}% tip is split ${people} ways. How much does each person pay?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A $${bill} dinner bill with ${tipPercent}% tip is split ${people} ways. How much does each person pay?`,
         answer: Math.round(perPerson * 100) / 100,
         hint: 'Add tip to bill, then divide by people',
         type: 'tip' as ProblemType
@@ -237,8 +226,7 @@ const generateHardProblem = (): ShoppingProblem => {
       const bulkDiscount = [10, 15, 20][Math.floor(Math.random() * 3)];
       const normalTotal = unitPrice * quantity;
       const discountedTotal = normalTotal - (normalTotal * bulkDiscount / 100);
-      return {
-        question: `Items are $${unitPrice} each. Buy ${quantity} items and get ${bulkDiscount}% off the total. What do you pay?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Items are $${unitPrice} each. Buy ${quantity} items and get ${bulkDiscount}% off the total. What do you pay?`,
         answer: discountedTotal,
         hint: 'Calculate total first, then apply percentage discount',
         type: 'discount' as ProblemType
@@ -252,8 +240,7 @@ const generateHardProblem = (): ShoppingProblem => {
       const priceWithPercent = originalPrice - (originalPrice * percentOff / 100);
       const priceWithDollar = originalPrice - dollarOff;
       const savings = Math.abs(priceWithPercent - priceWithDollar);
-      return {
-        question: `Item costs $${originalPrice}. Coupon A: ${percentOff}% off. Coupon B: $${dollarOff} off. How much more do you save with the better coupon?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Item costs $${originalPrice}. Coupon A: ${percentOff}% off. Coupon B: $${dollarOff} off. How much more do you save with the better coupon?`,
         answer: savings,
         hint: 'Calculate final price with each coupon, find the difference',
         type: 'comparison' as ProblemType
@@ -268,8 +255,7 @@ const generateHardProblem = (): ShoppingProblem => {
       const subtotal = item1Price + item2Price;
       const afterDiscount = subtotal - (subtotal * discount / 100);
       const finalTotal = afterDiscount + (afterDiscount * taxRate / 100);
-      return {
-        question: `You buy items at $${item1Price} and $${item2Price}. Get ${discount}% off, then ${taxRate}% tax. What's the final total?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `You buy items at $${item1Price} and $${item2Price}. Get ${discount}% off, then ${taxRate}% tax. What's the final total?`,
         answer: Math.round(finalTotal * 100) / 100,
         hint: 'Add items, apply discount, then add tax',
         type: 'tax' as ProblemType
@@ -709,7 +695,7 @@ export default function ShoppingMathClient({ relatedGames = defaultRelatedGames 
 
               {/* Ad Banner */}
               <div className="mt-6">
-                <AdBanner slot="bottom" />
+                <AdBanner />
               </div>
 
               {/* Mobile MREC2 - Before FAQs */}

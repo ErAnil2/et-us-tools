@@ -76,8 +76,7 @@ const generateEasyProblem = (): WordProblem => {
     () => {
       const a = Math.floor(Math.random() * 20) + 5;
       const b = Math.floor(Math.random() * 15) + 3;
-      return {
-        question: `Sarah has ${a} apples. Her friend gives her ${b} more apples. How many apples does Sarah have now?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Sarah has ${a} apples. Her friend gives her ${b} more apples. How many apples does Sarah have now?`,
         answer: a + b,
         hint: "Add the two amounts together",
         category: "Addition"
@@ -86,8 +85,7 @@ const generateEasyProblem = (): WordProblem => {
     () => {
       const total = Math.floor(Math.random() * 30) + 15;
       const given = Math.floor(Math.random() * (total - 5)) + 3;
-      return {
-        question: `Tom had ${total} stickers. He gave ${given} stickers to his sister. How many stickers does Tom have left?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Tom had ${total} stickers. He gave ${given} stickers to his sister. How many stickers does Tom have left?`,
         answer: total - given,
         hint: "Subtract what was given away",
         category: "Subtraction"
@@ -96,8 +94,7 @@ const generateEasyProblem = (): WordProblem => {
     () => {
       const bags = Math.floor(Math.random() * 6) + 2;
       const candiesPerBag = Math.floor(Math.random() * 8) + 3;
-      return {
-        question: `There are ${bags} bags with ${candiesPerBag} candies in each bag. How many candies are there in total?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `There are ${bags} bags with ${candiesPerBag} candies in each bag. How many candies are there in total?`,
         answer: bags * candiesPerBag,
         hint: "Multiply bags by candies per bag",
         category: "Multiplication"
@@ -106,8 +103,7 @@ const generateEasyProblem = (): WordProblem => {
     () => {
       const friends = Math.floor(Math.random() * 5) + 2;
       const total = friends * (Math.floor(Math.random() * 6) + 2);
-      return {
-        question: `${total} cookies are shared equally among ${friends} friends. How many cookies does each friend get?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `${total} cookies are shared equally among ${friends} friends. How many cookies does each friend get?`,
         answer: total / friends,
         hint: "Divide total by number of friends",
         category: "Division"
@@ -116,8 +112,7 @@ const generateEasyProblem = (): WordProblem => {
     () => {
       const price = Math.floor(Math.random() * 8) + 2;
       const quantity = Math.floor(Math.random() * 5) + 2;
-      return {
-        question: `Each pencil costs $${price}. How much do ${quantity} pencils cost?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Each pencil costs $${price}. How much do ${quantity} pencils cost?`,
         answer: price * quantity,
         hint: "Multiply price by quantity",
         category: "Money"
@@ -133,8 +128,7 @@ const generateMediumProblem = (): WordProblem => {
       const start = Math.floor(Math.random() * 50) + 30;
       const bought = Math.floor(Math.random() * 20) + 10;
       const sold = Math.floor(Math.random() * 15) + 5;
-      return {
-        question: `A store had ${start} books. They bought ${bought} more books and sold ${sold} books. How many books does the store have now?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A store had ${start} books. They bought ${bought} more books and sold ${sold} books. How many books does the store have now?`,
         answer: start + bought - sold,
         hint: "Add what was bought, subtract what was sold",
         category: "Two-step"
@@ -144,8 +138,7 @@ const generateMediumProblem = (): WordProblem => {
       const hourlyRate = Math.floor(Math.random() * 10) + 8;
       const hours = Math.floor(Math.random() * 6) + 3;
       const bonus = Math.floor(Math.random() * 15) + 5;
-      return {
-        question: `Alex earns $${hourlyRate} per hour. He worked ${hours} hours and received a $${bonus} bonus. How much did Alex earn in total?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `Alex earns $${hourlyRate} per hour. He worked ${hours} hours and received a $${bonus} bonus. How much did Alex earn in total?`,
         answer: (hourlyRate * hours) + bonus,
         hint: "Calculate hours × rate, then add bonus",
         category: "Money"
@@ -155,8 +148,7 @@ const generateMediumProblem = (): WordProblem => {
       const boxes = Math.floor(Math.random() * 6) + 3;
       const itemsPerBox = Math.floor(Math.random() * 12) + 6;
       const extraItems = Math.floor(Math.random() * 10) + 5;
-      return {
-        question: `There are ${boxes} boxes with ${itemsPerBox} items each, plus ${extraItems} loose items. How many items are there in total?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `There are ${boxes} boxes with ${itemsPerBox} items each, plus ${extraItems} loose items. How many items are there in total?`,
         answer: (boxes * itemsPerBox) + extraItems,
         hint: "Multiply boxes × items, then add extras",
         category: "Two-step"
@@ -165,8 +157,7 @@ const generateMediumProblem = (): WordProblem => {
     () => {
       const people = Math.floor(Math.random() * 8) + 4;
       const costPerPerson = Math.floor(Math.random() * 15) + 10;
-      return {
-        question: `A group of ${people} people went to a movie. Each ticket costs $${costPerPerson}. They paid with a $${people * costPerPerson + Math.floor(Math.random() * 20) + 10} bill. How much was the total cost?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A group of ${people} people went to a movie. Each ticket costs $${costPerPerson}. They paid with a $${people * costPerPerson + Math.floor(Math.random() * 20) + 10} bill. How much was the total cost?`,
         answer: people * costPerPerson,
         hint: "Multiply people × ticket price",
         category: "Money"
@@ -176,8 +167,7 @@ const generateMediumProblem = (): WordProblem => {
       const rows = Math.floor(Math.random() * 8) + 5;
       const seatsPerRow = Math.floor(Math.random() * 10) + 6;
       const emptySeats = Math.floor(Math.random() * 15) + 5;
-      return {
-        question: `A theater has ${rows} rows with ${seatsPerRow} seats in each row. If ${emptySeats} seats are empty, how many people are seated?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A theater has ${rows} rows with ${seatsPerRow} seats in each row. If ${emptySeats} seats are empty, how many people are seated?`,
         answer: (rows * seatsPerRow) - emptySeats,
         hint: "Calculate total seats, subtract empty ones",
         category: "Two-step"
@@ -193,8 +183,7 @@ const generateHardProblem = (): WordProblem => {
       const originalPrice = Math.floor(Math.random() * 50) + 50;
       const discountPercent = [10, 15, 20, 25][Math.floor(Math.random() * 4)];
       const discountAmount = (originalPrice * discountPercent) / 100;
-      return {
-        question: `A jacket originally costs $${originalPrice}. It's on sale for ${discountPercent}% off. How much is the discount amount?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A jacket originally costs $${originalPrice}. It's on sale for ${discountPercent}% off. How much is the discount amount?`,
         answer: discountAmount,
         hint: "Multiply price by discount percentage (as decimal)",
         category: "Percentages"
@@ -204,8 +193,7 @@ const generateHardProblem = (): WordProblem => {
       const distance = Math.floor(Math.random() * 100) + 50;
       const speed = [30, 40, 50, 60][Math.floor(Math.random() * 4)];
       const time = distance / speed;
-      return {
-        question: `A car travels ${distance} miles at a speed of ${speed} miles per hour. How many hours does the trip take?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A car travels ${distance} miles at a speed of ${speed} miles per hour. How many hours does the trip take?`,
         answer: time,
         hint: "Time = Distance ÷ Speed",
         category: "Distance"
@@ -215,8 +203,7 @@ const generateHardProblem = (): WordProblem => {
       const workers = Math.floor(Math.random() * 4) + 2;
       const days = Math.floor(Math.random() * 4) + 3;
       const hoursPerDay = Math.floor(Math.random() * 4) + 6;
-      return {
-        question: `If ${workers} workers each work ${hoursPerDay} hours per day for ${days} days, how many total work hours is that?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `If ${workers} workers each work ${hoursPerDay} hours per day for ${days} days, how many total work hours is that?`,
         answer: workers * hoursPerDay * days,
         hint: "Multiply: workers × hours × days",
         category: "Multi-step"
@@ -225,8 +212,7 @@ const generateHardProblem = (): WordProblem => {
     () => {
       const length = Math.floor(Math.random() * 15) + 10;
       const width = Math.floor(Math.random() * 10) + 5;
-      return {
-        question: `A rectangular garden is ${length} meters long and ${width} meters wide. What is the perimeter of the garden?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `A rectangular garden is ${length} meters long and ${width} meters wide. What is the perimeter of the garden?`,
         answer: 2 * (length + width),
         hint: "Perimeter = 2 × (length + width)",
         category: "Geometry"
@@ -237,8 +223,7 @@ const generateHardProblem = (): WordProblem => {
       const ratio1 = Math.floor(Math.random() * 3) + 2;
       const ratio2 = Math.floor(Math.random() * 3) + 1;
       const part1 = (total * ratio1) / (ratio1 + ratio2);
-      return {
-        question: `$${total} is divided between two people in the ratio ${ratio1}:${ratio2}. How much does the first person get?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `$${total} is divided between two people in the ratio ${ratio1}:${ratio2}. How much does the first person get?`,
         answer: part1,
         hint: "First find total parts, then calculate share",
         category: "Ratios"
@@ -248,8 +233,7 @@ const generateHardProblem = (): WordProblem => {
       const principal = [100, 200, 500, 1000][Math.floor(Math.random() * 4)];
       const rate = [5, 8, 10][Math.floor(Math.random() * 3)];
       const interest = (principal * rate) / 100;
-      return {
-        question: `If you invest $${principal} at ${rate}% simple interest for 1 year, how much interest do you earn?`,
+      return { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: `If you invest $${principal} at ${rate}% simple interest for 1 year, how much interest do you earn?`,
         answer: interest,
         hint: "Interest = Principal × Rate ÷ 100",
         category: "Finance"
@@ -642,7 +626,7 @@ export default function WordMathClient({ relatedGames = defaultRelatedGames }: W
 
               {/* Ad Banner */}
               <div className="mt-6">
-                <AdBanner slot="bottom" />
+                <AdBanner />
               </div>
 
               {/* Mobile MREC2 - Before FAQs */}

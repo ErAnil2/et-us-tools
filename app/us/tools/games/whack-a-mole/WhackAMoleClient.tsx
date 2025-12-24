@@ -38,26 +38,10 @@ interface GameStats {
 }
 
 const fallbackFaqs = [
-  {
-    question: "How do I play Whack-a-Mole?",
-    answer: "Click or tap on the moles when they pop up from their holes. Each mole you hit earns you points. Try to whack as many moles as possible before time runs out!",
-    order: 0
-  },
-  {
-    question: "How is the score calculated?",
-    answer: "You earn 10 points for each mole you successfully whack. The game lasts for 30 seconds on Easy, 25 seconds on Medium, and 20 seconds on Hard difficulty.",
-    order: 1
-  },
-  {
-    question: "What are the different difficulty levels?",
-    answer: "Easy mode has slower moles and longer game time. Medium has faster moles with moderate time. Hard mode features very fast moles and shorter time for maximum challenge.",
-    order: 2
-  },
-  {
-    question: "How can I improve my score?",
-    answer: "Focus on the center of the grid, stay calm, and anticipate where moles might appear. Quick reactions and not over-clicking help you achieve higher scores.",
-    order: 3
-  }
+  { id: 'faq-0', question: "How do I play Whack-a-Mole?", answer: "Click or tap on the moles when they pop up from their holes. Each mole you hit earns you points. Try to whack as many moles as possible before time runs out!", order: 0 },
+  { id: 'faq-1', question: "How is the score calculated?", answer: "You earn 10 points for each mole you successfully whack. The game lasts for 30 seconds on Easy, 25 seconds on Medium, and 20 seconds on Hard difficulty.", order: 1 },
+  { id: 'faq-2', question: "What are the different difficulty levels?", answer: "Easy mode has slower moles and longer game time. Medium has faster moles with moderate time. Hard mode features very fast moles and shorter time for maximum challenge.", order: 2 },
+  { id: 'faq-3', question: "How can I improve my score?", answer: "Focus on the center of the grid, stay calm, and anticipate where moles might appear. Quick reactions and not over-clicking help you achieve higher scores.", order: 3 }
 ];
 
 export default function WhackAMoleClient({ relatedGames = defaultRelatedGames }: WhackAMoleClientProps) {

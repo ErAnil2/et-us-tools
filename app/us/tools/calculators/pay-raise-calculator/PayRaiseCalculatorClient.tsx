@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -1058,7 +1058,7 @@ export default function PayRaiseCalculatorClient({ relatedCalculators = defaultR
               href={calc.href}
               className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-3 sm:p-4 md:p-6"
             >
-              <div className={`${calc.color} w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
+              <div className={`${calc.color || 'bg-gray-500'} w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
                 <span className="text-white text-xl font-bold">
                   {calc.icon === 'money' && '$'}
                   {calc.icon === 'percent' && '%'}

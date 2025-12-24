@@ -10,6 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -221,24 +223,19 @@ export default function BudgetCalculatorClient({ relatedCalculators = defaultRel
   };
 
   const faqItems = [
-    {
-      question: "What is the 50/30/20 budget rule?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is the 50/30/20 budget rule?",
       answer: "The 50/30/20 rule is a simple budgeting guideline that suggests allocating 50% of your after-tax income to needs (housing, utilities, groceries, insurance), 30% to wants (entertainment, dining out, subscriptions), and 20% to savings and debt repayment. This framework helps create a balanced budget that covers essentials while still allowing for enjoyment and financial growth."
     },
-    {
-      question: "How much should I spend on housing?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How much should I spend on housing?",
       answer: "Financial experts generally recommend spending no more than 28-30% of your gross monthly income on housing costs, including rent or mortgage, property taxes, and homeowner's insurance. If you live in a high cost-of-living area, you may need to allocate more, but try to compensate by reducing spending in other categories."
     },
-    {
-      question: "What percentage of my income should I save?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What percentage of my income should I save?",
       answer: "A common recommendation is to save at least 20% of your income, but this varies based on your goals and circumstances. If you're paying off high-interest debt, you might prioritize that first. If you're saving for retirement, aim for 15% minimum including employer contributions. For emergency funds, aim for 3-6 months of expenses."
     },
-    {
-      question: "How can I reduce my monthly expenses?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How can I reduce my monthly expenses?",
       answer: "Start by reviewing subscriptions and memberships you don't use regularly. Consider meal planning to reduce food waste and dining out expenses. Shop around for better insurance rates annually. Use energy-efficient practices to lower utility bills. Consider carpooling or public transit to reduce transportation costs. Small changes across multiple categories can add up significantly."
     },
-    {
-      question: "What's the difference between a budget and a spending plan?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What's the difference between a budget and a spending plan?",
       answer: "While often used interchangeably, a budget typically focuses on limiting spending within set categories, while a spending plan takes a more positive approach by prioritizing where your money goes based on your values and goals. A spending plan emphasizes intentional spending rather than restriction, which can make it easier to stick with long-term."
     }
   ];

@@ -10,7 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -281,24 +282,19 @@ export default function BinaryCalculatorClient({ relatedCalculators = defaultRel
   const needsSecondNumber = ['add', 'subtract', 'multiply', 'and', 'or', 'xor'].includes(operation);
 
   const faqItems = [
-    {
-      question: "What is the binary number system?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is the binary number system?",
       answer: "Binary is a base-2 number system that uses only two digits: 0 and 1. Each position represents a power of 2. For example, binary 1010 = 1×2³ + 0×2² + 1×2¹ + 0×2⁰ = 8 + 2 = 10 in decimal. Computers use binary because electronic circuits can easily represent two states: on (1) and off (0)."
     },
-    {
-      question: "How do I convert decimal to binary?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do I convert decimal to binary?",
       answer: "To convert decimal to binary, repeatedly divide by 2 and record the remainders. Read the remainders from bottom to top. For example, to convert 13: 13÷2=6 r1, 6÷2=3 r0, 3÷2=1 r1, 1÷2=0 r1. Reading bottom to top: 1101. So 13 in decimal = 1101 in binary."
     },
-    {
-      question: "What are bitwise operations?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What are bitwise operations?",
       answer: "Bitwise operations manipulate individual bits: AND (&) returns 1 only if both bits are 1. OR (|) returns 1 if either bit is 1. XOR (^) returns 1 if bits are different. NOT (~) flips each bit. These are fundamental in computer programming for flags, permissions, and low-level optimization."
     },
-    {
-      question: "What is hexadecimal?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is hexadecimal?",
       answer: "Hexadecimal (hex) is a base-16 number system using digits 0-9 and letters A-F (where A=10, B=11, ..., F=15). It's commonly used in computing because each hex digit represents exactly 4 binary bits, making it a compact way to represent binary data. For example, FF in hex = 11111111 in binary = 255 in decimal."
     },
-    {
-      question: "What is octal?",
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is octal?",
       answer: "Octal is a base-8 number system using digits 0-7. Each octal digit represents exactly 3 binary bits. It was historically used in computing and is still used for Unix file permissions. For example, 777 in octal = 111111111 in binary = 511 in decimal."
     }
   ];
@@ -565,7 +561,7 @@ export default function BinaryCalculatorClient({ relatedCalculators = defaultRel
             {relatedCalculators.map((calc) => (
               <Link key={calc.href} href={calc.href} className="group">
                 <div className="rounded-xl p-4 bg-white border-2 border-gray-100 hover:border-blue-300 hover:shadow-lg transition-all h-full">
-                  <div className={`w-12 h-12 ${calc.color} rounded-lg flex items-center justify-center mb-3`}>
+                  <div className={`w-12 h-12 ${calc.color || 'bg-gray-500'} rounded-lg flex items-center justify-center mb-3`}>
                     <span className="text-white text-xl">🔢</span>
                   </div>
                   <h3 className="text-sm font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">

@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface WeddingCostCalculatorClientProps {
@@ -577,7 +577,7 @@ export default function WeddingCostCalculatorClient({ relatedCalculators = defau
             <Link
               key={calc.href}
               href={calc.href}
-              className={`${calc.color} rounded-xl p-6 text-white hover:opacity-90 transition-opacity`}
+              className={`${calc.color || 'bg-gray-500'} rounded-xl p-6 text-white hover:opacity-90 transition-opacity`}
             >
               <h3 className="font-bold text-lg mb-2">{calc.title}</h3>
               <p className="text-sm opacity-90">{calc.description}</p>

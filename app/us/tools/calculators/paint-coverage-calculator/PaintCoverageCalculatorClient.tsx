@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -1384,7 +1384,7 @@ export default function PaintCoverageCalculatorClient({ relatedCalculators = def
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {relatedCalculators.map((calc, index) => (
             <Link key={index} href={calc.href} className="block">
-              <div className={`${calc.color} text-white rounded-lg p-6 hover:opacity-90 transition-opacity`}>
+              <div className={`${calc.color || 'bg-gray-500'} text-white rounded-lg p-6 hover:opacity-90 transition-opacity`}>
                 <h3 className="text-lg font-semibold mb-2">{calc.title}</h3>
                 <p className="text-sm text-white opacity-90">{calc.description}</p>
               </div>

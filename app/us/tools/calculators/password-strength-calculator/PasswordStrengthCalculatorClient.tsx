@@ -9,8 +9,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface PasswordStrengthCalculatorClientProps {
@@ -507,7 +507,7 @@ export default function PasswordStrengthCalculatorClient({ relatedCalculators = 
               href={calc.href}
               className="block group"
             >
-              <div className={`${calc.color} text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1`}>
+              <div className={`${calc.color || 'bg-gray-500'} text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1`}>
                 <h3 className="text-lg font-bold mb-2 group-hover:underline">
                   {calc.title}
                 </h3>

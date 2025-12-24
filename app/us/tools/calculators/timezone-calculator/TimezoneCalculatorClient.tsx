@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface Props {
@@ -456,7 +456,7 @@ export default function TimezoneCalculatorClient({ relatedCalculators = defaultR
             <Link
               key={index}
               href={calc.href}
-              className={`${calc.color} text-white p-4 rounded-lg hover:opacity-90 transition-opacity`}
+              className={`${calc.color || 'bg-gray-500'} text-white p-4 rounded-lg hover:opacity-90 transition-opacity`}
             >
               <h3 className="font-semibold">{calc.title}</h3>
               <p className="text-sm opacity-90">{calc.description}</p>

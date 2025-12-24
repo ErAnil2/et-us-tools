@@ -2,7 +2,12 @@
 
 import { useState } from 'react';
 
-export default function WordUnscramblerClient() {
+interface WordUnscramblerClientProps {
+  audioUrl?: string;
+  word?: string;
+}
+
+export default function WordUnscramblerClient({ audioUrl, word }: WordUnscramblerClientProps) {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="bg-white rounded-xl shadow-lg p-8">

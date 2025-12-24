@@ -603,7 +603,7 @@ export default function SnakeGameClient({ relatedGames = defaultRelatedGames }: 
 
               {/* Ad Banner */}
               <div className="mt-6">
-                <AdBanner slot="bottom" />
+                <AdBanner />
               </div>
 
               {/* SEO Content Section */}

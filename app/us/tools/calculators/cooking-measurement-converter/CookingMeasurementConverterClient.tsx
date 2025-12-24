@@ -9,7 +9,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -102,24 +103,19 @@ export default function CookingMeasurementConverterClient() {
   ];
 
   const faqs = [
-    {
-      question: 'How many tablespoons are in a cup?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'How many tablespoons are in a cup?',
       answer: 'There are 16 tablespoons in 1 US cup. This is a fundamental cooking conversion to remember. For half a cup, use 8 tablespoons, and for a quarter cup, use 4 tablespoons.'
     },
-    {
-      question: 'What is the difference between US and UK cup measurements?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'What is the difference between US and UK cup measurements?',
       answer: 'A US cup is 236.588 mL (8 fluid ounces), while a UK cup is 284.131 mL (10 fluid ounces). This 20% difference can significantly affect recipes, so always check which measurement system a recipe uses.'
     },
-    {
-      question: 'How do I convert grams to cups for dry ingredients?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'How do I convert grams to cups for dry ingredients?',
       answer: 'Converting grams to cups for dry ingredients depends on the ingredient density. For example, 1 cup of all-purpose flour is about 125g, while 1 cup of sugar is about 200g. Our converter uses water density as a baseline, so for dry ingredients, check specific conversion charts.'
     },
-    {
-      question: 'Why do recipes use different measurement systems?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'Why do recipes use different measurement systems?',
       answer: 'American recipes typically use volume measurements (cups, tablespoons) for convenience, while European and professional recipes use weight (grams) for precision. Weight measurements are more accurate because ingredients can be packed differently, affecting volume but not weight.'
     },
-    {
-      question: 'How do I scale a recipe for more or fewer servings?',
+    { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: 'How do I scale a recipe for more or fewer servings?',
       answer: 'Use our Recipe Scaler tool above. Divide your desired servings by the original servings to get the scaling factor. Multiply each ingredient by this factor. For example, scaling from 4 to 6 servings gives a factor of 1.5, so 1 cup becomes 1.5 cups.'
     }
   ];

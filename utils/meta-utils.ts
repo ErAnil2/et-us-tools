@@ -38,13 +38,12 @@ export function getMetaForCalculator(calculatorSlug: string, options: MetaOption
   try {
     const enhancedSEO = getEnhancedSEO(calculatorSlug, options);
     return {
-      // Existing format for backward compatibility
+      // Enhanced data first, then overrides
+      ...enhancedSEO,
+      // Override with options if provided
       title: options.title || enhancedSEO.title,
       description: options.description || enhancedSEO.description,
       keywords: enhancedSEO.keywords,
-      
-      // Enhanced data
-      ...enhancedSEO,
     };
   } catch (error) {
     console.warn(`Enhanced SEO not available for ${calculatorSlug}, using fallback`);

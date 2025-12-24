@@ -9,48 +9,37 @@ import { FirebaseFAQs } from '@/components/PageSEOContent';
 import { MobileBelowSubheadingBanner, SidebarMrec1, SidebarMrec2, GameAppMobileMrec1, GameAppMobileMrec2 } from '@/components/BannerPlacements';
 
 const fallbackFaqs = [
-  {
-    question: "What is a crossword puzzle?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is a crossword puzzle?",
     answer: "A crossword puzzle is a word game where you fill in a grid with words based on numbered clues. Words are arranged horizontally (across) and vertically (down), with letters shared where words intersect."
   },
-  {
-    question: "How do I solve a crossword puzzle?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do I solve a crossword puzzle?",
     answer: "Start with the clues you know, fill in those answers, then use the intersecting letters to help solve more difficult clues. Use the 'Hint' button if you get stuck on a particular letter."
   },
-  {
-    question: "What do the numbers in the grid mean?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What do the numbers in the grid mean?",
     answer: "The numbers in the grid correspond to the numbered clues. Each number marks the starting cell of a word that goes either across (horizontal) or down (vertical)."
   },
-  {
-    question: "Can I check my answers as I go?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Can I check my answers as I go?",
     answer: "Yes! Click the 'Check' button at any time to verify your answers. Correct letters will be counted and displayed in the progress bar."
   },
-  {
-    question: "What difficulty levels are available?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What difficulty levels are available?",
     answer: "This crossword offers four difficulty levels: Beginner (7x7 grid), Easy (9x9), Medium (11x11), and Hard (13x13). Higher difficulties have larger grids and more challenging vocabulary."
   },
-  {
-    question: "How do I navigate the crossword grid?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do I navigate the crossword grid?",
     answer: "Click any white cell to select it, then type your answer. Use arrow keys to move between cells, or click directly on the cell you want to edit. The backspace key deletes letters and moves backward."
   },
-  {
-    question: "What are 'across' and 'down' clues?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What are 'across' and 'down' clues?",
     answer: "Across clues are for words that read horizontally from left to right. Down clues are for words that read vertically from top to bottom. Each clue is numbered to match its starting position in the grid."
   },
-  {
-    question: "Why do some cells have numbers and others don't?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Why do some cells have numbers and others don't?",
     answer: "Only the first letter of each word has a number. This number corresponds to the clue number in the Across or Down clue lists. Cells without numbers are part of words but not starting positions."
   },
-  {
-    question: "What happens when words intersect?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What happens when words intersect?",
     answer: "When an across word and a down word share a cell, both words must have the same letter in that position. These intersections help you solve the puzzle by providing cross-checking letters."
   },
-  {
-    question: "Are crossword puzzles good for brain health?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Are crossword puzzles good for brain health?",
     answer: "Yes! Studies suggest that regularly solving crossword puzzles can help improve vocabulary, enhance memory, and may contribute to maintaining cognitive function as you age. They're a fun way to keep your mind sharp."
   },
-  {
-    question: "How can I improve my crossword solving skills?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How can I improve my crossword solving skills?",
     answer: "Practice regularly, learn common crossword words and abbreviations, start with easier puzzles and work up, and don't be afraid to use the hint feature when stuck. Over time, you'll recognize patterns and solve faster."
   }
 ];

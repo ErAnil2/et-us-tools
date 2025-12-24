@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface VolumeCalculatorClientProps {
@@ -660,7 +660,7 @@ export default function VolumeCalculatorClient({ relatedCalculators = defaultRel
             <Link
               key={calc.href}
               href={calc.href}
-              className={`${calc.color} text-white rounded-lg p-4 hover:opacity-90 transition`}
+              className={`${calc.color || 'bg-gray-500'} text-white rounded-lg p-4 hover:opacity-90 transition`}
             >
               <h3 className="font-bold text-lg mb-1">{calc.title}</h3>
               <p className="text-sm opacity-90">{calc.description}</p>

@@ -49,7 +49,7 @@ function SEOEditForm() {
 
   // FAQ editing state
   const [editingFaqIndex, setEditingFaqIndex] = useState<number | null>(null);
-  const [newFaq, setNewFaq] = useState<FAQ>({ question: '', answer: '' });
+  const [newFaq, setNewFaq] = useState<FAQ>({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '', answer: '' });
 
   useEffect(() => {
     if (pagePath) {
@@ -117,7 +117,7 @@ function SEOEditForm() {
         ...prev,
         faqs: [...prev.faqs, { ...newFaq, id: `faq-${Date.now()}`, order: prev.faqs.length + 1 }]
       }));
-      setNewFaq({ question: '', answer: '' });
+      setNewFaq({ id: 'faq-' + Math.random().toString(36).substr(2, 9), question: '', answer: '' });
     }
   };
 

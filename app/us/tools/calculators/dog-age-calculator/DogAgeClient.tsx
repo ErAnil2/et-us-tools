@@ -8,7 +8,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -22,7 +23,7 @@ import { CalculatorAfterCalcBanners } from '@/components/MRECBanners';
 import { MobileBelowSubheadingBanner } from '@/components/BannerPlacements';
 import { usePageSEO } from '@/lib/usePageSEO';
 interface DogAgeClientProps {
-  relatedCalculators: Array<{
+  relatedCalculators?: Array<{
     href: string;
     title: string;
     description: string;

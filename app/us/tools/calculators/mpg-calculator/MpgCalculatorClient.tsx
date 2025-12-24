@@ -11,8 +11,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface MpgCalculatorClientProps {
@@ -434,7 +434,7 @@ export default function MpgCalculatorClient({ relatedCalculators = defaultRelate
                   <Link
                     key={calc.href}
                     href={calc.href}
-                    className={`${calc.color} text-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow`}
+                    className={`${calc.color || 'bg-gray-500'} text-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow`}
                   >
                     <h3 className="font-semibold mb-1">{calc.title}</h3>
                     <p className="text-sm text-white/90">{calc.description}</p>

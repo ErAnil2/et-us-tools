@@ -11,7 +11,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -45,28 +46,21 @@ const ingredients = [
 ];
 
 const faqs = [
-  {
-    question: "Why do different ingredients have different cup measurements for the same weight?",
-    answer: "Different ingredients have different densities. For example, flour is lighter and more airy than sugar, so 1 cup of flour weighs less than 1 cup of sugar. This is why professional bakers prefer weighing ingredients for accuracy."
+  { id: 'faq-1', question: "Why do different ingredients have different cup measurements for the same weight?", answer: "Different ingredients have different densities. For example, flour is lighter and more airy than sugar, so 1 cup of flour weighs less than 1 cup of sugar. This is why professional bakers prefer weighing ingredients for accuracy."
   },
-  {
-    question: "Is it better to measure ingredients by weight or volume?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Is it better to measure ingredients by weight or volume?",
     answer: "Weight measurements (grams or ounces) are more accurate than volume measurements (cups). This is because how you scoop flour or pack brown sugar can significantly affect the amount. Professional recipes often use weight for consistency."
   },
-  {
-    question: "How do I measure flour accurately with cups?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do I measure flour accurately with cups?",
     answer: "For most accurate cup measurements: 1) Fluff the flour in its container, 2) Spoon flour into the measuring cup, 3) Level off with a straight edge. Never scoop directly or pack down, as this can add up to 30% more flour."
   },
-  {
-    question: "What is the standard cup size used in US recipes?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is the standard cup size used in US recipes?",
     answer: "US recipes use a standard cup size of 240ml (8 fluid ounces). This is different from the metric cup (250ml) used in Australia and some other countries, or the Japanese cup (200ml)."
   },
-  {
-    question: "How do I convert grams to tablespoons?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How do I convert grams to tablespoons?",
     answer: "The conversion depends on the ingredient. Generally, 1 tablespoon equals 1/16 of a cup. So divide your cup measurement by 16. For example, if 250g flour = 2 cups, then 250g flour = 32 tablespoons."
   },
-  {
-    question: "Why are my baked goods inconsistent when using cup measurements?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Why are my baked goods inconsistent when using cup measurements?",
     answer: "Cup measurements can vary based on how you scoop, pack, or level ingredients. Humidity, ingredient temperature, and settling can also affect volume. Using a kitchen scale eliminates these variables for more consistent results."
   }
 ];
@@ -84,9 +78,7 @@ const fallbackFaqs = [
   {
     id: '1',
     question: "What is a Grams To Cups Calculator?",
-    answer: "A Grams To Cups Calculator is a free online tool designed to help you quickly and accurately calculate grams to cups-related values. It simplifies complex calculations and provides instant results.",
-    order: 1
-  },
+    answer: "A Grams To Cups Calculator is a free online tool designed to help you quickly and accurately calculate grams to cups-related values. It simplifies complex calculations and provides instant results.", order: 1 },
   {
     id: '2',
     question: "How do I use this Grams To Cups Calculator?",

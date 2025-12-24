@@ -10,8 +10,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
-  icon: string;
+  color?: string;
+  icon?: string;
 }
 
 interface PregnancyWeightGainCalculatorClientProps {
@@ -703,7 +703,7 @@ export default function PregnancyWeightGainCalculatorClient({ relatedCalculators
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
           {relatedCalculators.map((calc) => (
             <Link key={calc.href} href={calc.href} className="block">
-              <div className={`${calc.color} rounded-xl p-6 text-white hover:opacity-90 transition-opacity`}>
+              <div className={`${calc.color || 'bg-gray-500'} rounded-xl p-6 text-white hover:opacity-90 transition-opacity`}>
                 <h3 className="text-xl font-bold mb-2">{calc.title}</h3>
                 <p className="text-white/90">{calc.description}</p>
               </div>

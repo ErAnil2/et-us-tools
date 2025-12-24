@@ -11,7 +11,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -61,7 +62,7 @@ const fallbackFaqs = [
 ];
 
 interface MarathonTimeCalculatorClientProps {
-  relatedCalculators: Array<{
+  relatedCalculators?: Array<{
     href: string;
     title: string;
     description: string;

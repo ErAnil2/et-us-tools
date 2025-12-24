@@ -9,7 +9,8 @@ interface RelatedCalculator {
   href: string;
   title: string;
   description: string;
-  color: string;
+  color?: string;
+  icon?: string;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
@@ -20,28 +21,21 @@ const defaultRelatedCalculators: RelatedCalculator[] = [
 ];
 
 const faqs = [
-  {
-    question: "How many miles is 1 kilometer?",
-    answer: "1 kilometer is equal to approximately 0.621371 miles. To convert kilometers to miles, multiply the kilometer value by 0.621371."
+  { id: 'faq-1', question: "How many miles is 1 kilometer?", answer: "1 kilometer is equal to approximately 0.621371 miles. To convert kilometers to miles, multiply the kilometer value by 0.621371."
   },
-  {
-    question: "How many kilometers is 1 mile?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How many kilometers is 1 mile?",
     answer: "1 mile is equal to approximately 1.60934 kilometers. To convert miles to kilometers, multiply the mile value by 1.60934."
   },
-  {
-    question: "Why do most countries use kilometers instead of miles?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "Why do most countries use kilometers instead of miles?",
     answer: "Most countries use kilometers because they adopted the metric system, which is based on powers of 10 and is easier for scientific calculations. The metric system was developed in France in the 1790s and has since become the international standard."
   },
-  {
-    question: "What is the Fibonacci trick for km to miles conversion?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "What is the Fibonacci trick for km to miles conversion?",
     answer: "Consecutive Fibonacci numbers (1, 1, 2, 3, 5, 8, 13, 21...) closely approximate km to mile conversions! For example: 5 km ≈ 3 miles, 8 km ≈ 5 miles, 13 km ≈ 8 miles. This works because the ratio between consecutive Fibonacci numbers approaches the golden ratio (1.618), which is close to the km-to-mile conversion factor (1.609)."
   },
-  {
-    question: "How long is a 5K run in miles?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How long is a 5K run in miles?",
     answer: "A 5K run is exactly 5 kilometers, which equals 3.107 miles. It's a popular distance for beginner runners and charity events."
   },
-  {
-    question: "How long is a marathon in both kilometers and miles?",
+  { id: 'faq-' + Math.random().toString(36).substr(2, 9), question: "How long is a marathon in both kilometers and miles?",
     answer: "A marathon is exactly 42.195 kilometers or 26.219 miles. The distance was standardized in 1921 based on the 1908 London Olympics course."
   }
 ];
@@ -59,9 +53,7 @@ const fallbackFaqs = [
   {
     id: '1',
     question: "What is a Kilometers To Miles Calculator?",
-    answer: "A Kilometers To Miles Calculator is a free online tool designed to help you quickly and accurately calculate kilometers to miles-related values. It simplifies complex calculations and provides instant results.",
-    order: 1
-  },
+    answer: "A Kilometers To Miles Calculator is a free online tool designed to help you quickly and accurately calculate kilometers to miles-related values. It simplifies complex calculations and provides instant results.", order: 1 },
   {
     id: '2',
     question: "How do I use this Kilometers To Miles Calculator?",
