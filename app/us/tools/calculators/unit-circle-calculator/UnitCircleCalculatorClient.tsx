@@ -16,7 +16,7 @@ interface RelatedCalculator {
 
 interface Props {
   relatedCalculators?: RelatedCalculator[];
-  faqSchema: any;
+  faqSchema?: any;
 }
 
 const defaultRelatedCalculators: RelatedCalculator[] = [
