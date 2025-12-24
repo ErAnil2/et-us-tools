@@ -475,7 +475,7 @@ export default function PunnettSquareCalculatorClient({ relatedCalculators = def
               key={index}
               href={calc.href}
               className="block bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow p-3 sm:p-4 md:p-6 border-l-4"
-              style={{ borderLeftColor: calc.color.replace('bg-', '#') }}
+              style={{ borderLeftColor: (calc.color ?? 'bg-gray-500').replace('bg-', '#') }}
             >
               <h3 className="text-lg font-bold text-gray-900 mb-2">{calc.title}</h3>
               <p className="text-gray-600 text-sm">{calc.description}</p>
