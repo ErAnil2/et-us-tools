@@ -635,6 +635,7 @@ export default function AdminSEOManagementPage() {
                                   onClick={() => {
                                     setEditingFaq(faq);
                                     setFaqForm({
+                                      id: faq.id,
                                       question: faq.question,
                                       answer: faq.answer,
                                       order: faq.order
