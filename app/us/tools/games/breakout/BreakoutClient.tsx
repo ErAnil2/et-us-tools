@@ -73,7 +73,7 @@ const fallbackFaqs = [
 
 export default function BreakoutClient({ relatedGames = defaultRelatedGames }: BreakoutClientProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | null>(null);
 
   const [gamePhase, setGamePhase] = useState<GamePhase>('menu');
   const [score, setScore] = useState(0);
