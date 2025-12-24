@@ -65,8 +65,8 @@ interface Game2048ClientProps {
     href: string;
     title: string;
     description: string;
-    color: string;
-    icon: string;
+    color?: string;
+    icon?: string;
   }>;
 }
 

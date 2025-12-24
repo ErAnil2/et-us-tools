@@ -50,7 +50,8 @@
       "Bash(node fix-all-types.js:*)",
       "Bash(node fix-comprehensive.js:*)",
       "Bash(node fix-color-required.js:*)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(node fix-game-icons.js:*)"
     ],
     "deny": [],
     "ask": []
