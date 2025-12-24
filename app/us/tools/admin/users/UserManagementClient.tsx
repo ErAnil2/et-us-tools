@@ -26,6 +26,7 @@ export default function UserManagementClient() {
 
   // Form state - email is used as username
   const [formData, setFormData] = useState({
+    username: '',
     email: '',
     password: '',
     name: '',
@@ -73,7 +74,7 @@ export default function UserManagementClient() {
       if (data.success) {
         setMessage({ type: 'success', text: 'User created successfully!' });
         setShowAddModal(false);
-        setFormData({ email: '', password: '', name: '', role: 'content_manager', isActive: true });
+        setFormData({ username: '', email: '', password: '', name: '', role: 'content_manager', isActive: true });
         fetchUsers();
       } else {
         setMessage({ type: 'error', text: data.error || 'Failed to create user' });
