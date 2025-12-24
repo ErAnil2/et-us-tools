@@ -356,6 +356,9 @@ export interface Banner {
   enabled: boolean;
   script: string;
   dimensions: string;
+  platform?: string;
+  category?: string;
+  minContainerSize?: string;
   fallbackAd: {
     text: string;
     width: number;
@@ -409,6 +412,9 @@ export async function saveBanner(bannerId: string, data: Partial<Banner>): Promi
       enabled: data.enabled ?? true,
       script: data.script || '',
       dimensions: data.dimensions || '300x250',
+      platform: data.platform || 'desktop',
+      category: data.category || 'desktop',
+      minContainerSize: data.minContainerSize || '300x250',
       fallbackAd: data.fallbackAd || { text: 'Advertisement', width: 300, height: 250 }
     }, { merge: true });
     return true;
